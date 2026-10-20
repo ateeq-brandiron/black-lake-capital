@@ -1,69 +1,103 @@
-import Image from "next/image";
+import { CtaBand } from "@/components/CtaBand";
+import { CtaButton } from "@/components/CtaButton";
+import { Divider } from "@/components/Divider";
+import { ImageSlot } from "@/components/ImageSlot";
+import { ChevronDownIcon } from "@/components/Icons";
+import { PageHero } from "@/components/PageHero";
+import { RichText } from "@/components/RichText";
+import { StatBlock } from "@/components/StatBlock";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
+import { getTestimonials, home } from "@/lib/content";
+import { pageMetadata } from "@/lib/metadata";
 
-export default function Home() {
+export const metadata = pageMetadata(home.meta, "/");
+
+export default function HomePage() {
+  const { hero, logoStrip, intro, stats, approach, testimonials, closing } = home;
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <PageHero title={hero.title} eyebrow={hero.eyebrow} video={hero.video} image={hero.image} imageLabel="hero video" markPosition="below">
+        <CtaButton variant="light" className="mt-4" />
+      </PageHero>
+
+      {/* Portfolio logo strip */}
+      <section className="bg-sky py-12" aria-label={logoStrip.label}>
+        <ul className="container-wide grid grid-cols-2 items-center gap-8 sm:grid-cols-4">
+          {logoStrip.logos.map((logo) => (
+            <li key={logo.name} className="flex h-24 items-center justify-center">
+              {logo.src ? (
+                <ImageSlot image={{ src: logo.src, alt: logo.name }} placeholder="light" fit="contain" sizes="240px" className="h-20 w-full" />
+              ) : (
+                <span className="text-2xl font-semibold text-navy/70">{logo.name}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Intro: elevator pitch */}
+      <section className="pt-16 pb-(--spacing-section)">
+        <Divider wide />
+        <div className="container-page mt-14 text-center">
+          <p className="text-lead mx-auto max-w-4xl">
+            <RichText text={intro.lead} />
           </p>
+          <p className="text-lead mx-auto mt-4 max-w-4xl">{intro.body}</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Proof points */}
+      <section className="pb-(--spacing-section)" aria-labelledby="stats-title">
+        <div className="container-wide">
+          <h2 id="stats-title" className="type-display mx-auto max-w-5xl text-center uppercase text-balance">
+            {stats.title}
+          </h2>
+          <div className="mt-16">
+            <StatBlock items={stats.items} />
+          </div>
+          <div className="mt-14 flex justify-center">
+            <CtaButton />
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Approach: Foundation / Strategy / Execution */}
+      <section aria-labelledby="approach-title">
+        <Divider wide />
+        <div className="container-wide mt-16">
+          <h2 id="approach-title" className="type-display mx-auto max-w-4xl text-center font-bold text-balance">
+            {approach.title}
+          </h2>
+          <ul className="mt-16 grid gap-12 md:grid-cols-3">
+            {approach.items.map((item) => (
+              <li key={item.label} className="flex flex-col items-center text-center">
+                <ImageSlot image={item.icon} label={`${item.label.toLowerCase()} icon`} placeholder="light" fit="contain" sizes="180px" className="size-40" />
+                <h3 className="mt-6 text-xl font-medium tracking-wide text-ink uppercase">{item.label}</h3>
+                <details className="group mt-5 w-full max-w-sm">
+                  <summary className="mx-auto flex min-h-11 w-fit cursor-pointer list-none items-center gap-3 font-semibold text-blue [&::-webkit-details-marker]:hidden">
+                    {item.summary}
+                    <ChevronDownIcon className="size-6 rounded-full border-2 border-current p-0.5 transition-transform group-open:rotate-180" />
+                  </summary>
+                  <div className="mt-4 text-lg leading-relaxed">
+                    <p className="font-semibold text-ink">{item.heading}</p>
+                    <p className="mt-2">{item.body}</p>
+                  </div>
+                </details>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-16 flex justify-center">
+            <CtaButton />
+          </div>
+        </div>
+        <div className="mt-(--spacing-section) pb-4">
+          <Divider wide />
+        </div>
+      </section>
+
+      <TestimonialCarousel title={testimonials.title} items={getTestimonials()} />
+
+      <CtaBand title={closing.title} body={closing.body} />
+    </>
   );
 }

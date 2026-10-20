@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "News | Black Lake Capital",
+    "description": null,
+    "confirmed": false,
+    "note": "Live meta title/description come from extraction."
+  },
+  "hero": {
+    "eyebrow": null,
+    "title": "News",
+    "subtitle": "Black Lake and portfolio news",
+    "image": {
+      "src": null,
+      "alt": "",
+      "note": "Hero video (same aerial lake road as Home)"
+    }
+  },
+  "status": "Layout and copy for this page are built in Step 7, after review of the shared layout and Home."
+}

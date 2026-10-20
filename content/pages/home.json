@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Black Lake Capital | Investors in Technology",
+    "description": "Black Lake Capital is a family office and independent sponsor investing in profitable, founder-led technology and tech-enabled companies in the US and Canada. Take some money off the table, stay involved, and share in what comes next.",
+    "confirmed": false,
+    "note": "Compare with the live meta title/description from extraction; keep the live ones if they are good."
+  },
+  "hero": {
+    "eyebrow": "Investors in technology",
+    "title": "Your team. Your plan. Your reward.",
+    "video": { "src": null, "poster": null, "note": "Hero video (aerial lake road) comes from extraction." },
+    "image": { "src": null, "alt": "" }
+  },
+  "logoStrip": {
+    "label": "Portfolio companies",
+    "logos": [
+      { "name": "A5", "src": null },
+      { "name": "Trapp", "src": null },
+      { "name": "OMCO Sumo", "src": null },
+      { "name": "Spinnaker SCA", "src": null }
+    ],
+    "note": "The live carousel scrolls through more logos than are visible in the screenshot; full list comes from extraction."
+  },
+  "intro": {
+    "lead": "You built a strong business. We help you **keep building it** without losing what made it successful in the first place.",
+    "body": "Take some money off the table today, stay involved, and participate in the value created next."
+  },
+  "stats": {
+    "title": "Investment performance that speaks for itself",
+    "items": [
+      {
+        "stat": "transactions",
+        "label": "Tech transactions completed",
+        "body": "Proven experience in tech scaling and exits"
+      },
+      {
+        "stat": "cashOnCash",
+        "label": "Cash-on-cash returns",
+        "body": "Realized returns on equity invested"
+      },
+      {
+        "stat": "secondBite",
+        "label": "In second-bite liquidity events",
+        "body": "Founder value across the last three subsequent transactions",
+        "detail": "About {secondTransactionMultiple} more cash, on average, in the second transaction than the first."
+      },
+      {
+        "stat": "positionsEliminated",
+        "label": "Positions eliminated",
+        "body": "Black Lake has never eliminated positions as part of an acquisition."
+      }
+    ],
+    "cta": true
+  },
+  "approach": {
+    "title": "Keep what works. Build what's next.",
+    "items": [
+      {
+        "icon": { "src": null, "alt": "", "note": "House/brick icon from the live site" },
+        "label": "Foundation",
+        "summary": "Your culture & vision",
+        "heading": "Your people. Your playbook.",
+        "body": "Your leadership team stays in place and your operating expertise stays at the center. There is no predetermined playbook."
+      },
+      {
+        "icon": { "src": null, "alt": "", "note": "Chess icon from the live site" },
+        "label": "Strategy",
+        "summary": "Capital, systems, and metrics",
+        "heading": "Experience without ego.",
+        "body": "A track record that speaks without being the loudest voice in the room."
+      },
+      {
+        "icon": { "src": null, "alt": "", "note": "Gears and arrows icon from the live site" },
+        "label": "Execution",
+        "summary": "Common goals & shared rewards",
+        "heading": "Shared success.",
+        "body": "You sell a portion of your company and retain meaningful ownership, creating the potential for a \"second bite of the apple.\""
+      }
+    ],
+    "note": "The live expand/collapse text behind each icon is not visible in the screenshot. Mapping the three approved differentiators onto Foundation / Strategy / Execution is a proposal.",
+    "cta": true
+  },
+  "testimonials": {
+    "title": "Success stories from those who've built with us"
+  },
+  "closing": {
+    "title": "Your Vision. Your People. Your Success.",
+    "body": "You don't have to carry it alone."
+  }
+}

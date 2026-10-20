@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Investors | Black Lake Capital",
+    "description": null,
+    "confirmed": false,
+    "note": "Live meta title/description come from extraction."
+  },
+  "hero": {
+    "eyebrow": null,
+    "title": "Is your company ready for exponential growth?",
+    "subtitle": "We build lasting partnerships with technology business leaders who share our commitment to growth.",
+    "image": {
+      "src": null,
+      "alt": "",
+      "note": "Night sky over mountain lake (form page, no curved hero)"
+    }
+  },
+  "status": "Layout and copy for this page are built in Step 7, after review of the shared layout and Home.",
+  "heroVariant": "form"
+}

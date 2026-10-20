@@ -1,0 +1,249 @@
+{
+  "note": "Seeded from reference/news.png (titles and bylines only). URLs, dates, excerpts and post bodies come from extraction. The live News page groups posts in four columns by source; portfolio-company posts appear to be pulled from their own sites (feed), so they link out.",
+  "confirmed": false,
+  "embed": {
+    "type": "spotify",
+    "src": null,
+    "note": "Spotify embed above the list shows 'not available in your region' in the screenshot."
+  },
+  "sources": [
+    {
+      "id": "black-lake",
+      "name": "Black Lake Capital",
+      "logo": {
+        "src": null,
+        "alt": "Black Lake Capital logo"
+      },
+      "local": true
+    },
+    {
+      "id": "a5",
+      "name": "A5",
+      "logo": {
+        "src": null,
+        "alt": "A5 logo"
+      },
+      "local": false
+    },
+    {
+      "id": "trapp",
+      "name": "Trapp Technology",
+      "logo": {
+        "src": null,
+        "alt": "Trapp Technology logo"
+      },
+      "local": false
+    },
+    {
+      "id": "macrosoft",
+      "name": "MacroSoft",
+      "logo": {
+        "src": null,
+        "alt": "MacroSoft logo"
+      },
+      "local": false
+    }
+  ],
+  "posts": [
+    {
+      "slug": "black-lake-tech-services-update-smaller-is-sometimes-better-in-generative-ai-models",
+      "source": "black-lake",
+      "title": "Black Lake tech services update: smaller is sometimes better in generative AI models",
+      "author": "Black Lake Capital",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "black-lake-announces-successful-exit-of-spinnakersca-investment",
+      "source": "black-lake",
+      "title": "Black Lake announces successful exit of SpinnakerSCA investment",
+      "author": "Black Lake Capital",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "join-black-lake-capital-in-supporting-the-leukemia-and-lymphoma-society",
+      "source": "black-lake",
+      "title": "Join Black Lake Capital in supporting the Leukemia and Lymphoma Society",
+      "author": "Black Lake Capital",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "black-lake-capital-announces-the-successful-exit-of-set-solutions",
+      "source": "black-lake",
+      "title": "Black Lake Capital announces the successful exit of Set Solutions",
+      "author": "Black Lake Capital",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "accelogix-acquisition",
+      "source": "black-lake",
+      "title": "Accelogix Acquisition",
+      "author": "Black Lake Capital",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "how-we-fixed-integra-s-broken-quoting-system-across-10-countries",
+      "source": "a5",
+      "title": "How We Fixed Integra's Broken Quoting System Across 10 Countries",
+      "author": "Samantha Wang",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "top-3-ai-driven-salesforce-trends-to-watch-in-2026",
+      "source": "a5",
+      "title": "Top 3 AI-Driven Salesforce Trends to Watch in 2026",
+      "author": "Samantha Wang",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "igniting-the-charge-how-evpassport-accelerated-to-77-faster-quoting-with-salesforce-and-a5",
+      "source": "a5",
+      "title": "Igniting the Charge: How EVPassport Accelerated to 77% Faster Quoting with Salesforce and A5",
+      "author": "Samantha Wang",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "salesforce-cpq-vs-revenue-cloud-advanced-when-to-upgrade-and-why-it-matters",
+      "source": "a5",
+      "title": "Salesforce CPQ Vs Revenue Cloud Advanced: When To Upgrade And Why It Matters",
+      "author": "Debarati Mukherjee",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "how-a5-helped-a-leading-bank-scale-salesforce-marketing-cloud-with-a-multi-org-migration",
+      "source": "a5",
+      "title": "How A5 Helped A Leading Bank Scale Salesforce Marketing Cloud With a Multi-Org Migration",
+      "author": "Samantha Wang",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "trapp-technology-named-to-prestigious-mes-midmarket-100-list",
+      "source": "trapp",
+      "title": "Trapp Technology Named to Prestigious MES Midmarket 100 List",
+      "author": "christianweb",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "trapp-technology-named-to-prestigious-mes-midmarket-100-list-2",
+      "source": "trapp",
+      "title": "Trapp Technology Named to Prestigious MES Midmarket 100 List",
+      "author": "Joseph Navarro",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "trapp-technology-wins-big-in-best-of-our-valley-awards",
+      "source": "trapp",
+      "title": "Trapp Technology Wins Big in Best of Our Valley Awards",
+      "author": "Ashley",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "trapp-technology-wins-big-in-best-of-our-valley-awards-2",
+      "source": "trapp",
+      "title": "Trapp Technology Wins Big in Best of Our Valley Awards",
+      "author": "Ashley",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "top-outsourced-it-services-for-small-business",
+      "source": "trapp",
+      "title": "Top Outsourced IT Services for Small Business",
+      "author": "Ashley",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "can-we-trust-ai-the-fight-against-hallucinations-bias",
+      "source": "macrosoft",
+      "title": "Can We Trust AI? The Fight Against Hallucinations & Bias",
+      "author": "Michael Fitton",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "the-power-of-intelligent-document-automation-with-opentext",
+      "source": "macrosoft",
+      "title": "The Power of Intelligent Document Automation with OpenText",
+      "author": "Pavithra Joy",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "ai-governance-frameworks-for-responsible-generative-ai-deployment",
+      "source": "macrosoft",
+      "title": "AI Governance: Frameworks for Responsible Generative AI Deployment",
+      "author": "Michael Fitton",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "from-legacy-to-cloud-opentext-s-path-to-modern-ccm",
+      "source": "macrosoft",
+      "title": "From Legacy to Cloud: OpenText's Path to Modern CCM",
+      "author": "Allen Shapiro",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    },
+    {
+      "slug": "quadient-vs-traditional-ccm-why-modern-platforms-outperform-legacy-systems",
+      "source": "macrosoft",
+      "title": "Quadient vs. Traditional CCM: Why Modern Platforms Outperform Legacy Systems",
+      "author": "Allen Shapiro",
+      "date": null,
+      "url": null,
+      "excerpt": null,
+      "body": null
+    }
+  ]
+}

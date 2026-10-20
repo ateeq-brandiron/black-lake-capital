@@ -1,0 +1,27 @@
+{
+  "transactions": {
+    "value": "15",
+    "confirmed": false,
+    "note": "TODO: live site says 15; messaging doc says 18 across seven platforms; client has said 16 and 18."
+  },
+  "cashOnCash": {
+    "value": "10x+",
+    "confirmed": true,
+    "note": "Approved: 10x+ cash-on-cash realized returns on equity invested."
+  },
+  "secondBite": {
+    "value": "$60M+",
+    "confirmed": false,
+    "note": "TODO: \"$60M+\" vs \"$60–65M\". Live site still shows $50M+."
+  },
+  "secondTransactionMultiple": {
+    "value": "3.5x",
+    "confirmed": true,
+    "note": "Approved: about 3.5x more cash on average in the second transaction than the first."
+  },
+  "positionsEliminated": {
+    "value": "0",
+    "confirmed": true,
+    "note": "Approved: Black Lake has never eliminated positions as part of an acquisition."
+  }
+}

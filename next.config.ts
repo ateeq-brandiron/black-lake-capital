@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // WordPress URLs end in a slash (/criteria/); keep them identical.
+  trailingSlash: true,
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {

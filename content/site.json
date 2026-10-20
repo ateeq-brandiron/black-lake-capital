@@ -1,0 +1,61 @@
+{
+  "name": "Black Lake Capital",
+  "url": "https://blacklakecap.com",
+  "copyrightYear": 2023,
+  "credit": "Designed by Brand Iron",
+  "messaging": {
+    "tagline": "Your team. Your plan. Your reward.",
+    "valueProposition": "Keep what works. Build what's next.",
+    "elevatorPitch": "You built a strong business. We help you keep building it without losing what made it successful in the first place. Take some money off the table today, stay involved, and participate in the value created next.",
+    "signOff": "Your Vision. Your People. Your Success."
+  },
+  "cta": {
+    "label": "Start a conversation",
+    "href": "mailto:info@BlackLakeCap.com?subject=Starting%20a%20conversation",
+    "confirmed": false,
+    "note": "Mailto until the client chooses mailto vs. the existing contact form on /investors/."
+  },
+  "contact": {
+    "phone": "(720) 770-0079",
+    "phoneHref": "tel:+17207700079",
+    "email": "info@BlackLakeCap.com",
+    "address": ["1524 Belford Ct", "Evergreen, CO 80439"],
+    "linkedin": {
+      "href": null,
+      "confirmed": false,
+      "note": "Company LinkedIn URL comes from the live footer (extraction blocked)."
+    }
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Investments", "href": "/investments/" },
+    { "label": "Team", "href": "/team/" },
+    { "label": "Criteria", "href": "/criteria/" },
+    { "label": "Values", "href": "/values/" },
+    { "label": "News", "href": "/news/" },
+    { "label": "Contact Us", "href": "/investors/" }
+  ],
+  "menuDownloads": {
+    "label": "Download Our Summary to Learn More",
+    "files": [],
+    "note": "Two PDF links appear in the live menu. Files and targets come from extraction."
+  },
+  "footer": {
+    "quickLinksTitle": "Quick Links",
+    "quickLinks": [
+      { "label": "Investments", "href": "/investments/" },
+      { "label": "Investors", "href": "/investors/" },
+      { "label": "Criteria", "href": "/criteria/" },
+      { "label": "Team", "href": "/team/" },
+      { "label": "Values", "href": "/values/" },
+      { "label": "News", "href": "/news/" }
+    ],
+    "legal": [
+      { "label": "Terms and Conditions", "href": "/terms-and-conditions/" },
+      { "label": "Cookie Policy", "href": "/cookie-policy/" },
+      { "label": "Privacy Policy", "href": "/privacy-policy/" }
+    ],
+    "legalConfirmed": false,
+    "contactTitle": "Contact"
+  }
+}

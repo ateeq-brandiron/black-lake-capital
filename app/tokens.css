@@ -1,0 +1,48 @@
+/*
+ * Design tokens for blacklakecap.com.
+ *
+ * Tailwind CSS 4 has no tailwind.config.js: this @theme block IS the Tailwind config.
+ * Every token becomes a utility (bg-navy, text-blue, font-numeral, ...).
+ *
+ * Source: pixel-sampled from the full-page screenshots in /reference (1366px wide).
+ * VERIFY against the live CSS once content/_source/css/ has been extracted
+ * (scripts/extract-wordpress.mjs). Differences from the approximate tokens in
+ * CLAUDE.md are listed in docs/design-tokens.md.
+ */
+@theme {
+  /* Brand colours */
+  --color-blue: #1e60ad; /* headings, stat numerals, testimonial band, footer headings */
+  --color-blue-deep: #1e60ac; /* testimonial band background (same hue, 1 step) */
+  --color-navy: #2e3b54; /* top bar, menu drawer, buttons, footer links, lake mark (top half) */
+  --color-navy-deep: #0b274c; /* Investors stat band */
+  --color-charcoal: #373536; /* lake mark (bottom half) */
+  --color-sky: #deeeff; /* light blue band (logo strip, form panel) */
+  --color-ink: #333333; /* dark headings, team names, news titles */
+  --color-body: #6b6b6b; /* body copy, intro text, footer contact */
+  --color-muted: #767676; /* divider lines, secondary text */
+  --color-mist: #d9d9d9; /* footer background, accordion borders */
+  --color-night: #171717; /* bottom bar */
+  --color-linkedin: #007bb6;
+
+  /* Typography */
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-numeral: var(--font-arapey), Georgia, serif;
+
+  /* Type scale (desktop values from the 1366px screenshots, fluid down to 360px) */
+  --text-hero: clamp(2.25rem, 1.4rem + 3.8vw, 3.75rem); /* 60px hero H1 */
+  --text-hero--line-height: 1.1;
+  --text-display: clamp(2rem, 1.3rem + 3vw, 3.5rem); /* 56px section H2 */
+  --text-display--line-height: 1.15;
+  --text-stat: clamp(3.5rem, 2.8rem + 3vw, 4.5rem); /* 72px stat numerals */
+  --text-stat--line-height: 1;
+  --text-lead: clamp(1.125rem, 1rem + 0.5vw, 1.375rem); /* 22px intro line */
+  --text-lead--line-height: 1.5;
+
+  /* Layout */
+  --container-page: 67.5rem; /* 1080px content column (143px gutters at 1366px) */
+  --container-wide: 80rem;
+  --radius-card: 0.75rem; /* team photos, form fields */
+
+  /* Section rhythm */
+  --spacing-section: clamp(4rem, 3rem + 4vw, 7rem);
+}

@@ -1,0 +1,21 @@
+{
+  "note": "Import every testimonial from the live carousel (10 slides). Only slides visible in /reference are here until extraction runs. Never add others.",
+  "items": [
+    {
+      "id": "trapp",
+      "quote": "Black Lake Capital has been instrumental in shaping Trapp's growing software and services offering. Together, we have crafted a dynamic go-to-market strategy, empowering our ArmorPoint cyber security solution to rapidly grow to meet customer demand.",
+      "name": "David Trapp",
+      "company": "Trapp Technologies",
+      "logo": { "src": null, "alt": "Trapp Technologies logo" },
+      "source": "reference/home.png"
+    },
+    {
+      "id": "third-century",
+      "quote": null,
+      "name": "Preston Moister",
+      "company": "Third Century",
+      "logo": { "src": null, "alt": "Third Century logo" },
+      "source": "CLAUDE.md (confirmed live; quote text comes from extraction)"
+    }
+  ]
+}
