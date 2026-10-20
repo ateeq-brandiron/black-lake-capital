@@ -15,5 +15,8 @@
       "note": "Lake with mountain reflection at sunset"
     }
   },
-  "status": "Layout and copy for this page are built in Step 7, after review of the shared layout and Home."
+  "intro": "Black Lake Capital has completed {transactions} technology transactions, delivering {cashOnCash} cash-on-cash realized returns on equity invested.",
+  "statusLabels": {
+    "completed": "Completed"
+  }
 }

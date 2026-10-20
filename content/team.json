@@ -1,0 +1,97 @@
+{
+  "stats": {
+    "title": "Backed by numbers",
+    "items": [
+      {
+        "stat": "combinedYears",
+        "label": "Combined years of transaction experience"
+      },
+      {
+        "stat": "transactions",
+        "label": "Tech transactions completed with Black Lake Capital"
+      }
+    ],
+    "note": "The live 'assets under management' stat renders as NaN, so it is left out until the client supplies the figure."
+  },
+  "sections": [
+    {
+      "title": "Built for agility",
+      "body": "As a family office with our own capital and a trusted network of investors, we move with agility and act decisively."
+    },
+    {
+      "title": "Access without barriers",
+      "body": "Our lean team gives founders direct access to experienced investors and the people who make the decisions. You don't have to carry it alone."
+    }
+  ],
+  "partners": [
+    {
+      "name": "Charles Scripps",
+      "role": "Managing Partner",
+      "bio": [
+        "Chad brings two decades of experience investing in private and public businesses. Prior to founding Black Lake, he was at leading private equity firms **HIG Capital** and **AEA Investors**, which manage $37B and $15B, respectively, and began his career as a management consultant with **McKinsey & Company**. He earned an MBA with Honors from the Wharton School and a BS in Chemical Engineering with Distinction from the University of Wisconsin."
+      ],
+      "photo": {
+        "src": null,
+        "alt": "Charles Scripps"
+      },
+      "phone": "303-951-8188",
+      "email": "cscripps@blacklakecap.com",
+      "linkedin": {
+        "href": null,
+        "label": "Charles (Chad) Scripps"
+      }
+    },
+    {
+      "name": "Aaron Nack",
+      "role": "Partner",
+      "bio": [
+        "Aaron is an entrepreneur with 25 years of experience as a founder, partner, investor, and advisor across a wide range of industries, including technology, manufacturing, logistics, and fashion. He bootstrapped the growth of digital transformation firm **AHEAD**, from startup to $250M in revenue, six offices, and 150 employees in seven years. A 2011 *Entrepreneur Magazine* article celebrated his successful leadership. The operational structure Aaron designed and implemented allowed the business to reach its current size of over $1.0B in revenue. Aaron has a B.S. in Economics from the University of Wisconsin-Madison."
+      ],
+      "photo": {
+        "src": null,
+        "alt": "Aaron Nack",
+        "note": "Updated headshot pending (open item)"
+      },
+      "phone": "312-543-8161",
+      "email": "anack@blacklakecap.com",
+      "linkedin": {
+        "href": null,
+        "label": "Aaron Nack",
+        "note": "Updated LinkedIn link pending (open item)"
+      }
+    }
+  ],
+  "advisoryTitle": "Advisory Board",
+  "advisors": [
+    {
+      "name": "Dick Grove",
+      "role": "Advisory Board Member",
+      "bio": [
+        "**Previously, Richard served as President and CEO** of Milwaukee Electric Tool Corporation, a power tool company with over $500M in annual sales. His background includes a range of acquisitions, divestitures, and financial transactions, including leveraged buyouts led by KKR and Merrill Lynch Capital Partners. He received his BS in Electrical Engineering from Cornell University and his MBA from the University of Pittsburgh."
+      ],
+      "linkedin": {
+        "href": null
+      }
+    },
+    {
+      "name": "LD Johnson",
+      "role": "Advisory Board Member",
+      "bio": [
+        "**LaDon currently serves as CFO** and director of CFO Systems LLC. Previously he was President and CFO of Icicle Seafoods, Inc. LaDon was also CFO of Cibus, a trait development company, and Advanta, the world's fifth largest crop seed company. While with Cibus, he increased revenue sevenfold. He holds a BA in Business Administration from Iowa State University and is a Certified Public Accountant."
+      ],
+      "linkedin": {
+        "href": null
+      }
+    },
+    {
+      "name": "John Marler",
+      "role": "Advisory Board Member",
+      "bio": [
+        "**Most recently, John Marler served as the Chief Executive Officer and President** of Set Solutions, a Texas based cybersecurity solution provider and integrator. Under John's leadership, Set Solutions grew from a regional boutique to a superregional enterprise provider with annual revenue of $175M in sales. With 25+ years in the high-tech industry, his experience spans the arc of modern-day information technology, from network & cybersecurity engineering at ecommerce pioneer Dell Computer, through sales and services in cybersecurity, and in more recent years leading organizations as CEO, President, COO, CTO, and VP Sales. John holds a BBA in Management Information Systems from Texas A&M."
+      ],
+      "linkedin": {
+        "href": null
+      }
+    }
+  ]
+}

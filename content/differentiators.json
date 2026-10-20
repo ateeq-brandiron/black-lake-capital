@@ -1,0 +1,21 @@
+{
+  "note": "Shared by Values ('What makes Black Lake different') and Investors ('Why partner with Black Lake Capital?'). Items 1-3 are the approved differentiators; item 4 condenses the live 'Lean Team Advantage' and 'Tech Industry Focus' columns into the approved value point. Draft copy.",
+  "items": [
+    {
+      "title": "Your people. Your playbook.",
+      "body": "Your leadership team stays in place and your operating expertise stays at the center. We respect the vision you built, keep the existing staff, and bring no predetermined playbook."
+    },
+    {
+      "title": "Shared success.",
+      "body": "You sell a portion of your company and retain meaningful ownership, creating the potential for a \"second bite of the apple.\" On average, founders have taken about {secondTransactionMultiple} more cash in the second transaction than the first."
+    },
+    {
+      "title": "Experience without ego.",
+      "body": "A track record that speaks without being the loudest voice in the room: {transactions} technology transactions and {cashOnCash} cash-on-cash realized returns on equity invested."
+    },
+    {
+      "title": "The deal should fit the business.",
+      "body": "A lean team and a deep focus on technology businesses let us make decisions quickly and shape each deal around the needs of the company, not the other way around."
+    }
+  ]
+}

@@ -15,5 +15,40 @@
       "note": "Forest lake with pine tree"
     }
   },
-  "status": "Layout and copy for this page are built in Step 7, after review of the shared layout and Home."
+  "intro": "We invest in majority and substantial minority equity recapitalizations of profitable, founder-led technology and tech-enabled businesses in the US and Canada, with a focus on technology distribution and implementation: VARs, cybersecurity providers, and the companies that deploy and support technology for their customers.",
+  "introConfirmed": false,
+  "criteria": {
+    "confirmed": false,
+    "note": "Proposed criteria from CLAUDE.md; public wording not yet confirmed. Live site says '$2M+ in EBITDA and $8M+ in Revenue'; the Investors form asks for $6M+ revenue.",
+    "items": [
+      {
+        "title": "EBITDA of $3M–$6M and revenue of $10M–$40M",
+        "body": "Our sweet spot is $3M–$6M in EBITDA, with a floor of about $1.5M."
+      },
+      {
+        "title": "Benefits from utilizing technology",
+        "body": "We focus on businesses that distribute, implement, and support technology for their customers."
+      },
+      {
+        "title": "Strong management teams",
+        "body": "Your leadership team stays in place and your operating expertise stays at the center."
+      },
+      {
+        "title": "Market-leading positions",
+        "body": null
+      },
+      {
+        "title": "Positive industry trends",
+        "body": null
+      },
+      {
+        "title": "Established and growing",
+        "body": "Businesses that are typically 4–12 years old, headquartered in the US or Canada."
+      },
+      {
+        "title": "Shared values",
+        "body": "Confident, human, collaborative, candid, and caring. The deal should fit the business."
+      }
+    ]
+  }
 }

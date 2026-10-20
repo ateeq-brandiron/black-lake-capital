@@ -1,0 +1,72 @@
+{
+  "note": "From reference/investments.png. Logos, the expand text behind each card and the 'Learn More' targets come from extraction. Case-study multiples are NOT published (unconfirmed).",
+  "companies": [
+    {
+      "name": "A5 Corporation",
+      "location": "Pleasanton, California",
+      "website": "www.A5corp.com",
+      "description": "Leading digital solution provider",
+      "status": "current",
+      "logo": {
+        "src": null,
+        "alt": "A5 Corporation logo"
+      }
+    },
+    {
+      "name": "Trapp Technology",
+      "location": "Phoenix, Arizona",
+      "website": "www.Trapptechnology.com",
+      "description": "Innovative cybersecurity solutions",
+      "status": "current",
+      "logo": {
+        "src": null,
+        "alt": "Trapp Technology logo"
+      }
+    },
+    {
+      "name": "Innovatix",
+      "location": "Parsippany, New Jersey",
+      "website": "www.macrosoftinc.com",
+      "description": "Solutions for complex software development",
+      "status": "current",
+      "logo": {
+        "src": null,
+        "alt": "Innovatix logo"
+      },
+      "note": "Live card shows the Innovatix logo but links to macrosoftinc.com. Confirm name and URL."
+    },
+    {
+      "name": "Spinnaker SCA",
+      "location": "Boulder, Colorado",
+      "website": "www.spinnakersca.com",
+      "description": "Complete suite of supply chain services",
+      "status": "completed",
+      "logo": {
+        "src": null,
+        "alt": "Spinnaker SCA logo"
+      }
+    },
+    {
+      "name": "Set Solutions",
+      "location": "Houston, Texas",
+      "website": "www.Setsolutions.com",
+      "description": "Full-service network security provider",
+      "status": "completed",
+      "logo": {
+        "src": null,
+        "alt": "Set Solutions logo"
+      }
+    },
+    {
+      "name": "OMCO SUMO",
+      "location": "Oconomowoc, Wisconsin",
+      "website": "www.omcosumo.com",
+      "description": "Manufacturer and global OEM supplier",
+      "status": "completed",
+      "logo": {
+        "src": null,
+        "alt": "OMCO SUMO logo"
+      }
+    }
+  ]
+}

@@ -1,9 +1,60 @@
-import { PageStub } from "@/components/PageStub";
+import { ContactForm } from "@/components/ContactForm";
+import { CtaBand } from "@/components/CtaBand";
+import { CtaButton } from "@/components/CtaButton";
+import { Differentiators } from "@/components/Differentiators";
+import { ImageSlot } from "@/components/ImageSlot";
+import { StatBlock } from "@/components/StatBlock";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import content from "@/content/pages/investors.json";
+import { getTestimonials } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata(content.meta, "/investors/");
 
 export default function InvestorsPage() {
-  return <PageStub content={content} />;
+  const { hero, form, stats, whyTitle, testimonials } = content;
+  return (
+    <>
+      {/* Hero with the inquiry form: the form is this section's one action */}
+      <section id="contact" className="relative isolate overflow-hidden py-14 text-white lg:py-14">
+        <ImageSlot image={hero.image} label={hero.image.note} sizes="100vw" priority className="absolute! inset-0 -z-10" />
+        <div className="absolute inset-0 -z-10 bg-black/30" />
+        <div className="container-page grid items-start gap-12 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:gap-16">
+          <div className="lg:pt-24">
+            <h1 className="text-[clamp(2rem,1.5rem+2vw,2.75rem)] leading-tight font-bold [text-shadow:0_2px_8px_rgb(0_0_0/0.5)]">{hero.title}</h1>
+            <p className="mt-4 text-xl leading-relaxed font-semibold [text-shadow:0_2px_8px_rgb(0_0_0/0.5)]">{hero.subtitle}</p>
+          </div>
+          <ContactForm labels={form} />
+        </div>
+      </section>
+
+      <section className="bg-navy-deep py-(--spacing-section)" aria-label="Track record">
+        <div className="container-page">
+          <StatBlock items={stats.items} tone="dark" />
+        </div>
+      </section>
+
+      <section className="py-(--spacing-section)" aria-labelledby="why-title">
+        <div className="container-wide">
+          <h2 id="why-title" className="text-center text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] font-bold text-ink">
+            {whyTitle}
+          </h2>
+          <div className="mt-16">
+            <Differentiators />
+          </div>
+          <div className="mt-16 flex justify-center">
+            <CtaButton href="#contact" />
+          </div>
+        </div>
+      </section>
+
+      <TestimonialCarousel
+        title={testimonials.title}
+        items={getTestimonials()}
+        background={<ImageSlot image={testimonials.background} label={testimonials.background.note} sizes="100vw" className="size-full" />}
+      />
+
+      <CtaBand />
+    </>
+  );
 }

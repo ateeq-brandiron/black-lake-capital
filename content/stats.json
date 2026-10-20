@@ -23,5 +23,10 @@
     "value": "0",
     "confirmed": true,
     "note": "Approved: Black Lake has never eliminated positions as part of an acquisition."
+  },
+  "combinedYears": {
+    "value": "150+",
+    "confirmed": false,
+    "note": "Carried over from the live Team page; not in the approved proof points."
   }
 }

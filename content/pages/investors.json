@@ -7,14 +7,64 @@
   },
   "hero": {
     "eyebrow": null,
-    "title": "Is your company ready for exponential growth?",
-    "subtitle": "We build lasting partnerships with technology business leaders who share our commitment to growth.",
+    "title": "Keep what works. Build what's next.",
+    "subtitle": "You built a strong business. Take some money off the table today, stay involved, and participate in the value created next.",
     "image": {
       "src": null,
       "alt": "",
-      "note": "Night sky over mountain lake (form page, no curved hero)"
+      "note": "Night sky over mountain lake"
     }
   },
-  "status": "Layout and copy for this page are built in Step 7, after review of the shared layout and Home.",
-  "heroVariant": "form"
+  "heroVariant": "form",
+  "form": {
+    "title": "Black Lake Capital may be the right partner for you.",
+    "submitLabel": "Start a conversation",
+    "successMessage": "Thank you. We'll be in touch shortly.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "tech": "Are you a technology-focused company?",
+      "region": "Is it a US- or Canada-based company?",
+      "revenue": "Are you making at least $6M in revenue per year?",
+      "company": "Company",
+      "services": "Services",
+      "description": "Description"
+    },
+    "revenueConfirmed": false,
+    "note": "Revenue question kept from the live form ($6M); criteria say $10M–$40M. Delivery target (email address/provider) to confirm."
+  },
+  "stats": {
+    "items": [
+      {
+        "stat": "transactions",
+        "label": "Tech transactions completed",
+        "body": "Proven experience in tech scaling and exits"
+      },
+      {
+        "stat": "cashOnCash",
+        "label": "Cash-on-cash returns",
+        "body": "Realized returns on equity invested"
+      },
+      {
+        "stat": "secondBite",
+        "label": "In second-bite liquidity events",
+        "body": "Founder value across the last three subsequent transactions"
+      },
+      {
+        "stat": "positionsEliminated",
+        "label": "Positions eliminated",
+        "body": "Black Lake has never eliminated positions as part of an acquisition."
+      }
+    ]
+  },
+  "whyTitle": "Why partner with Black Lake Capital?",
+  "testimonials": {
+    "title": "What our partners say",
+    "background": {
+      "src": null,
+      "alt": "",
+      "note": "Night sky over lake"
+    }
+  }
 }

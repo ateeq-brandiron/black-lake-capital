@@ -3,8 +3,11 @@ import stats from "@/content/stats.json";
 import testimonials from "@/content/testimonials.json";
 import newsJson from "@/content/news.json";
 import home from "@/content/pages/home.json";
+import differentiators from "@/content/differentiators.json";
+import portfolio from "@/content/portfolio.json";
+import team from "@/content/team.json";
 
-export { site, home };
+export { site, home, differentiators, portfolio, team };
 
 export type StatKey = keyof typeof stats;
 

@@ -26,5 +26,12 @@
 - Investors page form asks "at least $6M in revenue"; CLAUDE.md criteria say $10M–$40M revenue. Criteria page says "$2M+ in EBITDA and $8M+ in Revenue".
 - Live copyright says © 2023.
 
+## From the page build
+- Criteria: intro line and all criteria wording are draft. "Market-leading positions" and "Positive industry trends" need body text.
+- Investments: Innovatix logo vs macrosoftinc.com URL; "Learn More" targets; the year in "Since 20__".
+- Investors: where form inquiries go (address + email provider); whether this page also speaks to co-investors and intermediaries.
+- Team: "150+ combined years" is from the live site, not the approved proof points; AUM figure.
+- Stats inside body text (Values, Investors) also come from stats.json and change with it.
+
 ## Technical
 - Unknown `/news/<slug>/` URLs render the 404 page with `noindex` but return HTTP 200 (partial prerendering streams the status). Fine for SEO; revisit if a hard 404 is needed.

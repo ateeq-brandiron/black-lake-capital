@@ -22,3 +22,14 @@
 20. **Legal pages** created at WordPress default paths so footer links don't 404; the paths and text are unverified.
 21. **Not built**: the "back to top" buttons, the logo carousel arrows (static row for now), and the Spotify embed on News (it shows "not available in your region" in the screenshot).
 22. **No dependencies added** beyond the Next.js starter. GA4 loads via `next/script` from `NEXT_PUBLIC_GA_MEASUREMENT_ID`; Search Console via `GOOGLE_SITE_VERIFICATION`.
+
+## Remaining pages (initial draft)
+
+23. **Hero CTA on every page** (CLAUDE.md: "a CTA in the hero ... on every page"). On Investors the form is the hero's action.
+24. **Investors keeps the top bar** for consistency (the live page hides it).
+25. **Contact form** runs on a server action: validation, honeypot and a 3-second time trap (skipped for no-JS submissions so real leads aren't dropped). It sends through the Resend REST API with no SDK, and only when `EMAIL_PROVIDER=resend`. The default logs and sends nothing.
+26. **Differentiators** are one content file shared by Values and Investors, so the two pages can't drift apart.
+27. **Criteria toggles** without known body text render as plain rows instead of empty expanders.
+28. **Team stats**: the broken AUM ("NaN") is left out, so the block shows two numbers.
+29. **Investments "Learn More"** links and expand text are not rebuilt (targets unknown); the company website link stays.
+30. **Redirects** for common WordPress paths are in `next.config.ts` (see `docs/redirect-map.md`).

@@ -13,7 +13,7 @@ type Props = {
 export function StatBlock({ items, tone = "light" }: Props) {
   const dark = tone === "dark";
   return (
-    <dl className={`grid gap-x-8 gap-y-12 text-center sm:grid-cols-2 ${items.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}>
+    <dl className={`grid gap-x-8 gap-y-12 text-center sm:grid-cols-2 ${{ 2: "mx-auto max-w-3xl", 3: "lg:grid-cols-3", 4: "lg:grid-cols-4" }[items.length] ?? "lg:grid-cols-4"}`}>
       {items.map((item) => {
         const s = getStat(item.stat as StatKey);
         return (
