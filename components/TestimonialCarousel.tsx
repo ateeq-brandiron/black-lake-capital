@@ -20,7 +20,7 @@ export function TestimonialCarousel({ title, items, background }: Props) {
   const [index, setIndex] = useState(0);
   if (!items.length) return null;
   return (
-    <section className="relative isolate overflow-hidden bg-blue-deep py-(--spacing-section) text-white" aria-roledescription="carousel" aria-labelledby="testimonials-title">
+    <section id="testimonials" className="relative isolate overflow-hidden bg-blue-deep py-(--spacing-section) text-white" aria-roledescription="carousel" aria-labelledby="testimonials-title">
       {background ? <div className="absolute inset-0 -z-10">{background}</div> : null}
       <div className="container-wide">
         <h2 id="testimonials-title" className="text-center text-[clamp(1.75rem,1.2rem+2.6vw,3.5rem)] leading-tight font-bold text-balance">
@@ -36,9 +36,15 @@ export function TestimonialCarousel({ title, items, background }: Props) {
               className="col-start-1 row-start-1 grid items-start gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:gap-16"
             >
               <figcaption className="order-2 flex flex-col items-center md:order-1 md:items-start md:pl-[10%]">
-                <ImageSlot image={t.logo} placeholder="light" fit="contain" sizes="96px" className="mb-4 size-24 md:ml-20" />
+                <ImageSlot image={t.logo} placeholder="light" fit="contain" sizes="240px" className="mb-4 h-24 w-60 bg-white/0" />
                 <span className="font-bold uppercase">{t.name}</span>
-                <span className="uppercase">{t.company}</span>
+                {t.companyUrl ? (
+                  <a href={t.companyUrl} target="_blank" rel="noopener" className="uppercase hover:underline">
+                    {t.company}
+                  </a>
+                ) : (
+                  <span className="uppercase">{t.company}</span>
+                )}
               </figcaption>
               <blockquote className="relative order-1 pl-12 text-lg leading-snug md:order-2 md:text-xl">
                 <span className="absolute top-0 left-0 font-numeral text-6xl leading-none text-white/80" aria-hidden="true">

@@ -1,0 +1,882 @@
+[
+  {
+    "url": "https://blacklakecap.com/",
+    "slug": "home",
+    "kind": "page",
+    "lastmod": "2025-08-20T09:38:38+00:00",
+    "status": 200,
+    "title": "Black Lake Capital | Welcome|Focused On Technology And Innovation-Enabled Businesses",
+    "description": "",
+    "canonical": "https://blacklakecap.com/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "home wp-singular page-template-default page page-id-11 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/slide-anything-popup-preview/",
+    "slug": "slide-anything-popup-preview",
+    "kind": "page",
+    "lastmod": "2023-08-03T16:41:53+00:00",
+    "status": 200,
+    "title": "Slide Anything Popup Preview|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/slide-anything-popup-preview/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "cleanpage superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/mytry/",
+    "slug": "mytry",
+    "kind": "page",
+    "lastmod": "2022-01-04T06:50:22+00:00",
+    "status": 200,
+    "title": "myTry|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/mytry/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Make An Appointment"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-278 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/home-option/",
+    "slug": "home-option",
+    "kind": "page",
+    "lastmod": "2023-09-06T10:51:09+00:00",
+    "status": 200,
+    "title": "Home Option|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/home-option/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Contact Us"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-843 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/investing/",
+    "slug": "investing",
+    "kind": "page",
+    "lastmod": "2025-07-10T12:24:48+00:00",
+    "status": 200,
+    "title": "Active Investments|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/investing/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-893 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/team/",
+    "slug": "team",
+    "kind": "page",
+    "lastmod": "2025-10-31T00:44:01+00:00",
+    "status": 200,
+    "title": "Team|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/team/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-1049 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/news-4/",
+    "slug": "news-4",
+    "kind": "page",
+    "lastmod": "2025-03-19T21:33:50+00:00",
+    "status": 200,
+    "title": "News|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "blog custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/a5-corp-posts/",
+    "slug": "a5-corp-posts",
+    "kind": "page",
+    "lastmod": "2024-02-06T06:09:48+00:00",
+    "status": 200,
+    "title": "A5 Corp Posts|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/a5-corp-posts/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-4043 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/black-lake-capital-posts/",
+    "slug": "black-lake-capital-posts",
+    "kind": "page",
+    "lastmod": "2024-01-15T12:10:36+00:00",
+    "status": 200,
+    "title": "Black Lake Capital Posts|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/black-lake-capital-posts/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-4053 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/macrosoft-post/",
+    "slug": "macrosoft-post",
+    "kind": "page",
+    "lastmod": "2024-01-15T12:11:26+00:00",
+    "status": 200,
+    "title": "Macrosoft Post|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/macrosoft-post/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-4057 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/spinnaker-posts/",
+    "slug": "spinnaker-posts",
+    "kind": "page",
+    "lastmod": "2024-01-15T12:13:24+00:00",
+    "status": 200,
+    "title": "Spinnaker Posts|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/spinnaker-posts/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-4061 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/trapp-posts/",
+    "slug": "trapp-posts",
+    "kind": "page",
+    "lastmod": "2025-03-19T21:03:45+00:00",
+    "status": 200,
+    "title": "Trapp Posts|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/trapp-posts/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Trapp News & Insights: Stay Informed with Our Latest Updates"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-4069 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/ocmo-sumo-posts/",
+    "slug": "ocmo-sumo-posts",
+    "kind": "page",
+    "lastmod": "2024-01-15T12:36:29+00:00",
+    "status": 200,
+    "title": "OCMO SUMO Posts|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/ocmo-sumo-posts/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-4188 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/investment-criteria/",
+    "slug": "investment-criteria",
+    "kind": "page",
+    "lastmod": "2025-05-21T12:40:13+00:00",
+    "status": 200,
+    "title": "Investment Criteria|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/investment-criteria/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-241648 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/blc-tech-landing-page/",
+    "slug": "blc-tech-landing-page",
+    "kind": "page",
+    "lastmod": "2024-07-08T18:56:07+00:00",
+    "status": 200,
+    "title": "BLC Tech Landing Page|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/blc-tech-landing-page/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Fuel Your Technology Company’s Growth with Strategic Capital"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-242314 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/blc-investor-landing-page/",
+    "slug": "blc-investor-landing-page",
+    "kind": "page",
+    "lastmod": "2024-06-09T17:18:34+00:00",
+    "status": 200,
+    "title": "BLC Investor Landing Page|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/blc-investor-landing-page/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Macrosoft",
+      "A5 Corporation",
+      "Spinnaker SCA",
+      "OMCO SUMO",
+      "Trapp Technology",
+      "Set Solutions"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-242354 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/privacy-policy/",
+    "slug": "privacy-policy",
+    "kind": "page",
+    "lastmod": "2024-09-03T19:08:17+00:00",
+    "status": 200,
+    "title": "Privacy Policy|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/privacy-policy/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-242722 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/investors/",
+    "slug": "investors",
+    "kind": "page",
+    "lastmod": "2025-06-16T12:46:50+00:00",
+    "status": 200,
+    "title": "investors|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/investors/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Is your company ready for exponential growth?",
+      "15",
+      "10x+",
+      "$50M+",
+      "0",
+      "Why Partner with Black Lake Capital?"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template page-template-page-template-blank page-template-page-template-blank-php page page-id-242839 custom-background wp-theme-Divi et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters1 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/thank-you/",
+    "slug": "thank-you",
+    "kind": "page",
+    "lastmod": "2024-12-19T00:25:54+00:00",
+    "status": 200,
+    "title": "thank you|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/thank-you/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-242891 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/new-news/",
+    "slug": "new-news",
+    "kind": "page",
+    "lastmod": "2025-01-29T16:52:26+00:00",
+    "status": 200,
+    "title": "New News|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/new-news/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243108 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/blogs/",
+    "slug": "blogs",
+    "kind": "page",
+    "lastmod": "2025-01-29T18:11:29+00:00",
+    "status": 200,
+    "title": "blogs|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/blogs/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243172 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/test/",
+    "slug": "test",
+    "kind": "page",
+    "lastmod": "2025-03-11T21:23:06+00:00",
+    "status": 200,
+    "title": "TEST|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/test/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243276 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/macrosoft-2/",
+    "slug": "macrosoft-2",
+    "kind": "page",
+    "lastmod": "2026-07-07T13:50:12+00:00",
+    "status": 200,
+    "title": "Macrosoft|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/macrosoft-2/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Stay Updated: The Latest Blogs & News from Macrosoft"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243363 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/spinnakersca/",
+    "slug": "spinnakersca",
+    "kind": "page",
+    "lastmod": "2025-03-19T20:59:23+00:00",
+    "status": 200,
+    "title": "Spinnakersca|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/spinnakersca/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "SpinnakerSCA Insights: Your Hub for the Latest Blogs & News"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243368 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/a5-2/",
+    "slug": "a5-2",
+    "kind": "page",
+    "lastmod": "2025-03-19T21:09:22+00:00",
+    "status": 200,
+    "title": "A5|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/a5-2/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "A5 Crop Post: Latest News & Insights at Your Fingertips"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243385 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/omcosumo/",
+    "slug": "omcosumo",
+    "kind": "page",
+    "lastmod": "2025-03-19T21:12:46+00:00",
+    "status": 200,
+    "title": "omcosumo|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/omcosumo/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Omco Sumo Updates: Stay Ahead with Our Latest News & Insights"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243391 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/setsolutions-2/",
+    "slug": "setsolutions-2",
+    "kind": "page",
+    "lastmod": "2025-03-19T21:19:37+00:00",
+    "status": 200,
+    "title": "setsolutions|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/setsolutions-2/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "SET Solutions News & Insights: Stay Ahead with the Latest Updates"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243395 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/newspage/",
+    "slug": "newspage",
+    "kind": "page",
+    "lastmod": "2025-04-28T08:49:55+00:00",
+    "status": 200,
+    "title": "Newspage|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/newspage/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "Black Lake and Portfolio News"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243424 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/values/",
+    "slug": "values",
+    "kind": "page",
+    "lastmod": "2025-05-21T12:43:06+00:00",
+    "status": 200,
+    "title": "Values|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/values/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "A commitment to putting people and relationships first to drive industry-leading results for founders, employees and investors."
+    ],
+    "published": "",
+    "bodyClass": "wp-singular page-template-default page page-id-243444 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/spinnaker-sca/",
+    "slug": "testimonial--spinnaker-sca",
+    "kind": "testimonial",
+    "lastmod": "2025-04-07T21:04:35+00:00",
+    "status": 200,
+    "title": "SPINNAKER SCA|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/spinnaker-sca/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "SPINNAKER SCA"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-2557 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/a5-corporation/",
+    "slug": "testimonial--a5-corporation",
+    "kind": "testimonial",
+    "lastmod": "2025-04-07T21:04:08+00:00",
+    "status": 200,
+    "title": "A5 CORPORATION|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/a5-corporation/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "A5 CORPORATION"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-2562 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/set-solutions/",
+    "slug": "testimonial--set-solutions",
+    "kind": "testimonial",
+    "lastmod": "2025-04-07T21:03:50+00:00",
+    "status": 200,
+    "title": "SET SOLUTIONS|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/set-solutions/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "SET SOLUTIONS"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-2564 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/trapp-technologies/",
+    "slug": "testimonial--trapp-technologies",
+    "kind": "testimonial",
+    "lastmod": "2025-04-07T21:03:30+00:00",
+    "status": 200,
+    "title": "TRAPP TECHNOLOGIES|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/trapp-technologies/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "TRAPP TECHNOLOGIES"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-2565 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/source-capital/",
+    "slug": "testimonial--source-capital",
+    "kind": "testimonial",
+    "lastmod": "2025-04-07T21:02:37+00:00",
+    "status": 200,
+    "title": "SOURCE CAPITAL|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/source-capital/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "SOURCE CAPITAL"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-2566 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/third-century-partners/",
+    "slug": "testimonial--third-century-partners",
+    "kind": "testimonial",
+    "lastmod": "2025-04-07T20:59:35+00:00",
+    "status": 200,
+    "title": "THIRD CENTURY PARTNERS|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/third-century-partners/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "THIRD CENTURY PARTNERS"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-2567 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/sdr-partners/",
+    "slug": "testimonial--sdr-partners",
+    "kind": "testimonial",
+    "lastmod": "2023-12-15T21:13:49+00:00",
+    "status": 200,
+    "title": "SDR PARTNERS|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/sdr-partners/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "SDR PARTNERS"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-2568 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/tm-capital/",
+    "slug": "testimonial--tm-capital",
+    "kind": "testimonial",
+    "lastmod": "2025-04-07T20:45:53+00:00",
+    "status": 200,
+    "title": "TM CAPITAL|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/tm-capital/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "TM CAPITAL"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-2569 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/david-trapp/",
+    "slug": "testimonial--david-trapp",
+    "kind": "testimonial",
+    "lastmod": "2025-04-28T09:22:24+00:00",
+    "status": 200,
+    "title": "DAVID TRAPP|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/david-trapp/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "DAVID TRAPP"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-243655 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/john-sharkey/",
+    "slug": "testimonial--john-sharkey",
+    "kind": "testimonial",
+    "lastmod": "2025-04-28T09:23:57+00:00",
+    "status": 200,
+    "title": "JOHN SHARKEY|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/john-sharkey/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "JOHN SHARKEY"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-243656 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/vinay-kruttiventi/",
+    "slug": "testimonial--vinay-kruttiventi",
+    "kind": "testimonial",
+    "lastmod": "2025-04-28T09:23:53+00:00",
+    "status": 200,
+    "title": "VINAY KRUTTIVENTI|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/vinay-kruttiventi/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "VINAY KRUTTIVENTI"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-243657 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  },
+  {
+    "url": "https://blacklakecap.com/testimonial/john-marler/",
+    "slug": "testimonial--john-marler",
+    "kind": "testimonial",
+    "lastmod": "2025-04-28T09:23:46+00:00",
+    "status": 200,
+    "title": "JOHN MARLER|Black Lake Capital | Welcome",
+    "description": "",
+    "canonical": "https://blacklakecap.com/testimonial/john-marler/",
+    "robots": "max-image-preview:large",
+    "og": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "type": ""
+    },
+    "h1": [
+      "JOHN MARLER"
+    ],
+    "published": "",
+    "bodyClass": "wp-singular testimonial-template-default single single-testimonial postid-243658 custom-background wp-theme-Divi et_pb_button_helper_class et_transparent_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_right_sidebar et_divi_theme et-db superfly-on sfm-style-side sfm-sidebar-slide sfm-toggle-click sfm-sub-flyout sfm-sub-mob-dropdown netscape"
+  }
+]

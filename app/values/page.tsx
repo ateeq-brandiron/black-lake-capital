@@ -13,7 +13,7 @@ export default function ValuesPage() {
   const { hero, differentTitle, treeline, valuePoints } = content;
   return (
     <>
-      <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} imageLabel={hero.image.note}>
+      <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} video={hero.video}>
         <CtaButton variant="light" className="mt-2" />
       </PageHero>
 
@@ -41,7 +41,7 @@ export default function ValuesPage() {
             ))}
           </ul>
         </div>
-        <ImageSlot image={treeline} label={treeline.note} placeholder="light" sizes="100vw" className="mt-16 h-24 w-full sm:h-32" />
+        <ImageSlot image={treeline} placeholder="light" fit="cover" sizes="100vw" className="mt-16 aspect-16/3 w-full bg-white! outline-0! [&_img]:object-bottom" />
       </section>
 
       <CtaBand />

@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Investments | Black Lake Capital",
+    "description": null,
+    "confirmed": false,
+    "note": "Live meta title/description come from extraction."
+  },
+  "hero": {
+    "eyebrow": null,
+    "title": "Partners in success",
+    "subtitle": "Achieving your vision",
+    "image": {
+      "src": "/images/sections/investments-hero.jpg",
+      "alt": ""
+    }
+  },
+  "intro": "Since 2013, Black Lake Capital has completed {transactions} transactions, delivering {cashOnCash} cash-on-cash realized equity returns.",
+  "statusLabels": {
+    "completed": "Completed"
+  },
+  "learnMoreLabel": "Learn More"
+}

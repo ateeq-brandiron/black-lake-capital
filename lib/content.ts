@@ -18,6 +18,7 @@ export type Testimonial = {
   quote: string;
   name: string;
   company: string;
+  companyUrl?: string;
   logo: ImageRef;
 };
 
@@ -32,6 +33,9 @@ export type NewsPost = {
   /** External URL for portfolio-company posts. */
   url: string | null;
   excerpt: string | null;
+  featuredImage?: { src: string; alt: string; width: number; height: number } | null;
+  categories?: string[];
+  /** Sanitized HTML (scripts/import-posts.py). */
   body: string | null;
 };
 
@@ -54,9 +58,28 @@ export function getTestimonials(): Testimonial[] {
   return testimonials.items.filter((t): t is typeof t & { quote: string } => Boolean(t.quote));
 }
 
+/** Posts hosted on this site (all imported WordPress posts), newest first. */
 export function getLocalPosts() {
   const local = new Set(news.sources.filter((s) => s.local).map((s) => s.id));
-  return news.posts.filter((p) => local.has(p.source));
+  // Some builder-made posts are only a featured image (e.g. a press clipping), with no body text.
+  return news.posts.filter((p) => local.has(p.source) && (p.body || p.featuredImage));
+}
+
+export function getPost(slug: string) {
+  return getLocalPosts().find((p) => p.slug === slug);
+}
+
+export function getSource(id: string) {
+  return news.sources.find((s) => s.id === id);
+}
+
+/** WordPress posts live at the site root: /<slug>/. */
+export function postPath(slug: string) {
+  return `/${slug}/`;
+}
+
+export function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 }
 
 /** Path for a page that exists in content/pages, e.g. "criteria" -> "/criteria/". */

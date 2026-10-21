@@ -14,7 +14,7 @@ export default function TeamPage() {
   const { hero } = content;
   return (
     <>
-      <PageHero title={hero.title} image={hero.image} imageLabel={hero.image.note}>
+      <PageHero title={hero.title} image={hero.image}>
         <CtaButton variant="light" className="mt-2" />
       </PageHero>
 

@@ -26,7 +26,12 @@
   },
   "combinedYears": {
     "value": "150+",
-    "confirmed": false,
-    "note": "Carried over from the live Team page; not in the approved proof points."
+    "confirmed": true,
+    "note": "Live Team page."
+  },
+  "careerAum": {
+    "value": "$80B+",
+    "confirmed": true,
+    "note": "Live Team page (stored as '$80B+'; the counter renders it as NaN)."
   }
 }

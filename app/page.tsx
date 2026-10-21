@@ -16,17 +16,17 @@ export default function HomePage() {
   const { hero, logoStrip, intro, stats, approach, testimonials, closing } = home;
   return (
     <>
-      <PageHero title={hero.title} eyebrow={hero.eyebrow} video={hero.video} image={hero.image} imageLabel="hero video" markPosition="below">
+      <PageHero title={hero.title} eyebrow={hero.eyebrow} video={hero.video} image={hero.image} markPosition="below">
         <CtaButton variant="light" className="mt-4" />
       </PageHero>
 
       {/* Portfolio logo strip */}
       <section className="bg-sky py-12" aria-label={logoStrip.label}>
-        <ul className="container-wide grid grid-cols-2 items-center gap-8 sm:grid-cols-4">
+        <ul className="container-wide grid grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
           {logoStrip.logos.map((logo) => (
             <li key={logo.name} className="flex h-24 items-center justify-center">
               {logo.src ? (
-                <ImageSlot image={{ src: logo.src, alt: logo.name }} placeholder="light" fit="contain" sizes="240px" className="h-20 w-full" />
+                <ImageSlot image={{ src: logo.src, alt: logo.name }} placeholder="light" fit="contain" sizes="240px" className="h-24 w-full bg-transparent! outline-0!" />
               ) : (
                 <span className="text-2xl font-semibold text-navy/70">{logo.name}</span>
               )}
@@ -71,7 +71,7 @@ export default function HomePage() {
           <ul className="mt-16 grid gap-12 md:grid-cols-3">
             {approach.items.map((item) => (
               <li key={item.label} className="flex flex-col items-center text-center">
-                <ImageSlot image={item.icon} label={`${item.label.toLowerCase()} icon`} placeholder="light" fit="contain" sizes="180px" className="size-40" />
+                <ImageSlot image={item.icon} placeholder="light" fit="contain" sizes="180px" className="size-40 bg-transparent! outline-0!" />
                 <h3 className="mt-6 text-xl font-medium tracking-wide text-ink uppercase">{item.label}</h3>
                 <details className="group mt-5 w-full max-w-sm">
                   <summary className="mx-auto flex min-h-11 w-fit cursor-pointer list-none items-center gap-3 font-semibold text-blue [&::-webkit-details-marker]:hidden">

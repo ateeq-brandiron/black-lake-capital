@@ -10,16 +10,18 @@
     "title": "Values",
     "subtitle": "We believe the people who built a successful business should remain at the center of what comes next.",
     "image": {
-      "src": null,
-      "alt": "",
-      "note": "Hero video (same aerial lake road as Home)"
+      "src": "/images/sections/home-hero-poster.jpg",
+      "alt": ""
+    },
+    "video": {
+      "src": "/images/video/hero-lofoten.mp4",
+      "poster": "/images/sections/home-hero-poster.jpg"
     }
   },
   "differentTitle": "What makes Black Lake different",
   "treeline": {
-    "src": null,
-    "alt": "",
-    "note": "Blue pine treeline illustration"
+    "src": "/images/sections/values-treeline.png",
+    "alt": ""
   },
   "valuePoints": {
     "title": "What founders can expect",

@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Criteria | Black Lake Capital",
+    "description": null,
+    "confirmed": false,
+    "note": "Live meta title/description come from extraction."
+  },
+  "hero": {
+    "eyebrow": null,
+    "title": "Investment criteria",
+    "subtitle": "Is your business the right fit? Criteria for strategic growth",
+    "image": {
+      "src": "/images/sections/criteria-hero.jpg",
+      "alt": ""
+    }
+  },
+  "intro": "We invest in majority and substantial minority equity recapitalizations in leading middle-market technology and innovation-enabled businesses.",
+  "introConfirmed": true,
+  "criteria": {
+    "confirmed": true,
+    "note": "Live wording from /investment-criteria/. Proposed update (EBITDA $3M–$6M, revenue $10M–$40M, 4–12 years) is not yet approved for publication.",
+    "items": [
+      {
+        "title": "$2M+ in EBITDA and $8M+ in Revenue",
+        "body": "Cash-flow-positive companies across the US and Canada."
+      },
+      {
+        "title": "Benefits from Utilizing Technology",
+        "body": "Black Lake looks to leverage technology and innovation to increase revenue growth and profitability."
+      },
+      {
+        "title": "Strong Management Teams",
+        "body": "Black Lake partners with executives who lead their respective industries and have a history of success."
+      },
+      {
+        "title": "Market-Leading Positions",
+        "body": "Companies that create defensible, competitive positions naturally set themselves up to provide recurring revenue and pricing power."
+      },
+      {
+        "title": "Positive Industry Trends",
+        "body": "Black Lake wants to be in it for the long term. We use market research and our extensive executive network to look for positive trends."
+      },
+      {
+        "title": "Shared Values",
+        "body": "We seek business owners and managers who share our values of collaboration, commitment, and compassion."
+      }
+    ]
+  }
+}

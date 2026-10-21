@@ -10,9 +10,8 @@
     "title": "Keep what works. Build what's next.",
     "subtitle": "Black Lake partners with founders who want to create value today without walking away from the business they still believe in.",
     "image": {
-      "src": null,
-      "alt": "",
-      "note": "Night sky over mountain lake"
+      "src": "/images/sections/investors-hero.jpg",
+      "alt": ""
     }
   },
   "heroVariant": "form",
@@ -62,9 +61,8 @@
   "testimonials": {
     "title": "What our partners say",
     "background": {
-      "src": null,
-      "alt": "",
-      "note": "Night sky over lake"
+      "src": "/images/sections/investors-testimonials.jpg",
+      "alt": ""
     }
   }
 }

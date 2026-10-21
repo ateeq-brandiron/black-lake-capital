@@ -46,6 +46,9 @@ const REF = path.join(ROOT, "reference");
 const SCREENSHOTS = !flag("--no-screenshots");
 const MEDIA = !flag("--no-media");
 const VIEWPORT = { width: 1440, height: 900 };
+/** Pause between page loads; the live host answers 429 when crawled quickly. */
+const DELAY_MS = Number(opt("--delay", "8000"));
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function loadPlaywright() {
   try {
@@ -73,9 +76,20 @@ function isLocal(origin) {
 
 // ---------------------------------------------------------------- sitemap
 
+/** GET with retries on 429, honouring Retry-After. */
+async function politeGet(request, url, options = {}) {
+  for (let attempt = 0; ; attempt++) {
+    const res = await request.get(url, { timeout: 30_000, ...options });
+    if (res.status() !== 429 || attempt >= 4) return res;
+    const wait = (Number(res.headers()["retry-after"]) || 30 * (attempt + 1)) * 1000;
+    log(`429 on ${url}; waiting ${wait / 1000}s`);
+    await sleep(wait);
+  }
+}
+
 async function getText(request, url) {
   try {
-    const res = await request.get(url, { timeout: 30_000 });
+    const res = await politeGet(request, url);
     if (!res.ok()) return { status: res.status(), text: null };
     return { status: res.status(), text: await res.text(), type: res.headers()["content-type"] ?? "" };
   } catch (err) {
@@ -132,6 +146,7 @@ function kindOf(entry) {
   if (/post-sitemap|posts-post/.test(name)) return "post";
   if (/page-sitemap|posts-page/.test(name)) return "page";
   if (/category|tag|taxonom/.test(name)) return "taxonomy";
+  if (/testimonial/.test(name)) return "testimonial";
   if (/author|users/.test(name)) return "author";
   if (/attachment|media|image/.test(name)) return "attachment";
   return "other";
@@ -142,12 +157,12 @@ function kindOf(entry) {
 async function fetchWpJson(request) {
   const out = {};
   await mkdir(path.join(SRC, "wp-json"), { recursive: true });
-  for (const type of ["pages", "posts", "media", "categories"]) {
+  for (const type of ["pages", "posts", "categories", "project"]) {
     const all = [];
     let status = 0;
     for (let page = 1; page < 50; page++) {
       try {
-        const res = await request.get(`${BASE}/wp-json/wp/v2/${type}?per_page=100&page=${page}`, { timeout: 30_000 });
+        const res = await politeGet(request, `${BASE}/wp-json/wp/v2/${type}?per_page=100&page=${page}`);
         status = res.status();
         if (!res.ok()) break;
         const batch = await res.json();
@@ -420,7 +435,8 @@ async function downloadMedia(request, images) {
         break;
       }
       try {
-        const res = await request.get(url, { timeout: 120_000 });
+        const res = await politeGet(request, url, { timeout: 120_000 });
+        await sleep(500);
         if (!res.ok()) continue;
         const body = await res.body();
         let name = decodeURIComponent(path.basename(new URL(url).pathname)) || "file";
@@ -460,7 +476,7 @@ async function main() {
     entries.push({ url: `${BASE}/`, sitemap: "(none)", lastmod: "" });
   }
   for (const e of entries) e.kind = kindOf(e);
-  log(`${entries.length} sitemap URLs`);
+  log(`${entries.length} sitemap URLs`, JSON.stringify(tried));
 
   log("querying /wp-json/wp/v2");
   const wpStatus = await fetchWpJson(request);
@@ -468,7 +484,13 @@ async function main() {
   const browser = await chromium.launch({ proxy });
   const context = await browser.newContext({ viewport: VIEWPORT, userAgent: "BlackLakeRebuild-Extractor/1.0 (read-only)" });
   // Never submit anything: block every non-GET request from the page.
-  await context.route("**/*", (route) => (route.request().method() === "GET" ? route.continue() : route.abort()));
+  // Also skip trackers: they are irrelevant to content and slow every page down.
+  const TRACKERS = /googletagmanager|google-analytics|doubleclick|licdn|linkedin\.com\/(px|li)|facebook\.(net|com)\/tr|hotjar|clarity\.ms/;
+  await context.route("**/*", (route) => {
+    const req = route.request();
+    if (req.method() !== "GET" || TRACKERS.test(req.url())) return route.abort();
+    return route.continue();
+  });
 
   const pages = [];
   const allImages = [];
@@ -482,12 +504,20 @@ async function main() {
   const tracking = { ga4: new Set(), ua: new Set(), gtm: new Set(), googleSiteVerification: new Set() };
 
   for (const entry of entries) {
-    if (["attachment", "author"].includes(entry.kind)) continue;
+    // Posts come from /wp-json (full content); archives add nothing.
+    if (["attachment", "author", "taxonomy", "post"].includes(entry.kind)) continue;
     const slug = slugFor(entry.url);
     log("page", entry.url);
     const page = await context.newPage();
     try {
-      const res = await page.goto(entry.url, { waitUntil: "networkidle", timeout: 60_000 });
+      // "load", not "networkidle": a looping hero video never goes idle.
+      let res = await page.goto(entry.url, { waitUntil: "load", timeout: 60_000 });
+      for (let attempt = 1; res?.status() === 429 && attempt <= 4; attempt++) {
+        const wait = (Number(res.headers()["retry-after"]) || 45 * attempt) * 1000;
+        log(`429 on ${entry.url}; waiting ${wait / 1000}s`);
+        await sleep(wait);
+        res = await page.goto(entry.url, { waitUntil: "load", timeout: 60_000 });
+      }
       // Scroll to trigger lazy-loaded images and counters, then return to top.
       await page.evaluate(async () => {
         for (let y = 0; y < document.body.scrollHeight; y += 600) {
@@ -550,6 +580,7 @@ async function main() {
       pages.push({ url: entry.url, slug, kind: entry.kind, status: 0, error: String(err).slice(0, 200) });
     } finally {
       await page.close();
+      await sleep(DELAY_MS);
     }
   }
 
@@ -557,7 +588,8 @@ async function main() {
   if (SCREENSHOTS && !existsSync(path.join(REF, "home-mobile.png"))) {
     const m = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true });
     const p = await m.newPage();
-    await p.goto(`${BASE}/`, { waitUntil: "networkidle", timeout: 60_000 }).catch(() => {});
+    await p.goto(`${BASE}/`, { waitUntil: "load", timeout: 60_000 }).catch(() => {});
+    await p.waitForTimeout(2000);
     await p.screenshot({ path: path.join(REF, "home-mobile.png"), fullPage: true }).catch(() => {});
     await m.close();
   }
@@ -644,7 +676,7 @@ async function main() {
     "",
     "## Skipped sitemap entries",
     "",
-    ...entries.filter((e) => ["attachment", "author"].includes(e.kind)).map((e) => `- ${e.kind}: ${e.url}`),
+    ...entries.filter((e) => ["attachment", "author", "taxonomy"].includes(e.kind)).map((e) => `- ${e.kind}: ${e.url}`),
     "",
     "## Linked internally but not in the sitemap",
     "",

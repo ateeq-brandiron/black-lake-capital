@@ -4,14 +4,14 @@
  * Tailwind CSS 4 has no tailwind.config.js: this @theme block IS the Tailwind config.
  * Every token becomes a utility (bg-navy, text-blue, font-numeral, ...).
  *
- * Source: pixel-sampled from the full-page screenshots in /reference (1366px wide).
- * VERIFY against the live CSS once content/_source/css/ has been extracted
- * (scripts/extract-wordpress.mjs). Differences from the approximate tokens in
- * CLAUDE.md are listed in docs/design-tokens.md.
+ * Source: live CSS (content/_source/css/), cross-checked against the /reference
+ * screenshots. Differences from the approximate tokens in CLAUDE.md are listed in
+ * docs/design-tokens.md.
  */
 @theme {
   /* Brand colours */
-  --color-blue: #1e60ad; /* headings, stat numerals, testimonial band, footer headings */
+  --color-blue: #1e60ad; /* headings, testimonial band, footer headings */
+  --color-blue-stat: #165fac; /* stat numerals and labels */
   --color-blue-deep: #1e60ac; /* testimonial band background (same hue, 1 step) */
   --color-navy: #2e3b54; /* top bar, menu drawer, buttons, footer links, lake mark (top half) */
   --color-navy-deep: #0b274c; /* Investors stat band */
@@ -26,7 +26,7 @@
 
   /* Typography */
   --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
-  --font-numeral: var(--font-arapey), Georgia, serif;
+  --font-numeral: var(--font-quattrocento), Georgia, serif;
 
   /* Type scale (desktop values from the 1366px screenshots, fluid down to 360px) */
   --text-hero: clamp(2.25rem, 1.4rem + 3.8vw, 3.75rem); /* 60px hero H1 */

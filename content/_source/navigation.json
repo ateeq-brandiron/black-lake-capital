@@ -1,0 +1,48 @@
+{
+  "header": [
+    {
+      "label": "Home",
+      "href": "https://blacklakecap.com/",
+      "children": []
+    },
+    {
+      "label": "Investments",
+      "href": "https://blacklakecap.com/investing/",
+      "children": []
+    },
+    {
+      "label": "Team",
+      "href": "https://blacklakecap.com/team/",
+      "children": []
+    },
+    {
+      "label": "Criteria",
+      "href": "https://blacklakecap.com/investment-criteria/",
+      "children": []
+    },
+    {
+      "label": "Values",
+      "href": "https://blacklakecap.com/values/",
+      "children": []
+    },
+    {
+      "label": "News",
+      "href": "https://blacklakecap.com/newspage/",
+      "children": []
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://blacklakecap.com/investors/",
+      "children": []
+    }
+  ],
+  "footer": {
+    "text": "Black Lake Capital © 2023 | Designed by Brand Iron",
+    "links": [
+      {
+        "label": "RSS",
+        "href": "https://blacklakecap.com/feed/"
+      }
+    ]
+  }
+}

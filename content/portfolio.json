@@ -1,5 +1,5 @@
 {
-  "note": "From reference/investments.png. Logos, the expand text behind each card and the 'Learn More' targets come from extraction. Case-study multiples are NOT published (unconfirmed).",
+  "note": "Order, text and logos from the live /investing/ page (the 'Completed' ribbon is part of the logo image). 'Learn More' goes to the company's posts on the News page. Case-study multiples are not published.",
   "companies": [
     {
       "name": "A5 Corporation",
@@ -8,32 +8,11 @@
       "description": "Leading digital solution provider",
       "status": "current",
       "logo": {
-        "src": null,
+        "src": "/images/logos/portfolio-a5.jpg",
         "alt": "A5 Corporation logo"
-      }
-    },
-    {
-      "name": "Trapp Technology",
-      "location": "Phoenix, Arizona",
-      "website": "www.Trapptechnology.com",
-      "description": "Innovative cybersecurity solutions",
-      "status": "current",
-      "logo": {
-        "src": null,
-        "alt": "Trapp Technology logo"
-      }
-    },
-    {
-      "name": "Innovatix",
-      "location": "Parsippany, New Jersey",
-      "website": "www.macrosoftinc.com",
-      "description": "Solutions for complex software development",
-      "status": "current",
-      "logo": {
-        "src": null,
-        "alt": "Innovatix logo"
       },
-      "note": "Live card shows the Innovatix logo but links to macrosoftinc.com. Confirm name and URL."
+      "ribbonInLogo": false,
+      "newsSource": "a5"
     },
     {
       "name": "Spinnaker SCA",
@@ -42,9 +21,24 @@
       "description": "Complete suite of supply chain services",
       "status": "completed",
       "logo": {
-        "src": null,
+        "src": "/images/logos/portfolio-spinnaker-completed.png",
         "alt": "Spinnaker SCA logo"
-      }
+      },
+      "ribbonInLogo": true,
+      "newsSource": "spinnaker"
+    },
+    {
+      "name": "Trapp Technology",
+      "location": "Phoenix, Arizona",
+      "website": "www.Trapptechnology.com",
+      "description": "Innovative cybersecurity solutions",
+      "status": "current",
+      "logo": {
+        "src": "/images/logos/portfolio-trapp.jpg",
+        "alt": "Trapp Technology logo"
+      },
+      "ribbonInLogo": false,
+      "newsSource": "trapp"
     },
     {
       "name": "Set Solutions",
@@ -53,9 +47,25 @@
       "description": "Full-service network security provider",
       "status": "completed",
       "logo": {
-        "src": null,
+        "src": "/images/logos/portfolio-set-solutions-completed.webp",
         "alt": "Set Solutions logo"
-      }
+      },
+      "ribbonInLogo": true,
+      "newsSource": null
+    },
+    {
+      "name": "Innovatix",
+      "location": "Parsippany, New Jersey",
+      "website": "www.macrosoftinc.com",
+      "description": "Solutions for complex software development",
+      "status": "current",
+      "logo": {
+        "src": "/images/logos/portfolio-innovatix.jpg",
+        "alt": "Innovatix logo"
+      },
+      "note": "Live card shows the Innovatix logo but links to macrosoftinc.com. Confirm name and URL.",
+      "ribbonInLogo": false,
+      "newsSource": "macrosoft"
     },
     {
       "name": "OMCO SUMO",
@@ -64,9 +74,11 @@
       "description": "Manufacturer and global OEM supplier",
       "status": "completed",
       "logo": {
-        "src": null,
+        "src": "/images/logos/portfolio-omco-sumo-completed.png",
         "alt": "OMCO SUMO logo"
-      }
+      },
+      "ribbonInLogo": true,
+      "newsSource": "omco-sumo"
     }
   ]
 }

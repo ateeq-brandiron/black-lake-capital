@@ -33,3 +33,17 @@
 28. **Team stats**: the broken AUM ("NaN") is left out, so the block shows two numbers.
 29. **Investments "Learn More"** links and expand text are not rebuilt (targets unknown); the company website link stays.
 30. **Redirects** for common WordPress paths are in `next.config.ts` (see `docs/redirect-map.md`).
+
+## After extracting the live site (21 Oct 2026)
+
+31. **Live URLs kept:** /investing/, /investment-criteria/, /newspage/, and every post at /<slug>/. My earlier guesses (/investments/, /criteria/, /news/) were dropped.
+32. **All 170 posts imported** (8 Black Lake, 162 portfolio-company copies) with sanitized HTML, local WebP images (max 1200px), and per-company listings at /newspage/<company>/. Builder-made posts with no body show their featured image (as on the live site).
+33. **Criteria** show the live wording and toggle text. The proposed new criteria stay unpublished until approved.
+34. **Home expanders** keep the messaging-platform text; the live text ("you continue to steer...") leans on the rejected "control" framing.
+35. **Testimonials:** the 8 unique quotes from the live carousel, with names, companies, links and logos. The 12 testimonial posts redirect to the carousel.
+36. **Team stats:** 150+ years, $80B+ AUM (the live counter's "NaN"), and the transaction count.
+37. **Serif font** corrected to Quattrocento (from the live CSS).
+38. **Official logo mark** (164px PNG) replaces my SVG redraw. The divider mark stays an SVG.
+39. **Tracking:** the live GTM container and Search Console token, loaded on production only.
+40. **Terms and Cookie Policy** dropped from the footer: the live pages don't exist.
+41. **"Learn More"** on Investments goes to the company's posts (/newspage/<company>/); Set Solutions has none.

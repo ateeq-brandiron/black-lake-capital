@@ -21,7 +21,7 @@ export function StatBlock({ items, tone = "light" }: Props) {
             <dt className="order-2 mt-4">
               <span className={dark ? "block text-lg leading-tight font-bold text-white uppercase" : "type-label block"}>{item.label}</span>
             </dt>
-            <dd className={`order-1 ${dark ? "text-4xl font-bold text-white" : "font-numeral text-stat text-blue"}`}>
+            <dd className={`order-1 ${dark ? "text-4xl font-bold text-white" : "font-numeral text-stat text-blue-stat"}`}>
               <Unconfirmed confirmed={s.confirmed} note={s.note}>
                 {s.value}
               </Unconfirmed>

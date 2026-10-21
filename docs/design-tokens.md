@@ -2,7 +2,7 @@
 
 Tokens live in `app/tokens.css` (Tailwind 4 `@theme`, which replaces `tailwind.config.js`).
 
-**Source:** pixel-sampled from `/reference/*.png` (1366px wide). The live CSS could not be read because this build environment blocks blacklakecap.com. Re-check against `content/_source/css/` after `npm run extract`.
+**Source:** live CSS (`content/_source/css/`, extracted 21 Oct 2026), cross-checked with the screenshots. The sampled values were confirmed: navy `#2e3b54` (CSS also uses `#2e3c54` and `#2d3b53`), blue `#1e60ad`, stat numerals `#165fac`.
 
 ## Differences from the approximate tokens in CLAUDE.md
 
@@ -16,5 +16,5 @@ Tokens live in `app/tokens.css` (Tailwind 4 `@theme`, which replaces `tailwind.c
 | Charcoal | (none) | `#373536` | Lake mark bottom half. |
 | Text | (none) | `#333333` headings, `#6b6b6b` body | |
 | Headings/body font | Montserrat | Montserrat | Confirmed visually. |
-| Stat numerals | "a light serif" | Arapey (closest Google match) | Visual match only; confirm the font name in the live CSS. |
-| Other fonts on the live site | (none) | Century Gothic (testimonials), Lato (Investments cards) | Folded into Montserrat for a tighter type hierarchy. |
+| Stat numerals | "a light serif" | **Quattrocento** 72px, `#165fac` | Confirmed in the live CSS (number counters). |
+| Other fonts on the live site | (none) | Lato, Merriweather (old landing pages), Century Gothic (testimonials) | Folded into Montserrat for a tighter type hierarchy. |

@@ -1,0 +1,113 @@
+.dmpro_carousel .swiper-dmpro-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start
+}
+
+.dmpro_carousel .et_pb_main_blurb_image .et-waypoint{
+  opacity: 1 !important;
+}
+
+.dmpro_carousel .dmpro_carousel_child {
+  border-style: solid;
+}
+
+.dmpro_carousel .swiper-container-3d .dmpro-carousel-wrapper {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.dmpro_carousel .swiper-dmpro-container .dmpro-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  flex-wrap: nowrap;
+  overflow: visible
+}
+
+.dmpro_carousel .swiper-dmpro-container .dmpro_carousel_child {
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  margin-bottom: 0!important;
+  flex-direction: column;
+  float: none!important;
+  clear: none!important;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  overflow: hidden;
+}
+
+.dmpro_carousel .swiper-dmpro-container .dmpro_carousel_child .dmpro-carousel-image img {
+	display: block;
+	width: 100%;
+}
+
+.dmpro_carousel .swiper-pagination {
+  text-align: center;
+  width: 100%;
+}
+
+.dmpro_carousel .swiper-pagination .swiper-pagination-bullets {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.dmpro_carousel .swiper-pagination .swiper-pagination-bullet {
+  margin: 0 4px;
+  width: 8px;
+  height: 8px;
+}
+
+.dmpro_carousel .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.dmpro_carousel .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0
+}
+
+.dmpro_carousel .swiper-button-next,
+.dmpro_carousel .swiper-button-prev {
+  background-image:none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  font-size: 50px;
+  transition: all .3s;
+}
+
+.dmpro_carousel .swiper-button-next:after,
+.dmpro_carousel .swiper-button-prev:after {
+  content: attr(data-icon);
+  display: block;
+  font-family: ETmodules;
+  box-sizing: border-box;
+}
+
+.dmpro_carousel .swiper-button-prev {
+  left: -66px
+}
+.dmpro_carousel .swiper-button-next {
+  right: -66px
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  cursor: pointer;
+  pointer-events: all
+}

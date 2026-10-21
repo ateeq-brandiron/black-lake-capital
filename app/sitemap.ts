@@ -1,12 +1,11 @@
 import type { MetadataRoute } from "next";
-import { getLocalPosts, site } from "@/lib/content";
+import { getLocalPosts, news, postPath, site } from "@/lib/content";
 
-const PAGES = ["/", "/investments/", "/investors/", "/criteria/", "/team/", "/values/", "/news/", "/terms-and-conditions/", "/cookie-policy/", "/privacy-policy/"];
+const PAGES = ["/", "/investing/", "/investors/", "/investment-criteria/", "/team/", "/values/", "/newspage/", "/privacy-policy/"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? site.url;
-  const posts = getLocalPosts()
-    .filter((p) => p.body)
-    .map((p) => `/news/${p.slug}/`);
-  return [...PAGES, ...posts].map((path) => ({ url: new URL(path, base).href }));
+  const listings = [...PAGES, ...news.sources.map((s) => `/newspage/${s.id}/`)].map((path) => ({ url: new URL(path, base).href }));
+  const posts = getLocalPosts().map((p) => ({ url: new URL(postPath(p.slug), base).href, lastModified: p.date ?? undefined }));
+  return [...listings, ...posts];
 }

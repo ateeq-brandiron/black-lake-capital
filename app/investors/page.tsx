@@ -17,7 +17,7 @@ export default function InvestorsPage() {
     <>
       {/* Hero with the inquiry form: the form is this section's one action */}
       <section id="contact" className="relative isolate overflow-hidden py-14 text-white lg:py-14">
-        <ImageSlot image={hero.image} label={hero.image.note} sizes="100vw" priority className="absolute! inset-0 -z-10" />
+        <ImageSlot image={hero.image} sizes="100vw" priority className="absolute! inset-0 -z-10" />
         <div className="absolute inset-0 -z-10 bg-black/30" />
         <div className="container-page grid items-start gap-12 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:gap-16">
           <div className="lg:pt-24">
@@ -51,7 +51,7 @@ export default function InvestorsPage() {
       <TestimonialCarousel
         title={testimonials.title}
         items={getTestimonials()}
-        background={<ImageSlot image={testimonials.background} label={testimonials.background.note} sizes="100vw" className="size-full" />}
+        background={<ImageSlot image={testimonials.background} sizes="100vw" className="size-full" />}
       />
 
       <CtaBand />

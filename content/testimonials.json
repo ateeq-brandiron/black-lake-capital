@@ -1,21 +1,93 @@
 {
-  "note": "Import every testimonial from the live carousel (10 slides). Only slides visible in /reference are here until extraction runs. Never add others.",
+  "note": "All 8 testimonials from the live Home/Investors carousel (the live carousel repeats two of them). Quotes verbatim.",
   "items": [
     {
+      "id": "set-solutions",
+      "quote": "Through an exemplary collaboration with Black Lake Capital, Set Solutions embarked on an extraordinary journey, growing five-fold in five years, developing new offices, and bolstering our management talent. Throughout the relationship, Black Lake remained focused on supporting our leadership team’s vision, which ultimately delivered a successful exit and terrific next step for the organization.",
+      "name": "John Marler",
+      "company": "Set Solutions",
+      "companyUrl": "https://setsolutionsllc.com/",
+      "logo": {
+        "src": "/images/testimonials/set-solutions.webp",
+        "alt": "Set Solutions logo"
+      }
+    },
+    {
+      "id": "a5",
+      "quote": "At A5 Corporation, our journey with BLC has been transformative. We have transcended beyond Oracle CPQ, incorporating Salesforce.com, Certinia, and Docusign services into our offerings. Through our partnership, A5 has a complete suite of services to meet its clients’ needs.",
+      "name": "Vinay Kruttiventi",
+      "company": "A5 Corporation",
+      "companyUrl": "https://a5corp.com/",
+      "logo": {
+        "src": "/images/testimonials/a5.webp",
+        "alt": "A5 Corporation logo"
+      }
+    },
+    {
+      "id": "spinnaker",
+      "quote": "Black Lake Capital’s flexible approach and collaborative mindset have been instrumental in fostering a strong partnership. They’ve supported our growth and helped us to seamlessly integrate two mergers while retaining all of our talented employees through these transitions. Because of Black Lake’s investment, we are able to address a broader set of supply chain challenges and opportunities.",
+      "name": "John Sharkey",
+      "company": "Spinnaker SCA",
+      "companyUrl": "https://spinnakersca.com/",
+      "logo": {
+        "src": "/images/testimonials/spinnaker.webp",
+        "alt": "Spinnaker SCA logo"
+      }
+    },
+    {
       "id": "trapp",
-      "quote": "Black Lake Capital has been instrumental in shaping Trapp's growing software and services offering. Together, we have crafted a dynamic go-to-market strategy, empowering our ArmorPoint cyber security solution to rapidly grow to meet customer demand.",
+      "quote": "Black Lake Capital has been instrumental in shaping Trapp’s growing software and services offering. Together, we have crafted a dynamic go-to-market strategy, empowering our ArmorPoint cyber security solution to rapidly grow to meet customer demand.",
       "name": "David Trapp",
       "company": "Trapp Technologies",
-      "logo": { "src": null, "alt": "Trapp Technologies logo" },
-      "source": "reference/home.png"
+      "companyUrl": "https://trapptechnology.com/",
+      "logo": {
+        "src": "/images/testimonials/trapp.webp",
+        "alt": "Trapp Technologies logo"
+      }
+    },
+    {
+      "id": "tm-capital",
+      "quote": "Black Lake Capital possesses a strong understanding of value creation. They foster collaboration within their portfolio companies to drive success. There is no greater endorsement than that I know their management teams would like to work with them again.",
+      "name": "Brad Adams",
+      "company": "TM Capital",
+      "companyUrl": "https://www.tmcapital.com/",
+      "logo": {
+        "src": "/images/testimonials/tm-capital.png",
+        "alt": "TM Capital logo"
+      }
+    },
+    {
+      "id": "sdr-partners",
+      "quote": "We worked with Black Lake Capital on a difficult transaction with multiple businesses and owners. They stayed true to their word from offer to closing, despite the challenges we encountered. It is refreshing to feel like we’re on the same side of the table as the buyer as we find solutions to close a transaction.",
+      "name": "Scott Mitchell",
+      "company": "SDR Partners",
+      "companyUrl": "https://sdrventures.com/",
+      "logo": {
+        "src": "/images/testimonials/sdr-partners.png",
+        "alt": "SDR Partners logo"
+      }
     },
     {
       "id": "third-century",
-      "quote": null,
+      "quote": "True partnership reveals itself when the journey takes unexpected turns. In our collaboration with Black Lake Capital, we have experienced their unwavering support and commitment, even in the face of unforeseen challenges, including economic downturns, customer losses, and the departure of key executives. Their resilience and adaptability have been invaluable assets during turbulent times.",
       "name": "Preston Moister",
-      "company": "Third Century",
-      "logo": { "src": null, "alt": "Third Century logo" },
-      "source": "CLAUDE.md (confirmed live; quote text comes from extraction)"
+      "company": "Third Century Partners",
+      "companyUrl": "https://www.thirdcentury.com/",
+      "logo": {
+        "src": "/images/testimonials/third-century.png",
+        "alt": "Third Century Partners logo"
+      }
+    },
+    {
+      "id": "source-capital",
+      "quote": "Black Lake Capital is more than just an investor; they are true partners. Their hands-on approach and deep industry expertise have been instrumental in helping us create value in our investments. With a shared vision, we have completed acquisitions, made key hires, and implemented new management systems. We look forward to achieving even greater success together in the future.",
+      "name": "Joe Rodgers",
+      "company": "Source Capital",
+      "companyUrl": "https://source-cap.com/",
+      "logo": {
+        "src": "/images/testimonials/source-capital.png",
+        "alt": "Source Capital logo"
+      }
     }
   ]
 }

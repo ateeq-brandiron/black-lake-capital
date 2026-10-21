@@ -1,6 +1,6 @@
-# Page-by-page summary (initial draft)
+# Page-by-page summary
 
-Every page: shared top bar, hamburger menu, hero with a "Start a conversation" button, closing CTA band with the sign-off, footer. Live-site photos, logos, icons and headshots show "Image pending" placeholders until extraction runs.
+Every page: shared top bar, hamburger menu, hero with a "Start a conversation" button, closing CTA band with the sign-off, footer. All imagery comes from the live site. URLs match the live site (see docs/redirect-map.md); open questions are in docs/open-items.md.
 
 | Page | Reference sections kept | Messaging changes | Flagged |
 | --- | --- | --- | --- |

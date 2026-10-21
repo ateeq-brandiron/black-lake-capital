@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "News | Black Lake Capital",
+    "description": null,
+    "confirmed": false,
+    "note": "Live meta title/description come from extraction."
+  },
+  "hero": {
+    "eyebrow": null,
+    "title": "News",
+    "subtitle": "Black Lake and portfolio news",
+    "image": {
+      "src": "/images/sections/home-hero-poster.jpg",
+      "alt": ""
+    },
+    "video": {
+      "src": "/images/video/hero-lofoten.mp4",
+      "poster": "/images/sections/home-hero-poster.jpg"
+    }
+  }
+}

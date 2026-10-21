@@ -1,36 +1,33 @@
 # Open items
 
-## Blocked on extraction (network access to blacklakecap.com)
-- Sitemap / full page inventory (any pages not in the menu), exact URLs of legal pages.
-- Meta titles and descriptions of every page (current ones in `content/pages/*.json` are provisional, `confirmed: false`).
-- Exact CSS values and font names (`docs/design-tokens.md`).
-- All images: hero video, page hero photos, portfolio logos, approach icons, team headshots, official logo SVG.
-- All 10 carousel testimonials (only Trapp is visible; Third Century / Preston Moister quote text needed).
-- News: post URLs, dates, excerpts, bodies; portfolio feed source.
-- Company LinkedIn URL (footer), two "Download Our Summary" PDFs (menu), GA4 ID and Search Console token.
-- Approach section expand/collapse text on the live Home page.
+Updated after extracting the live site (21 Oct 2026).
 
-## Client decisions (CLAUDE.md open items, all `confirmed: false`)
-- RESOLVED: transaction count 18 and second-bite $60M+, from the 2026 messaging platform.
-- Criteria public wording; founder process steps; case-study multiples.
-- Aaron Nack headshot and LinkedIn.
-- CTA target: mailto vs contact form.
+## Client decisions
+1. **Criteria wording.** The site shows the live wording ("$2M+ in EBITDA and $8M+ in Revenue"). The proposed update (EBITDA $3M–$6M, floor ~$1.5M, revenue $10M–$40M, 4–12 years, US/Canada, technology distribution and implementation) is not approved for publication yet.
+2. **Contact form revenue question** says $6M (live form). Criteria say $8M+. Align?
+3. **"Start a conversation" target:** email link (current) or the form on /investors/.
+4. **Where form inquiries go** (recipient address) and an email service (Resend API key + verified sender).
+5. **Founder process steps** and **case-study multiples** (Set Solutions 16x, Spinnaker SCA 32x, A5 22x): publish or leave out.
+6. **Sales sheet and deck PDFs** (menu downloads) are the 2025 v7.2 files. They may still say 15 transactions; the site now says 18 (messaging platform).
+7. **Landing pages** /blc-tech-landing-page/ and /blc-investor-landing-page/: still used in campaigns? Currently redirected (temporary).
+8. **Terms and Conditions / Cookie Policy:** shown as plain text in the live footer, but the pages don't exist. Supply text or leave them out (current).
+9. **Company LinkedIn URL:** the live footer icons are unlinked theme defaults.
+10. **Phone on the live News page** reads 303-327-9701; everywhere else (720) 770-0079 (used).
+11. **News feed** includes 162 portfolio-company posts, many AI-themed. CLAUDE.md says not to make AI a selling point. Keep all (current), filter, or drop?
+12. **Innovatix** card links to macrosoftinc.com (as on the live site). Confirm.
+13. **Aaron Nack:** updated headshot and LinkedIn (the live ones are used for now).
+14. **Vector logo:** only a 164px PNG exists on the live site. An SVG would be sharper on high-density screens.
+15. **Michael Doyle's comment** on the messaging platform (more hard-hitting facts, "deal of the year"): needs approved facts before anything is added.
 
-## Found in the screenshots
-- Team page shows "NaN" for assets under management (broken counter on the live site).
-- News page footer shows a different phone number: 303-327-9701 (other pages: (720) 770-0079).
-- Footer social icons differ by page: LinkedIn on Home/Investments/Investors, Facebook + X on Criteria/Team/Values/News.
-- Footer quick links differ by page (Investors and Values missing on some).
-- News feed includes AI-themed portfolio posts; CLAUDE.md says not to make AI a selling point. Keep, filter, or drop?
-- Investors page form asks "at least $6M in revenue"; CLAUDE.md criteria say $10M–$40M revenue. Criteria page says "$2M+ in EBITDA and $8M+ in Revenue".
-- Live copyright says © 2023.
-
-## From the page build
-- Criteria: intro line and all criteria wording are draft. "Market-leading positions" and "Positive industry trends" need body text.
-- Investments: Innovatix logo vs macrosoftinc.com URL; "Learn More" targets; the year in "Since 20__".
-- Investors: where form inquiries go (address + email provider); whether this page also speaks to co-investors and intermediaries.
-- Team: "150+ combined years" is from the live site, not the approved proof points; AUM figure.
-- Stats inside body text (Values, Investors) also come from stats.json and change with it.
+## Resolved by the extraction
+- All images, hero video, logos, icons, headshots, treeline art, official logo mark, favicon.
+- All 8 carousel testimonials with names, companies and logos.
+- Criteria toggle text, Home expander text (replaced by messaging platform copy), Investments "Since 2013".
+- Team AUM: stored as "$80B+" (the live counter shows NaN).
+- Team LinkedIn URLs for all five people.
+- GTM container GTM-ND3Z87WN and Search Console token.
+- Full sitemap and redirect map (`docs/redirect-map.md`).
+- Live meta: titles are generic ("Team|Black Lake Capital | Welcome") and no page has a meta description, so the new titles and descriptions replace them.
 
 ## Technical
-- Unknown `/news/<slug>/` URLs render the 404 page with `noindex` but return HTTP 200 (partial prerendering streams the status). Fine for SEO; revisit if a hard 404 is needed.
+- Unknown URLs that match the post route render the 404 page with noindex but can return HTTP 200 (partial prerendering). Fine for SEO.

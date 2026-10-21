@@ -1,59 +1,75 @@
 import Link from "next/link";
 import { ImageSlot } from "@/components/ImageSlot";
-import type { NewsPost, NewsSource } from "@/lib/content";
+import { formatDate, type NewsPost, type NewsSource, postPath } from "@/lib/content";
 
-type Props = { sources: NewsSource[]; posts: NewsPost[] };
-
-function postHref(post: NewsPost, source: NewsSource) {
-  if (source.local) return post.body ? `/news/${post.slug}/` : null;
-  return post.url;
+function NewsCard({ post }: { post: NewsPost }) {
+  return (
+    <li className="border border-mist px-5 py-6">
+      <h3 className="text-xl leading-tight text-ink">
+        <Link href={postPath(post.slug)} className="hover:text-blue">
+          {post.title}
+        </Link>
+      </h3>
+      <p className="mt-3 text-sm">
+        {post.author ? <>by {post.author}</> : null}
+        {post.author && post.date ? " · " : null}
+        {post.date ? <time dateTime={post.date}>{formatDate(post.date)}</time> : null}
+      </p>
+      <Link href={postPath(post.slug)} className="mt-4 inline-block py-1 font-medium text-navy hover:text-blue">
+        read more<span className="sr-only">: {post.title}</span>
+      </Link>
+    </li>
+  );
 }
 
-/** News listing: one column per source (Black Lake + portfolio companies), as on the live site. */
-export function NewsList({ sources, posts }: Props) {
+function SourceHeading({ source, as: Tag = "h2" }: { source: NewsSource; as?: "h2" | "h1" }) {
   return (
-    <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
+    <Tag className="flex h-32 items-center justify-center">
+      <ImageSlot image={source.logo} placeholder="light" fit="contain" sizes="240px" className="h-28 w-full" />
+      <span className="sr-only">{source.name}</span>
+    </Tag>
+  );
+}
+
+type ListProps = { sources: NewsSource[]; posts: NewsPost[]; perSource: number };
+
+/** News listing: one column per source (Black Lake + portfolio companies), as on the live site. */
+export function NewsList({ sources, posts, perSource }: ListProps) {
+  return (
+    <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
       {sources.map((source) => {
-        const list = posts.filter((p) => p.source === source.id);
-        if (!list.length) return null;
+        const all = posts.filter((p) => p.source === source.id);
+        if (!all.length) return null;
         return (
-          <section key={source.id} aria-labelledby={`news-${source.id}`}>
-            <h2 id={`news-${source.id}`} className="flex h-32 items-center justify-center">
-              {source.logo.src ? (
-                <ImageSlot image={source.logo} placeholder="light" fit="contain" sizes="240px" className="h-28 w-full" />
-              ) : (
-                <span className="text-2xl font-semibold text-navy">{source.name}</span>
-              )}
-            </h2>
-            <ul className="mt-2 space-y-8">
-              {list.map((post) => {
-                const href = postHref(post, source);
-                return (
-                  <li key={post.slug} className="border border-mist px-5 py-6">
-                    <h3 className="text-xl leading-tight text-ink">{post.title}</h3>
-                    {post.date ? (
-                      <p className="mt-3 text-sm">
-                        <time dateTime={post.date}>{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
-                      </p>
-                    ) : null}
-                    <p className="mt-3">by {post.author}</p>
-                    {href ? (
-                      <Link
-                        href={href}
-                        className="mt-4 inline-block py-1 font-medium text-navy hover:text-blue"
-                        target={source.local ? undefined : "_blank"}
-                        rel={source.local ? undefined : "noopener"}
-                      >
-                        read more<span className="sr-only">: {post.title}</span>
-                      </Link>
-                    ) : null}
-                  </li>
-                );
-              })}
+          <section key={source.id} id={`news-${source.id}`} aria-label={source.name}>
+            <SourceHeading source={source} />
+            <ul className="mt-2 space-y-6">
+              {all.slice(0, perSource).map((post) => (
+                <NewsCard key={post.slug} post={post} />
+              ))}
             </ul>
+            {all.length > perSource ? (
+              <Link href={`/newspage/${source.id}/`} className="mt-6 inline-block py-2 font-semibold text-navy hover:text-blue">
+                All {all.length} posts from {source.name} &rarr;
+              </Link>
+            ) : null}
           </section>
         );
       })}
     </div>
+  );
+}
+
+/** Every post from one source, newest first. */
+export function SourceNewsList({ source, posts }: { source: NewsSource; posts: NewsPost[] }) {
+  return (
+    <>
+      <SourceHeading source={source} as="h1" />
+      <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post) => (
+          <NewsCard key={post.slug} post={post} />
+        ))}
+      </ul>
+    </>
   );
 }

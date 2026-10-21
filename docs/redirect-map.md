@@ -1,38 +1,52 @@
 # Redirect map
 
-PROVISIONAL: built from the screenshots and common WordPress paths. Re-check against `content/_source/inventory.md` after `npm run extract`, and add a row for every old URL that changes.
+From the live sitemap (`content/_source/inventory.md`, extracted 21 Oct 2026). Redirects live in `next.config.ts`.
 
-## URLs kept as-is (no redirect)
+## URLs kept exactly as they are
 
-| Old URL | New route |
+| URL | Page |
 | --- | --- |
-| / | / |
-| /investments/ | /investments/ |
-| /investors/ | /investors/ |
-| /criteria/ | /criteria/ |
-| /team/ | /team/ |
-| /values/ | /values/ |
-| /news/ | /news/ |
-| /terms-and-conditions/ | /terms-and-conditions/ (path unverified) |
-| /cookie-policy/ | /cookie-policy/ (path unverified) |
-| /privacy-policy/ | /privacy-policy/ (path unverified) |
+| / | Home |
+| /investing/ | Investments |
+| /investors/ | Investors (contact form; "Contact Us" in the menu) |
+| /investment-criteria/ | Criteria |
+| /team/ | Team |
+| /values/ | Values |
+| /newspage/ | News |
+| /privacy-policy/ | Privacy Policy |
+| /&lt;post-slug&gt;/ | All 170 posts keep their WordPress URL |
 
-Paths without a trailing slash (e.g. `/criteria`) 308-redirect to the slash version, as WordPress does.
+URLs without a trailing slash 308-redirect to the slash version, as WordPress does.
 
-## Redirects (in `next.config.ts`, all permanent)
+## New URLs
 
-| Old URL | Redirects to | Why |
+| URL | What |
+| --- | --- |
+| /newspage/black-lake/, /a5/, /trapp/, /macrosoft/, /spinnaker/, /omco-sumo/ | All posts from one company (replaces the old per-company feed pages) |
+| /downloads/UPDATED-2025-*.pdf | Sales sheet and sales deck (were under /wp-content/uploads/2025/10/) |
+
+## Redirects (permanent unless noted)
+
+| Old URL | Goes to | Why |
 | --- | --- | --- |
-| /home | / | Common WordPress duplicate of the front page |
-| /contact, /contact-us | /investors/ | The contact form lives on Investors ("Contact Us" in the menu) |
-| /feed | /news/ | RSS feed (footer RSS icon); no feed on the new site |
-| /news/page/:n | /news/ | WordPress pagination; the new listing is one page |
-| /blog | /news/ | Common alias |
-| /author/*, /category/*, /tag/* | /news/ | WordPress archives |
+| /home-option/, /mytry/, /test/, /slide-anything-popup-preview/ | / | Draft/test pages |
+| /thank-you/ | /investors/ | Old form confirmation page; the new form confirms in place |
+| /blc-tech-landing-page/ | / (temporary) | Landing page outside the menu. **Confirm whether campaigns still use it** |
+| /blc-investor-landing-page/ | /investors/ (temporary) | Same |
+| /news-4/, /new-news/, /blogs/ | /newspage/ | Old or duplicate News pages |
+| /black-lake-capital-posts/ | /newspage/black-lake/ | Per-company feed page |
+| /a5-corp-posts/, /a5-2/, /a5-corporation | /newspage/a5/ | Feed pages and the old Investments "Learn More" link |
+| /trapp-posts/, /trapp-technology | /newspage/trapp/ | Same |
+| /macrosoft-post/, /macrosoft-2/ | /newspage/macrosoft/ | Same |
+| /spinnaker-posts/, /spinnakersca/, /spinnaker-sca | /newspage/spinnaker/ | Same |
+| /ocmo-sumo-posts/, /omcosumo/ | /newspage/omco-sumo/ | Same |
+| /setsolutions-2/, /set-solutions | /investing/ | Set Solutions has no posts |
+| /testimonial/* (12 posts) | /#testimonials | Testimonials now live in the carousel only |
+| /category/*, /author/*, /tag/*, /page/N/ | /newspage/ | WordPress archives |
+| /feed/ | /newspage/ | RSS feed (footer icon); no feed on the new site |
+| /wp-content/uploads/2025/10/UPDATED-2025-*.pdf | /downloads/… | Keeps links in old emails working |
 
-## To confirm after extraction
+## Not redirected
 
-- **Black Lake's own posts**: the new URL is `/news/<slug>/`. If WordPress serves them elsewhere (e.g. `/<slug>/` or `/2024/05/<slug>/`), add one redirect per post.
-- **Portfolio-company posts** on the News page link out to their own sites and have no local URL.
-- **The two "Download Our Summary" PDFs** under `/wp-content/uploads/...`: copy them to `public/` and redirect the old paths, or the links in old emails break.
-- Any page found in the sitemap that is not in the menu.
+- `/terms-and-conditions/` and `/cookie-policy/` already return 404 on the live site.
+- Other `/wp-content/uploads/` files (post images) are not redirected; every image the new site uses is served locally.

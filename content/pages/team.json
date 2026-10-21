@@ -10,9 +10,8 @@
     "title": "Our team of operating and financial experts",
     "subtitle": null,
     "image": {
-      "src": null,
-      "alt": "",
-      "note": "Turquoise mountain lake"
+      "src": "/images/sections/team-hero.jpg",
+      "alt": ""
     }
   }
 }

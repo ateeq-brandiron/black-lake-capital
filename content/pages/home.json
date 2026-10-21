@@ -3,15 +3,14 @@
     "title": "Black Lake Capital | Investors in Technology",
     "description": "Black Lake Capital is a family office and independent sponsor investing in profitable, founder-led technology and tech-enabled companies in the US and Canada. Take some money off the table, stay involved, and share in what comes next.",
     "confirmed": false,
-    "note": "Compare with the live meta title/description from extraction; keep the live ones if they are good."
+    "note": "Live title: 'Black Lake Capital | Welcome|Focused On Technology And Innovation-Enabled Businesses'; no live meta description. New title/description are ours."
   },
   "hero": {
     "eyebrow": "Investors in technology",
     "title": "Your team. Your plan. Your reward.",
     "video": {
-      "src": null,
-      "poster": null,
-      "note": "Hero video (aerial lake road) comes from extraction."
+      "src": "/images/video/hero-lofoten.mp4",
+      "poster": "/images/sections/home-hero-poster.jpg"
     },
     "image": {
       "src": null,
@@ -23,22 +22,25 @@
     "logos": [
       {
         "name": "A5",
-        "src": null
+        "src": "/images/logos/strip-a5.png"
       },
       {
         "name": "Trapp",
-        "src": null
+        "src": "/images/logos/strip-trapp.png"
       },
       {
-        "name": "OMCO Sumo",
-        "src": null
+        "name": "OMCO SUMO",
+        "src": "/images/logos/strip-omco-sumo.png"
       },
       {
         "name": "Spinnaker SCA",
-        "src": null
+        "src": "/images/logos/strip-spinnaker.png"
+      },
+      {
+        "name": "Set Solutions",
+        "src": "/images/logos/strip-set-solutions.png"
       }
-    ],
-    "note": "The live carousel scrolls through more logos than are visible in the screenshot; full list comes from extraction."
+    ]
   },
   "intro": {
     "lead": "You built a strong business. Black Lake Capital helps you **keep building it** without losing what made it successful in the first place.",
@@ -76,9 +78,8 @@
     "items": [
       {
         "icon": {
-          "src": null,
-          "alt": "",
-          "note": "House/brick icon from the live site"
+          "src": "/images/icons/foundation.png",
+          "alt": ""
         },
         "label": "Foundation",
         "summary": "Your culture & vision",
@@ -87,9 +88,8 @@
       },
       {
         "icon": {
-          "src": null,
-          "alt": "",
-          "note": "Chess icon from the live site"
+          "src": "/images/icons/strategy.png",
+          "alt": ""
         },
         "label": "Strategy",
         "summary": "Capital, systems, and metrics",
@@ -98,9 +98,8 @@
       },
       {
         "icon": {
-          "src": null,
-          "alt": "",
-          "note": "Gears and arrows icon from the live site"
+          "src": "/images/icons/execution.png",
+          "alt": ""
         },
         "label": "Execution",
         "summary": "Common goals & shared rewards",

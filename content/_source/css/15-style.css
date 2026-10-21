@@ -1,0 +1,71 @@
+.dmpro_carousel_child {
+  	display: flex;
+  	align-items: center;
+}
+
+.dmpro_carousel_child .et_pb_module_inner {
+	width: 100%;
+}
+
+.dmpro-image-wrap {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.dmpro-carousel-icon-circle-border {
+	border: 3px solid;
+}
+.dmpro-carousel-icon-circle {
+    padding: 25px;
+    border-radius: 100%;
+    font-size: 48px;
+}
+
+.dmpro_carousel_child .dmpro-carousel-image {
+	display: block;
+	margin: auto;
+}
+
+.dmpro_carousel_child .dmpro-carousel-image img {
+	position: relative;
+	border-style: solid;
+	height: auto;
+}
+
+.dmpro_carousel_child .dmpro-carousel-item-content {
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+	width: 100%;
+	padding: 20px;
+	border-style: solid;
+	position: relative;
+}
+
+.dmpro_carousel_child .dmpro-carousel-item-title {
+  	margin-bottom: 15px;
+  	padding: 0;
+}
+
+.dmpro_carousel_child .dmpro-carousel-item-desc {
+	font-size: 14px;
+	line-height: 15px;
+  	margin-bottom: 15px;
+}
+
+.dmpro_carousel_child .dmpro-carousel-button-wrapper {
+	flex: 1;
+}
+
+.dmpro_carousel_child .dmpro-carousel-button {
+	font-size: 20px;
+	display: inline-block;
+	border-style: solid;
+}
+
+.dmpro_carousel_child .dmpro-carousel-button:hover:after,
+.dmpro_carousel_child .dmpro-carousel-button:hover:before {
+	font-size: inherit !important;
+	line-height: inherit;
+}

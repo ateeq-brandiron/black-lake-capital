@@ -28,7 +28,7 @@
     "linkedin": {
       "href": null,
       "confirmed": false,
-      "note": "Company LinkedIn URL comes from the live footer (extraction blocked)."
+      "note": "The live footer's social icons have no links (theme defaults). Company LinkedIn URL needed from the client."
     }
   },
   "nav": [
@@ -38,7 +38,7 @@
     },
     {
       "label": "Investments",
-      "href": "/investments/"
+      "href": "/investing/"
     },
     {
       "label": "Team",
@@ -46,7 +46,7 @@
     },
     {
       "label": "Criteria",
-      "href": "/criteria/"
+      "href": "/investment-criteria/"
     },
     {
       "label": "Values",
@@ -54,7 +54,7 @@
     },
     {
       "label": "News",
-      "href": "/news/"
+      "href": "/newspage/"
     },
     {
       "label": "Contact Us",
@@ -63,15 +63,24 @@
   ],
   "menuDownloads": {
     "label": "Download Our Summary to Learn More",
-    "files": [],
-    "note": "Two PDF links appear in the live menu. Files and targets come from extraction."
+    "files": [
+      {
+        "label": "Sales sheet (PDF)",
+        "href": "/downloads/UPDATED-2025-BLC-Sales-Sheet-v7.2.pdf"
+      },
+      {
+        "label": "Sales deck (PDF)",
+        "href": "/downloads/UPDATED-2025-Black-Lake-Capital-Sales-Deck-v7.2.pdf"
+      }
+    ],
+    "note": "Both PDFs copied from the live menu (2025, v7.2). They may still say 15 transactions; check against the messaging platform."
   },
   "footer": {
     "quickLinksTitle": "Quick Links",
     "quickLinks": [
       {
         "label": "Investments",
-        "href": "/investments/"
+        "href": "/investing/"
       },
       {
         "label": "Investors",
@@ -79,7 +88,7 @@
       },
       {
         "label": "Criteria",
-        "href": "/criteria/"
+        "href": "/investment-criteria/"
       },
       {
         "label": "Team",
@@ -91,24 +100,22 @@
       },
       {
         "label": "News",
-        "href": "/news/"
+        "href": "/newspage/"
       }
     ],
     "legal": [
-      {
-        "label": "Terms and Conditions",
-        "href": "/terms-and-conditions/"
-      },
-      {
-        "label": "Cookie Policy",
-        "href": "/cookie-policy/"
-      },
       {
         "label": "Privacy Policy",
         "href": "/privacy-policy/"
       }
     ],
-    "legalConfirmed": false,
-    "contactTitle": "Contact"
+    "legalConfirmed": true,
+    "contactTitle": "Contact",
+    "legalNote": "Terms and Conditions and Cookie Policy appear as plain text in the live footer but no such pages exist (404). Dropped until the client supplies them."
+  },
+  "tracking": {
+    "gtmId": "GTM-ND3Z87WN",
+    "googleSiteVerification": "google7d5f38c031bfe7a2",
+    "note": "From the live site HTML. GTM loads only on the production deployment."
   }
 }
