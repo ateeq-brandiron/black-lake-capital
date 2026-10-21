@@ -1,21 +1,21 @@
 {
-  "note": "Shared by Values ('What makes Black Lake different') and Investors ('Why partner with Black Lake Capital?'). Items 1-3 are the approved differentiators; item 4 condenses the live 'Lean Team Advantage' and 'Tech Industry Focus' columns into the approved value point. Draft copy.",
+  "note": "Shared by Values and Investors. Source: 2026 Revised Black Lake Capital Messaging Platform (Google Doc). Stat values come from stats.json.",
   "items": [
     {
-      "title": "Your people. Your playbook.",
-      "body": "Your leadership team stays in place and your operating expertise stays at the center. We respect the vision you built, keep the existing staff, and bring no predetermined playbook."
+      "title": "Your People. Your Playbook.",
+      "body": "We partner with founders and management teams without arriving with a predetermined playbook or trying to reengineer what already works. Your leadership team stays in place, your operating expertise remains at the center, and Black Lake has never eliminated positions as part of an acquisition."
     },
     {
-      "title": "Shared success.",
-      "body": "You sell a portion of your company and retain meaningful ownership, creating the potential for a \"second bite of the apple.\" On average, founders have taken about {secondTransactionMultiple} more cash in the second transaction than the first."
+      "title": "Shared Success.",
+      "body": "You sell a portion of your business while retaining meaningful ownership, creating the potential for a “second bite of the apple.” Across our last three subsequent transactions, founders received {secondBite} in value from that second transaction, and about {secondTransactionMultiple} more cash on average than in the initial sale."
     },
     {
-      "title": "Experience without ego.",
-      "body": "A track record that speaks without being the loudest voice in the room: {transactions} technology transactions and {cashOnCash} cash-on-cash realized returns on equity invested."
+      "title": "Experience Without Ego.",
+      "body": "Black Lake has completed {transactions} transactions across seven platforms, generating {cashOnCash} cash-on-cash realized returns on equity invested. We ask hard questions, stay flexible when circumstances change, and bring perspective without pretending we have every answer."
     },
     {
-      "title": "The deal should fit the business.",
-      "body": "A lean team and a deep focus on technology businesses let us make decisions quickly and shape each deal around the needs of the company, not the other way around."
+      "title": "The Deal Should Fit the Business.",
+      "body": "Your company should not have to fit someone else’s investment formula. We evaluate opportunities deal by deal and structure the investment around the opportunity instead of forcing it into a predetermined box."
     }
   ]
 }

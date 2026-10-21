@@ -8,7 +8,7 @@
   "hero": {
     "eyebrow": null,
     "title": "Keep what works. Build what's next.",
-    "subtitle": "You built a strong business. Take some money off the table today, stay involved, and participate in the value created next.",
+    "subtitle": "Black Lake partners with founders who want to create value today without walking away from the business they still believe in.",
     "image": {
       "src": null,
       "alt": "",
@@ -48,8 +48,8 @@
       },
       {
         "stat": "secondBite",
-        "label": "In second-bite liquidity events",
-        "body": "Founder value across the last three subsequent transactions"
+        "label": "In second-bite value for founders",
+        "body": "From the second transaction after partnering with Black Lake, across the last three"
       },
       {
         "stat": "positionsEliminated",

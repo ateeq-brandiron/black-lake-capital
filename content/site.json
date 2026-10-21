@@ -6,8 +6,10 @@
   "messaging": {
     "tagline": "Your team. Your plan. Your reward.",
     "valueProposition": "Keep what works. Build what's next.",
-    "elevatorPitch": "You built a strong business. We help you keep building it without losing what made it successful in the first place. Take some money off the table today, stay involved, and participate in the value created next.",
-    "signOff": "Your Vision. Your People. Your Success."
+    "elevatorPitch": "You built a strong business. Black Lake Capital helps you keep building it without losing what made it successful in the first place. We partner with founders who want to take some money off the table today, stay involved in the business, and participate in the value created next.",
+    "signOff": "Your Vision. Your People. Your Success.",
+    "vision": "At Black Lake Capital, we believe the people who built a successful business should remain at the center of what comes next.",
+    "source": "Source: 2026 Revised Black Lake Capital Messaging Platform (Google Doc)."
   },
   "cta": {
     "label": "Start a conversation",
@@ -19,7 +21,10 @@
     "phone": "(720) 770-0079",
     "phoneHref": "tel:+17207700079",
     "email": "info@BlackLakeCap.com",
-    "address": ["1524 Belford Ct", "Evergreen, CO 80439"],
+    "address": [
+      "1524 Belford Ct",
+      "Evergreen, CO 80439"
+    ],
     "linkedin": {
       "href": null,
       "confirmed": false,
@@ -27,13 +32,34 @@
     }
   },
   "nav": [
-    { "label": "Home", "href": "/" },
-    { "label": "Investments", "href": "/investments/" },
-    { "label": "Team", "href": "/team/" },
-    { "label": "Criteria", "href": "/criteria/" },
-    { "label": "Values", "href": "/values/" },
-    { "label": "News", "href": "/news/" },
-    { "label": "Contact Us", "href": "/investors/" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Investments",
+      "href": "/investments/"
+    },
+    {
+      "label": "Team",
+      "href": "/team/"
+    },
+    {
+      "label": "Criteria",
+      "href": "/criteria/"
+    },
+    {
+      "label": "Values",
+      "href": "/values/"
+    },
+    {
+      "label": "News",
+      "href": "/news/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/investors/"
+    }
   ],
   "menuDownloads": {
     "label": "Download Our Summary to Learn More",
@@ -43,17 +69,44 @@
   "footer": {
     "quickLinksTitle": "Quick Links",
     "quickLinks": [
-      { "label": "Investments", "href": "/investments/" },
-      { "label": "Investors", "href": "/investors/" },
-      { "label": "Criteria", "href": "/criteria/" },
-      { "label": "Team", "href": "/team/" },
-      { "label": "Values", "href": "/values/" },
-      { "label": "News", "href": "/news/" }
+      {
+        "label": "Investments",
+        "href": "/investments/"
+      },
+      {
+        "label": "Investors",
+        "href": "/investors/"
+      },
+      {
+        "label": "Criteria",
+        "href": "/criteria/"
+      },
+      {
+        "label": "Team",
+        "href": "/team/"
+      },
+      {
+        "label": "Values",
+        "href": "/values/"
+      },
+      {
+        "label": "News",
+        "href": "/news/"
+      }
     ],
     "legal": [
-      { "label": "Terms and Conditions", "href": "/terms-and-conditions/" },
-      { "label": "Cookie Policy", "href": "/cookie-policy/" },
-      { "label": "Privacy Policy", "href": "/privacy-policy/" }
+      {
+        "label": "Terms and Conditions",
+        "href": "/terms-and-conditions/"
+      },
+      {
+        "label": "Cookie Policy",
+        "href": "/cookie-policy/"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy/"
+      }
     ],
     "legalConfirmed": false,
     "contactTitle": "Contact"

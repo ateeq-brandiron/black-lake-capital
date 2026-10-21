@@ -2,7 +2,7 @@
   "transactions": {
     "value": "15",
     "confirmed": false,
-    "note": "TODO: live site says 15; messaging doc says 18 across seven platforms; client has said 16 and 18."
+    "note": "TODO: messaging platform (2026) says 18 transactions across seven platforms; live site says 15; client has also said 16. Confirm before launch."
   },
   "cashOnCash": {
     "value": "10x+",
@@ -12,7 +12,7 @@
   "secondBite": {
     "value": "$60M+",
     "confirmed": false,
-    "note": "TODO: \"$60M+\" vs \"$60–65M\". Live site still shows $50M+."
+    "note": "Messaging platform (2026): 'more than $60 million' from the second transaction across the last three. CLAUDE.md lists $60M+ vs $60–65M as open."
   },
   "secondTransactionMultiple": {
     "value": "3.5x",

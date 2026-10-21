@@ -8,22 +8,41 @@
   "hero": {
     "eyebrow": "Investors in technology",
     "title": "Your team. Your plan. Your reward.",
-    "video": { "src": null, "poster": null, "note": "Hero video (aerial lake road) comes from extraction." },
-    "image": { "src": null, "alt": "" }
+    "video": {
+      "src": null,
+      "poster": null,
+      "note": "Hero video (aerial lake road) comes from extraction."
+    },
+    "image": {
+      "src": null,
+      "alt": ""
+    }
   },
   "logoStrip": {
     "label": "Portfolio companies",
     "logos": [
-      { "name": "A5", "src": null },
-      { "name": "Trapp", "src": null },
-      { "name": "OMCO Sumo", "src": null },
-      { "name": "Spinnaker SCA", "src": null }
+      {
+        "name": "A5",
+        "src": null
+      },
+      {
+        "name": "Trapp",
+        "src": null
+      },
+      {
+        "name": "OMCO Sumo",
+        "src": null
+      },
+      {
+        "name": "Spinnaker SCA",
+        "src": null
+      }
     ],
     "note": "The live carousel scrolls through more logos than are visible in the screenshot; full list comes from extraction."
   },
   "intro": {
-    "lead": "You built a strong business. We help you **keep building it** without losing what made it successful in the first place.",
-    "body": "Take some money off the table today, stay involved, and participate in the value created next."
+    "lead": "You built a strong business. Black Lake Capital helps you **keep building it** without losing what made it successful in the first place.",
+    "body": "We partner with founders who want to take some money off the table today, stay involved in the business, and participate in the value created next."
   },
   "stats": {
     "title": "Investment performance that speaks for itself",
@@ -40,8 +59,8 @@
       },
       {
         "stat": "secondBite",
-        "label": "In second-bite liquidity events",
-        "body": "Founder value across the last three subsequent transactions",
+        "label": "In second-bite value for founders",
+        "body": "From the second transaction after partnering with Black Lake, across the last three",
         "detail": "About {secondTransactionMultiple} more cash, on average, in the second transaction than the first."
       },
       {
@@ -56,28 +75,40 @@
     "title": "Keep what works. Build what's next.",
     "items": [
       {
-        "icon": { "src": null, "alt": "", "note": "House/brick icon from the live site" },
+        "icon": {
+          "src": null,
+          "alt": "",
+          "note": "House/brick icon from the live site"
+        },
         "label": "Foundation",
         "summary": "Your culture & vision",
-        "heading": "Your people. Your playbook.",
-        "body": "Your leadership team stays in place and your operating expertise stays at the center. There is no predetermined playbook."
+        "heading": "Your People. Your Playbook.",
+        "body": "You built the business. You know what makes it work. Your leadership team stays in place, your operating expertise remains at the center, and we build an aligned strategy around where the business can go next."
       },
       {
-        "icon": { "src": null, "alt": "", "note": "Chess icon from the live site" },
+        "icon": {
+          "src": null,
+          "alt": "",
+          "note": "Chess icon from the live site"
+        },
         "label": "Strategy",
         "summary": "Capital, systems, and metrics",
-        "heading": "Experience without ego.",
-        "body": "A track record that speaks without being the loudest voice in the room."
+        "heading": "Experience Without Ego.",
+        "body": "We ask hard questions, stay flexible when circumstances change, and bring perspective to the table without pretending we have every answer."
       },
       {
-        "icon": { "src": null, "alt": "", "note": "Gears and arrows icon from the live site" },
+        "icon": {
+          "src": null,
+          "alt": "",
+          "note": "Gears and arrows icon from the live site"
+        },
         "label": "Execution",
         "summary": "Common goals & shared rewards",
-        "heading": "Shared success.",
-        "body": "You sell a portion of your company and retain meaningful ownership, creating the potential for a \"second bite of the apple.\""
+        "heading": "Shared Success.",
+        "body": "Strong returns matter most when the people who built the business share in them. You sell a portion of your business while retaining meaningful ownership, creating the potential for a “second bite of the apple.”"
       }
     ],
-    "note": "The live expand/collapse text behind each icon is not visible in the screenshot. Mapping the three approved differentiators onto Foundation / Strategy / Execution is a proposal.",
+    "note": "Expander text from the messaging platform. Mapping the three differentiators onto Foundation / Strategy / Execution is a proposal.",
     "cta": true
   },
   "testimonials": {
