@@ -11,8 +11,7 @@
 - Approach section expand/collapse text on the live Home page.
 
 ## Client decisions (CLAUDE.md open items, all `confirmed: false`)
-- Transaction count: 15 / 16 / 18 (`content/stats.json`).
-- Second-bite figure: $60M+ vs $60–65M (`content/stats.json`).
+- RESOLVED: transaction count 18 and second-bite $60M+, from the 2026 messaging platform.
 - Criteria public wording; founder process steps; case-study multiples.
 - Aaron Nack headshot and LinkedIn.
 - CTA target: mailto vs contact form.
