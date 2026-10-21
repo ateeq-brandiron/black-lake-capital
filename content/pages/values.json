@@ -20,5 +20,23 @@
     "src": null,
     "alt": "",
     "note": "Blue pine treeline illustration"
+  },
+  "valuePoints": {
+    "title": "What founders can expect",
+    "items": [
+      {
+        "title": "You Don’t Have to Carry It Alone",
+        "body": "Leading a business can be a lonely job. Black Lake gives founders an experienced partner to lean on. We help take on the problems we can solve, bring perspective when the path is not obvious, and give you more room to focus on the parts of the business where you create the most value."
+      },
+      {
+        "title": "Steady, Not Stubborn",
+        "body": "Every business gets hit by something it did not see coming. We do not panic when circumstances change, but we do not dig in just to prove we were right either. We focus on what the business needs next and adjust the strategy when it is time to move in a different direction."
+      },
+      {
+        "title": "The Deal Should Fit the Business",
+        "body": "Black Lake evaluates opportunities deal by deal, bringing together the right capital and partners around the business in front of us, instead of forcing the opportunity into a predetermined box."
+      }
+    ],
+    "note": "Value points from the messaging platform. Section heading is draft UI copy."
   }
 }

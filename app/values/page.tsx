@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(content.meta, "/values/");
 
 export default function ValuesPage() {
-  const { hero, differentTitle, treeline } = content;
+  const { hero, differentTitle, treeline, valuePoints } = content;
   return (
     <>
       <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} imageLabel={hero.image.note}>
@@ -29,6 +29,17 @@ export default function ValuesPage() {
           <div className="mt-16 flex justify-center">
             <CtaButton />
           </div>
+        </div>
+        <div className="container-wide mt-(--spacing-section)">
+          <h2 className="type-display text-center text-balance">{valuePoints.title}</h2>
+          <ul className="mt-14 grid gap-12 md:grid-cols-3">
+            {valuePoints.items.map((item) => (
+              <li key={item.title} className="border-t-4 border-blue pt-6">
+                <h3 className="text-2xl leading-tight font-bold text-ink">{item.title}</h3>
+                <p className="mt-5 leading-loose text-ink">{item.body}</p>
+              </li>
+            ))}
+          </ul>
         </div>
         <ImageSlot image={treeline} label={treeline.note} placeholder="light" sizes="100vw" className="mt-16 h-24 w-full sm:h-32" />
       </section>

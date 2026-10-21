@@ -1,28 +1,28 @@
 {
   "transactions": {
-    "value": "15",
-    "confirmed": false,
-    "note": "TODO: messaging platform (2026) says 18 transactions across seven platforms; live site says 15; client has also said 16. Confirm before launch."
+    "value": "18",
+    "confirmed": true,
+    "note": "2026 Revised Black Lake Capital Messaging Platform: 18 transactions across seven platforms."
   },
   "cashOnCash": {
     "value": "10x+",
     "confirmed": true,
-    "note": "Approved: 10x+ cash-on-cash realized returns on equity invested."
+    "note": "2026 Revised Black Lake Capital Messaging Platform: more than 10x cash-on-cash realized returns on equity invested."
   },
   "secondBite": {
     "value": "$60M+",
-    "confirmed": false,
-    "note": "Messaging platform (2026): 'more than $60 million' from the second transaction across the last three. CLAUDE.md lists $60M+ vs $60–65M as open."
+    "confirmed": true,
+    "note": "2026 Revised Black Lake Capital Messaging Platform: more than $60 million from the second transaction, across the last three."
   },
   "secondTransactionMultiple": {
     "value": "3.5x",
     "confirmed": true,
-    "note": "Approved: about 3.5x more cash on average in the second transaction than the first."
+    "note": "2026 Revised Black Lake Capital Messaging Platform: approximately 3.5 times more cash on average."
   },
   "positionsEliminated": {
     "value": "0",
     "confirmed": true,
-    "note": "Approved: Black Lake has never eliminated positions as part of an acquisition."
+    "note": "2026 Revised Black Lake Capital Messaging Platform: never eliminated positions as part of an acquisition."
   },
   "combinedYears": {
     "value": "150+",
