@@ -24,7 +24,8 @@ Content rule (from the user): where sources conflict, the 2026 messaging platfor
 See also docs/slack-drive-review.md (competitor-site feedback, criteria sources, launch checklist).
 
 ## From the competitor redesign (22 Oct)
-- **High-res originals:** the site uses the 1600px WordPress images (there are no larger originals on WordPress). The Drive "Client Media Review/Images" and "Video" folders hold the originals, but this environment's network policy blocks Drive downloads. Allow `drive.google.com` and `drive.usercontent.google.com`, or add the files to the repo.
+- **High-res originals (done 22 Oct):** the Criteria, Investments, News and Team heroes now use the 2000px Drive originals ("Client Media Review/Images"; WordPress had 1600px). Those originals are only 2000px. Still 1600px: Investors hero and testimonial background (not in Drive). The Video folder holds watermarked stock previews and the 4K clips; the Home hero video is already 4K.
+- **Headshots on Drive are private:** "Chad headshot.png", "Aaron headshot.png" (Jan 2025) and "CAS Headshot Fall 2025.jpg" need link sharing (or upload to the repo) before they can be used. "CAS Fall 2025" may be Chad's newer headshot; confirm which to use.
 - Approve the "How we partner" step names and the FAQ questions.
 - Podcast cover art (optional), to replace the waveform graphic.
 
