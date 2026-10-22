@@ -38,7 +38,7 @@ export default function HomePage() {
                 <Link
                   href="/investing/"
                   tabIndex={copy > 0 ? -1 : undefined}
-                  className="flex h-24 w-full items-center justify-center grayscale-[0.85] opacity-75 transition duration-300 hover:opacity-100 hover:grayscale-0 focus-visible:opacity-100 focus-visible:grayscale-0"
+                  className="flex h-24 w-full items-center justify-center"
                 >
                   {logo.src ? (
                     <ImageSlot image={{ src: logo.src, alt: copy > 0 ? "" : logo.name }} placeholder="light" fit="contain" sizes="240px" className="h-24 w-full bg-transparent! outline-0!" />

@@ -68,7 +68,7 @@ Source: Drive "Competitor Websites.docx" and Slack (19 Oct). Brand colours, font
 52. **Founder FAQ** on Criteria (#faq). The questions are ours; every answer is platform text.
 53. **Exit stories** (Third Century "Your success is our story"): Set Solutions, SpinnakerSCA and A5, using facts from the exit posts or press release and the published testimonials. No multiples. Shown on Home and on Investments (#stories).
 54. **Partners teaser** on Home (people-first), plus an **In the media** section (podcast, Axial 2025, Opus Connect) on Home and News. No podcast artwork is available, so a waveform graphic stands in.
-55. **Home logo strip** scrolls as on the live site; logos are muted until hover. The "Exited" tags (Canopy) were removed at Ateeq's request (22 Oct); exits show as "Completed" on Investments.
+55. **Home logo strip** scrolls as on the live site; logos are shown in full colour (greyscale dropped at Ateeq's request). The "Exited" tags (Canopy) were removed at Ateeq's request (22 Oct); exits show as "Completed" on Investments.
 56. **Testimonials stay at the bottom** of Home (Source Capital).
 57. **Modern finish:**
     - Cards with hover lift.
