@@ -5,7 +5,7 @@ Updated after extracting the live site (21 Oct 2026).
 ## Client decisions
 1. **Criteria wording.** The site shows the live wording ("$2M+ in EBITDA and $8M+ in Revenue"). The proposed update (EBITDA $3M–$6M, floor ~$1.5M, revenue $10M–$40M, 4–12 years, US/Canada, technology distribution and implementation) is not approved for publication yet.
 2. **Contact form revenue question** says $6M (live form). Criteria say $8M+. Align?
-3. **"Start a conversation" target:** email link (current) or the form on /investors/.
+3. RESOLVED: "Start a conversation" goes to the contact form on /investors/ (the email link did nothing without a desktop mail app).
 4. **Where form inquiries go** (recipient address) and an email service (Resend API key + verified sender).
 5. **Founder process steps** and **case-study multiples** (Set Solutions 16x, Spinnaker SCA 32x, A5 22x): publish or leave out.
 6. **Sales sheet and deck PDFs** (menu downloads) are the 2025 v7.2 files. They may still say 15 transactions; the site now says 18 (messaging platform).

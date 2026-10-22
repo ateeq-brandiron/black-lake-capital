@@ -13,9 +13,9 @@
   },
   "cta": {
     "label": "Start a conversation",
-    "href": "mailto:info@BlackLakeCap.com?subject=Starting%20a%20conversation",
-    "confirmed": false,
-    "note": "Mailto until the client chooses mailto vs. the existing contact form on /investors/."
+    "href": "/investors/#contact",
+    "confirmed": true,
+    "note": "Goes to the contact form on /investors/. A mailto link did nothing for visitors without a desktop mail app."
   },
   "contact": {
     "phone": "(720) 770-0079",
