@@ -31,7 +31,10 @@ export default function InvestmentsPage() {
         </div>
       </section>
 
-      <section className="pb-(--spacing-section)" aria-label="Portfolio companies">
+      <section className="pb-(--spacing-section)" aria-labelledby="portfolio-title">
+        <h2 id="portfolio-title" className="sr-only">
+          Portfolio companies
+        </h2>
         <div className="container-wide grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           {portfolio.companies.map((c) => (
             <PortfolioCard key={c.name} company={c} completedLabel={statusLabels.completed} learnMoreLabel={learnMoreLabel} />

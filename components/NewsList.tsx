@@ -5,7 +5,7 @@ import { type NewsPost, type NewsSource, postPath } from "@/lib/content";
 function NewsCard({ post }: { post: NewsPost }) {
   return (
     <li className="card-lift rounded-card border border-mist bg-white px-5 py-5">
-      <h3 className="text-lg leading-none font-medium text-ink">
+      <h3 className="text-lg leading-snug font-medium text-ink">
         <Link href={postPath(post.slug)} className="hover:text-blue">
           {post.title}
         </Link>
@@ -61,6 +61,7 @@ export function SourceNewsList({ source, posts }: { source: NewsSource; posts: N
   return (
     <>
       <SourceHeading source={source} as="h1" />
+      <h2 className="sr-only">Posts</h2>
       <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <NewsCard key={post.slug} post={post} />

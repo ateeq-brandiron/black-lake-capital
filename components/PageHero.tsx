@@ -7,7 +7,8 @@ type Props = {
   eyebrow?: string | null;
   subtitle?: string | null;
   image?: ImageRef;
-  video?: { src: string | null; poster: string | null };
+  /** srcMobile: a lighter 720p encode for phones (served via <source media>). */
+  video?: { src: string | null; srcMobile?: string | null; poster: string | null };
   /** Where the lake mark sits relative to the title (Home has it below, inner pages above). */
   markPosition?: "above" | "below";
   /** Short label for the image placeholder while assets are missing. */
@@ -27,6 +28,7 @@ export function PageHero({ title, eyebrow, subtitle, image, video, markPosition 
       <div className="absolute inset-0 -z-10">
         {video?.src ? (
           <video className="size-full object-cover motion-reduce:hidden" autoPlay muted loop playsInline poster={video.poster ?? undefined} aria-hidden="true">
+            {video.srcMobile ? <source src={video.srcMobile} type="video/mp4" media="(max-width: 767px)" /> : null}
             <source src={video.src} type="video/mp4" />
           </video>
         ) : null}

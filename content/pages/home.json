@@ -10,6 +10,7 @@
     "title": "Your team. Your plan. Your reward.",
     "video": {
       "src": "/images/video/hero-lofoten.mp4",
+      "srcMobile": "/images/video/hero-lofoten-720.mp4",
       "poster": "/images/sections/home-hero-poster.jpg"
     },
     "image": {

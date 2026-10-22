@@ -9,7 +9,7 @@ export function Unconfirmed({ confirmed, note, block = false, children }: Props)
   if (block) {
     return (
       <div className="relative outline-2 outline-offset-8 outline-amber-500 outline-dashed" title={title} data-unconfirmed="">
-        <p className="absolute -top-9 right-0 text-xs font-semibold tracking-wider text-amber-700 uppercase">Draft: not yet confirmed</p>
+        <p className="absolute -top-9 right-0 rounded bg-amber-100 px-2 py-0.5 text-xs font-semibold tracking-wider text-amber-900 uppercase">Draft: not yet confirmed</p>
         {children}
       </div>
     );

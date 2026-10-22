@@ -17,7 +17,7 @@ export type Story = {
 /** Exit stories as cards: outcome, what happened, and the founder's own words. */
 export function StoryCards({ stories, readMore = "Read the story" }: { stories: Story[]; readMore?: string }) {
   return (
-    <ul className="grid gap-8 md:grid-cols-3">
+    <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {stories.map((s) => (
         <li key={s.id} className="reveal card-lift flex flex-col overflow-hidden rounded-card border border-navy/10 bg-white">
           <div className="flex h-32 items-center justify-center bg-sky/60 px-10">
@@ -25,7 +25,7 @@ export function StoryCards({ stories, readMore = "Read the story" }: { stories: 
           </div>
           <div className="flex flex-1 flex-col p-7">
             <p className="inline-flex w-fit items-center rounded-full bg-navy px-3 py-1 text-xs font-bold tracking-wider text-white uppercase">{s.outcome}</p>
-            <h3 className="mt-4 text-2xl leading-tight font-bold text-ink">{s.company}</h3>
+            <h3 className="mt-4 text-2xl leading-tight font-bold break-words text-ink">{s.company}</h3>
             <p className="mt-1 text-sm text-muted">{s.sector}</p>
             <p className="mt-4">{s.summary}</p>
             {s.quote ? (

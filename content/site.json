@@ -118,5 +118,11 @@
     "gtmId": "GTM-ND3Z87WN",
     "googleSiteVerification": "google7d5f38c031bfe7a2",
     "note": "From the live site HTML. GTM loads only on the production deployment."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for has moved or no longer exists.",
+    "homeLabel": "Back to home",
+    "note": "404 page copy (ours)."
   }
 }

@@ -14,7 +14,7 @@ export function Footer() {
             <LakeMark className="size-36" title={site.name} />
           </Link>
           <div>
-            <h2 className="text-lg font-semibold text-blue">{footer.quickLinksTitle}</h2>
+            <h2 className="text-lg font-semibold text-blue-stat">{footer.quickLinksTitle}</h2>
             <ul className="mt-3 space-y-1">
               {footer.quickLinks.map((l) => (
                 <li key={l.href}>
@@ -35,7 +35,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="text-lg font-semibold text-blue">{footer.contactTitle}</h2>
+            <h2 className="text-lg font-semibold text-blue-stat">{footer.contactTitle}</h2>
             <address className="mt-4 not-italic">
               <a href={contact.phoneHref} className="block hover:text-blue">
                 {contact.phone}

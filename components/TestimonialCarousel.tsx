@@ -44,7 +44,7 @@ export function TestimonialCarousel({ title, items, background, titleSize = "lar
                 <ImageSlot image={t.logo} placeholder="light" fit="contain" sizes="240px" className="mb-4 h-24 w-60 bg-white/0" />
                 <span className="font-quote text-lg leading-tight font-bold uppercase">{t.name}</span>
                 {t.companyUrl ? (
-                  <a href={t.companyUrl} target="_blank" rel="noopener" className="font-quote text-lg leading-tight font-normal uppercase hover:underline">
+                  <a href={t.companyUrl} target="_blank" rel="noopener" className="inline-block py-1 font-quote text-lg leading-tight font-normal uppercase hover:underline">
                     {t.company}
                   </a>
                 ) : (

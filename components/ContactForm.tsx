@@ -36,8 +36,8 @@ export function ContactForm({ labels }: { labels: Labels }) {
       <legend className="font-semibold text-ink">{f[name]}</legend>
       <div className="mt-1 flex flex-col">
         {["yes", "no"].map((v) => (
-          <label key={v} className="flex min-h-8 items-center gap-2 font-medium capitalize">
-            <input type="radio" name={name} value={v} className="size-4 accent-navy" />
+          <label key={v} className="flex min-h-11 items-center gap-3 font-medium capitalize">
+            <input type="radio" name={name} value={v} className="size-5 accent-navy" />
             {v}
           </label>
         ))}

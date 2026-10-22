@@ -40,4 +40,4 @@ See also docs/slack-drive-review.md (competitor-site feedback, criteria sources,
 - Live meta: titles are generic ("Team|Black Lake Capital | Welcome") and no page has a meta description, so the new titles and descriptions replace them.
 
 ## Technical
-- Unknown URLs that match the post route render the 404 page with noindex but can return HTTP 200 (partial prerendering). Fine for SEO.
+- RESOLVED (22 Oct): unknown URLs now return a real HTTP 404 with a branded not-found page (`proxy.ts`).

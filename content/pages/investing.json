@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Investments | Black Lake Capital",
-    "description": null,
+    "description": "Since 2013, Black Lake Capital has completed {transactions} transactions across seven platforms. See our portfolio companies and founder success stories.",
     "confirmed": false,
-    "note": "Live meta title/description come from extraction."
+    "note": "Description written from page copy (the live pages have none)."
   },
   "hero": {
     "eyebrow": null,
