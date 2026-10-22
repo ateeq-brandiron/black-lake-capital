@@ -136,3 +136,25 @@
   text-transform: uppercase;
   color: var(--color-blue);
 }
+
+/* Logo marquee (Home): the track holds four copies and slides by half, so the loop is seamless. Pauses on hover/focus. */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: no-preference) {
+    .marquee {
+      mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    }
+    .marquee-track {
+      animation: marquee 40s linear infinite;
+    }
+    .marquee:hover .marquee-track,
+    .marquee:focus-within .marquee-track {
+      animation-play-state: paused;
+    }
+  }
+}

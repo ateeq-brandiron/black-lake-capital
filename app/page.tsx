@@ -28,23 +28,28 @@ export default function HomePage() {
         <CtaButton variant="light" className="mt-4" />
       </PageHero>
 
-      {/* Portfolio logo strip: muted until hover; exited companies are tagged */}
-      <section className="bg-sky py-12" aria-label={logoStrip.label}>
-        <ul className="container-wide grid grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
-          {logoStrip.logos.map((logo) => {
-            return (
-              <li key={logo.name} className="group flex flex-col items-center gap-2">
-                <Link href="/investing/" className="flex h-24 w-full items-center justify-center grayscale-[0.85] opacity-75 transition duration-300 hover:opacity-100 hover:grayscale-0 focus-visible:opacity-100 focus-visible:grayscale-0">
+      {/* Portfolio logo strip: scrolls continuously as on the live site (static with reduced motion); exited companies are tagged */}
+      <section className="marquee overflow-hidden bg-sky py-12" aria-label={logoStrip.label}>
+        {/* Four copies so half the track is wider than any screen; the track slides by half and loops seamlessly */}
+        <ul className="marquee-track flex w-max items-center motion-reduce:w-full motion-reduce:flex-wrap motion-reduce:justify-center">
+          {[0, 1, 2, 3].flatMap((copy) =>
+            logoStrip.logos.map((logo) => (
+              <li key={`${copy}-${logo.name}`} aria-hidden={copy > 0 || undefined} className={`flex w-60 shrink-0 flex-col items-center gap-2 px-6 motion-reduce:w-40 sm:motion-reduce:w-60 ${copy > 0 ? "motion-reduce:hidden" : ""}`}>
+                <Link
+                  href="/investing/"
+                  tabIndex={copy > 0 ? -1 : undefined}
+                  className="flex h-24 w-full items-center justify-center grayscale-[0.85] opacity-75 transition duration-300 hover:opacity-100 hover:grayscale-0 focus-visible:opacity-100 focus-visible:grayscale-0"
+                >
                   {logo.src ? (
-                    <ImageSlot image={{ src: logo.src, alt: logo.name }} placeholder="light" fit="contain" sizes="240px" className="h-24 w-full bg-transparent! outline-0!" />
+                    <ImageSlot image={{ src: logo.src, alt: copy > 0 ? "" : logo.name }} placeholder="light" fit="contain" sizes="240px" className="h-24 w-full bg-transparent! outline-0!" />
                   ) : (
                     <span className="text-2xl font-semibold text-navy/70">{logo.name}</span>
                   )}
                 </Link>
                 {logo.exited ? <span className="text-[0.6875rem] font-bold tracking-[0.16em] text-navy/70 uppercase">{logoStrip.exitedLabel}</span> : <span className="h-4" aria-hidden="true" />}
               </li>
-            );
-          })}
+            )),
+          )}
         </ul>
       </section>
 
