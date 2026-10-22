@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRightIcon } from "@/components/Icons";
+import { LakeMark } from "@/components/LakeMark";
 
 export type MediaItem = {
   kind: string;
@@ -13,14 +14,19 @@ export type MediaItem = {
 /** Podcasts, recognition and interviews. External links open in a new tab. */
 export function MediaCards({ items }: { items: MediaItem[] }) {
   return (
-    <ul className="grid gap-8 md:grid-cols-3">
+    <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
       {items.map((m) => {
         const external = m.href.startsWith("http");
         return (
           <li key={m.href} className="reveal card-lift group relative flex flex-col overflow-hidden rounded-card border border-navy/10 bg-white">
             <div className="relative aspect-[16/9] overflow-hidden bg-navy">
               {m.image ? (
-                <Image src={m.image.src} alt={m.image.alt} fill sizes="(min-width: 768px) 30vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={m.image.src} alt={m.image.alt} fill sizes="(min-width: 1280px) 22vw, (min-width: 768px) 45vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+              ) : m.kind !== "Podcast" ? (
+                // No artwork yet: the lake mark on navy stands in.
+                <div className="flex size-full items-center justify-center bg-[radial-gradient(circle_at_30%_20%,#1e60ad_0%,#0b274c_70%)]">
+                  <LakeMark className="size-20 drop-shadow-lg" />
+                </div>
               ) : (
                 // Podcast artwork is not available; a waveform stands in.
                 <svg viewBox="0 0 320 180" className="size-full" aria-hidden="true">
