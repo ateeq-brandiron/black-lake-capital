@@ -5,6 +5,8 @@ Updated after extracting the live site (21 Oct 2026).
 ## Client decisions
 
 Content rule (from the user): where sources conflict, the 2026 messaging platform wins. Form delivery questions are on hold.
+
+**22 Oct:** per Ateeq, every open question below stays as currently built unless the messaging platform changes. The platform was last edited 19 Oct and is already applied, so nothing changed.
 1. **Criteria wording.** Aligned with the messaging platform: deal-by-deal intro, thresholds shown as "typically $2M+ EBITDA and $8M+ revenue", platform voice for Shared Values. The proposed update ($3M–$6M EBITDA etc.) is not published.
 2. RESOLVED: the $6M revenue gate is removed from the form (platform: no investment formula).
 3. RESOLVED: "Start a conversation" goes to the contact form on /investors/ (the email link did nothing without a desktop mail app).
@@ -26,7 +28,7 @@ See also docs/slack-drive-review.md (competitor-site feedback, criteria sources,
 ## From the competitor redesign (22 Oct)
 - **High-res originals (done 22 Oct):** the Criteria, Investments, News and Team heroes now use the 2000px Drive originals ("Client Media Review/Images"; WordPress had 1600px). Those originals are only 2000px. Still 1600px: Investors hero and testimonial background (not in Drive). The Video folder holds watermarked stock previews and the 4K clips; the Home hero video is already 4K.
 - **Headshots:** using the live website's photos (per Ateeq, 22 Oct). Chad's is now the full 1600×2400 live upload. Aaron's live photo is only 413px (the largest on WordPress), so it is slightly soft on large screens; a larger copy would fix that.
-- Approve the "How we partner" step names and the FAQ questions.
+- RESOLVED (22 Oct): "How we partner" step names and FAQ questions kept as is.
 - Podcast cover art (optional), to replace the waveform graphic.
 
 ## Resolved by the extraction

@@ -123,8 +123,8 @@
   "process": {
     "eyebrow": "For business owners",
     "title": "How we partner",
-    "confirmed": false,
-    "note": "Step names are draft (from Chad's competitor feedback); step text is from the platform.",
+    "confirmed": true,
+    "note": "Step names are ours (from Chad's competitor feedback); step text is from the platform. Kept as is per Ateeq, 22 Oct.",
     "steps": [
       {
         "title": "Start a conversation",
