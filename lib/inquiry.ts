@@ -1,6 +1,6 @@
 export type InquiryState = { status: "idle" | "success" | "error"; message?: string; errors?: Partial<Record<string, string>> };
 
-export const INQUIRY_FIELDS = ["name", "email", "phone", "tech", "region", "revenue", "company", "services", "description"] as const;
+export const INQUIRY_FIELDS = ["name", "email", "phone", "tech", "region", "company", "services", "description"] as const;
 export type InquiryField = (typeof INQUIRY_FIELDS)[number];
 export type Inquiry = Record<InquiryField, string>;
 
@@ -12,7 +12,7 @@ export function validateInquiry(form: FormData): { inquiry: Inquiry } | { errors
   const errors: Partial<Record<InquiryField, string>> = {};
   if (!inquiry.name) errors.name = "Please enter your name.";
   if (!EMAIL.test(inquiry.email)) errors.email = "Please enter a valid email address.";
-  for (const f of ["tech", "region", "revenue"] as const) {
+  for (const f of ["tech", "region"] as const) {
     if (inquiry[f] && inquiry[f] !== "yes" && inquiry[f] !== "no") errors[f] = "Please choose yes or no.";
   }
   return Object.keys(errors).length ? { errors } : { inquiry };

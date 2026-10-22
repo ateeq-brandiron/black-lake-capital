@@ -3,8 +3,10 @@
 Updated after extracting the live site (21 Oct 2026).
 
 ## Client decisions
-1. **Criteria wording.** The site shows the live wording ("$2M+ in EBITDA and $8M+ in Revenue"). The proposed update (EBITDA $3M–$6M, floor ~$1.5M, revenue $10M–$40M, 4–12 years, US/Canada, technology distribution and implementation) is not approved for publication yet.
-2. **Contact form revenue question** says $6M (live form). Criteria say $8M+. Align?
+
+Content rule (from the user): where sources conflict, the 2026 messaging platform wins. Form delivery questions are on hold.
+1. **Criteria wording.** Aligned with the messaging platform: deal-by-deal intro, thresholds shown as "typically $2M+ EBITDA and $8M+ revenue", platform voice for Shared Values. The proposed update ($3M–$6M EBITDA etc.) is not published.
+2. RESOLVED: the $6M revenue gate is removed from the form (platform: no investment formula).
 3. RESOLVED: "Start a conversation" goes to the contact form on /investors/ (the email link did nothing without a desktop mail app).
 4. **Where form inquiries go** (recipient address) and an email service (Resend API key + verified sender).
 5. **Founder process steps** and **case-study multiples** (Set Solutions 16x, Spinnaker SCA 32x, A5 22x): publish or leave out.

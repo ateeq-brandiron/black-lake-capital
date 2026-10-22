@@ -8,21 +8,21 @@
   "hero": {
     "eyebrow": null,
     "title": "Investment criteria",
-    "subtitle": "Is your business the right fit? Criteria for strategic growth",
+    "subtitle": "Is Black Lake the right fit for your business?",
     "image": {
       "src": "/images/sections/criteria-hero.jpg",
       "alt": ""
     }
   },
-  "intro": "We invest in majority and substantial minority equity recapitalizations in leading middle-market technology and innovation-enabled businesses.",
+  "intro": "We partner with founders who want to take some money off the table today, stay involved in the business, and participate in the value created next. Your company should not have to fit someone else’s investment formula, so we evaluate every opportunity deal by deal. Here is what we typically look for.",
   "introConfirmed": true,
   "criteria": {
     "confirmed": true,
-    "note": "Live wording from /investment-criteria/. Proposed update (EBITDA $3M–$6M, revenue $10M–$40M, 4–12 years) is not yet approved for publication.",
+    "note": "Live criteria, reworded where they conflicted with the 2026 messaging platform (no fixed formula, platform voice). Proposed new figures ($3M–$6M EBITDA etc.) are not published.",
     "items": [
       {
-        "title": "$2M+ in EBITDA and $8M+ in Revenue",
-        "body": "Cash-flow-positive companies across the US and Canada."
+        "title": "Profitable, Established Businesses",
+        "body": "Cash-flow-positive companies in the US and Canada, typically with $2M+ in EBITDA and $8M+ in revenue."
       },
       {
         "title": "Benefits from Utilizing Technology",
@@ -30,7 +30,7 @@
       },
       {
         "title": "Strong Management Teams",
-        "body": "Black Lake partners with executives who lead their respective industries and have a history of success."
+        "body": "Founders and management teams who know what makes their business work. Your leadership team stays in place and your operating expertise remains at the center."
       },
       {
         "title": "Market-Leading Positions",
@@ -42,7 +42,7 @@
       },
       {
         "title": "Shared Values",
-        "body": "We seek business owners and managers who share our values of collaboration, commitment, and compassion."
+        "body": "We look for founders and management teams who share how we work: confident, human, collaborative, candid, and caring."
       }
     ]
   }

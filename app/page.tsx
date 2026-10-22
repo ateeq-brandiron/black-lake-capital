@@ -78,10 +78,7 @@ export default function HomePage() {
                     {item.summary}
                     <ChevronDownIcon className="size-6 rounded-full border-2 border-current p-0.5 transition-transform group-open:rotate-180" />
                   </summary>
-                  <div className="mt-4 text-lg leading-relaxed">
-                    <p className="font-semibold text-ink">{item.heading}</p>
-                    <p className="mt-2">{item.body}</p>
-                  </div>
+                  <p className="mt-4 text-lg leading-relaxed">{item.body}</p>
                 </details>
               </li>
             ))}

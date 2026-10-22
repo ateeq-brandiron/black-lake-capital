@@ -12,7 +12,7 @@
       },
       {
         "stat": "transactions",
-        "label": "Tech transactions completed with Black Lake Capital"
+        "label": "Transactions completed across seven platforms"
       }
     ],
     "note": "All three from the live Team page. The live AUM counter shows 'NaN' because the stored value is '$80B+'."
@@ -20,7 +20,7 @@
   "sections": [
     {
       "title": "Built for agility",
-      "body": "As a family office with our own capital and a trusted network of investors, we move with agility and act decisively."
+      "body": "As a family office with our own capital and a trusted network of investors, we evaluate opportunities deal by deal and bring together the right capital and partners around the business in front of us."
     },
     {
       "title": "Access without barriers",

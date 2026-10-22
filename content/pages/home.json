@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Black Lake Capital | Investors in Technology",
-    "description": "Black Lake Capital is a family office and independent sponsor investing in profitable, founder-led technology and tech-enabled companies in the US and Canada. Take some money off the table, stay involved, and share in what comes next.",
+    "description": "Black Lake Capital is a family office that partners with founders of technology businesses who want to take some money off the table today, stay involved, and participate in the value created next.",
     "confirmed": false,
     "note": "Live title: 'Black Lake Capital | Welcome|Focused On Technology And Innovation-Enabled Businesses'; no live meta description. New title/description are ours."
   },
@@ -51,8 +51,8 @@
     "items": [
       {
         "stat": "transactions",
-        "label": "Tech transactions completed",
-        "body": "Proven experience in tech scaling and exits"
+        "label": "Transactions completed",
+        "body": "Across seven platforms"
       },
       {
         "stat": "cashOnCash",
@@ -82,8 +82,7 @@
           "alt": ""
         },
         "label": "Foundation",
-        "summary": "Your culture & vision",
-        "heading": "Your People. Your Playbook.",
+        "summary": "Your People. Your Playbook.",
         "body": "You built the business. You know what makes it work. Your leadership team stays in place, your operating expertise remains at the center, and we build an aligned strategy around where the business can go next."
       },
       {
@@ -92,8 +91,7 @@
           "alt": ""
         },
         "label": "Strategy",
-        "summary": "Capital, systems, and metrics",
-        "heading": "Experience Without Ego.",
+        "summary": "Experience Without Ego.",
         "body": "We ask hard questions, stay flexible when circumstances change, and bring perspective to the table without pretending we have every answer."
       },
       {
@@ -102,12 +100,11 @@
           "alt": ""
         },
         "label": "Execution",
-        "summary": "Common goals & shared rewards",
-        "heading": "Shared Success.",
+        "summary": "Shared Success.",
         "body": "Strong returns matter most when the people who built the business share in them. You sell a portion of your business while retaining meaningful ownership, creating the potential for a “second bite of the apple.”"
       }
     ],
-    "note": "Expander text from the messaging platform. Mapping the three differentiators onto Foundation / Strategy / Execution is a proposal.",
+    "note": "Foundation / Strategy / Execution keep the live layout; the sub-labels and text are the platform's differentiators.",
     "cta": true
   },
   "testimonials": {

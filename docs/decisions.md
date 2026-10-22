@@ -47,3 +47,12 @@
 39. **Tracking:** the live GTM container and Search Console token, loaded on production only.
 40. **Terms and Cookie Policy** dropped from the footer: the live pages don't exist.
 41. **"Learn More"** on Investments goes to the company's posts (/newspage/<company>/); Set Solutions has none.
+
+## Platform alignment pass (22 Oct 2026)
+
+42. **The 2026 messaging platform wins every content conflict.** Testimonials stay verbatim (client quotes).
+43. Removed the form's "$6M revenue" gate ("The Deal Should Fit the Business").
+44. Criteria: platform intro (no "equity recapitalizations" / "middle-market" jargon), thresholds framed as "typically", Strong Management Teams and Shared Values in platform language, subtitle "Is Black Lake the right fit for your business?"
+45. Stat labels: "Transactions completed / Across seven platforms" (Home, Investors, Team).
+46. Home approach sub-labels are the platform's differentiator headings.
+47. Investments intro, Team "Built for agility", Investors form heading and Home meta description reworded to platform language.

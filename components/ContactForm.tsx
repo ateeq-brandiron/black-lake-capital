@@ -8,7 +8,7 @@ type Labels = {
   title: string;
   submitLabel: string;
   successMessage: string;
-  fields: Record<"name" | "email" | "phone" | "tech" | "region" | "revenue" | "company" | "services" | "description", string>;
+  fields: Record<"name" | "email" | "phone" | "tech" | "region" | "company" | "services" | "description", string>;
 };
 
 const input = "mt-1.5 block min-h-11 w-full rounded-md border border-[#9aa3ae] bg-white px-3 py-2 text-ink placeholder:text-[#6b6b6b] focus:border-blue";
@@ -31,7 +31,7 @@ export function ContactForm({ labels }: { labels: Labels }) {
     );
   }
 
-  const yesNo = (name: "tech" | "region" | "revenue") => (
+  const yesNo = (name: "tech" | "region") => (
     <fieldset className="mt-5">
       <legend className="font-semibold text-ink">{f[name]}</legend>
       <div className="mt-1 flex gap-6">
@@ -73,7 +73,6 @@ export function ContactForm({ labels }: { labels: Labels }) {
 
       {yesNo("tech")}
       {yesNo("region")}
-      {yesNo("revenue")}
 
       <label className="mt-5 block font-semibold">
         {f.company}
