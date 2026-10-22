@@ -1,44 +1,57 @@
+import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { CtaButton } from "@/components/CtaButton";
 import { Divider } from "@/components/Divider";
 import { ImageSlot } from "@/components/ImageSlot";
-import { ChevronDownIcon } from "@/components/Icons";
+import { ArrowRightIcon, ChevronDownIcon, LinkedInIcon } from "@/components/Icons";
+import { MediaCards } from "@/components/MediaCards";
 import { PageHero } from "@/components/PageHero";
+import { ProcessSteps } from "@/components/ProcessSteps";
 import { RichText } from "@/components/RichText";
 import { StatBlock } from "@/components/StatBlock";
+import { StoryCards } from "@/components/StoryCards";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
-import { getTestimonials, home } from "@/lib/content";
+import { VisionVenn } from "@/components/VisionVenn";
+import criteriaPage from "@/content/pages/investment-criteria.json";
+import { getMedia, getStories, getTestimonials, home, team } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata(home.meta, "/");
 
 export default function HomePage() {
-  const { hero, logoStrip, intro, stats, approach, testimonials, closing } = home;
+  const { hero, logoStrip, intro, vision, stats, approach, process, testimonials, closing } = home;
+  const stories = getStories();
+  const media = getMedia();
   return (
     <>
       <PageHero title={hero.title} eyebrow={hero.eyebrow} video={hero.video} image={hero.image} markPosition="below" size="home">
         <CtaButton variant="light" className="mt-4" />
       </PageHero>
 
-      {/* Portfolio logo strip */}
+      {/* Portfolio logo strip: muted until hover; exited companies are tagged */}
       <section className="bg-sky py-12" aria-label={logoStrip.label}>
         <ul className="container-wide grid grid-cols-2 items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
-          {logoStrip.logos.map((logo) => (
-            <li key={logo.name} className="flex h-24 items-center justify-center">
-              {logo.src ? (
-                <ImageSlot image={{ src: logo.src, alt: logo.name }} placeholder="light" fit="contain" sizes="240px" className="h-24 w-full bg-transparent! outline-0!" />
-              ) : (
-                <span className="text-2xl font-semibold text-navy/70">{logo.name}</span>
-              )}
-            </li>
-          ))}
+          {logoStrip.logos.map((logo) => {
+            return (
+              <li key={logo.name} className="group flex flex-col items-center gap-2">
+                <Link href="/investing/" className="flex h-24 w-full items-center justify-center grayscale-[0.85] opacity-75 transition duration-300 hover:opacity-100 hover:grayscale-0 focus-visible:opacity-100 focus-visible:grayscale-0">
+                  {logo.src ? (
+                    <ImageSlot image={{ src: logo.src, alt: logo.name }} placeholder="light" fit="contain" sizes="240px" className="h-24 w-full bg-transparent! outline-0!" />
+                  ) : (
+                    <span className="text-2xl font-semibold text-navy/70">{logo.name}</span>
+                  )}
+                </Link>
+                {logo.exited ? <span className="text-[0.6875rem] font-bold tracking-[0.16em] text-navy/70 uppercase">{logoStrip.exitedLabel}</span> : <span className="h-4" aria-hidden="true" />}
+              </li>
+            );
+          })}
         </ul>
       </section>
 
       {/* Intro: elevator pitch */}
-      <section className="pt-16 pb-(--spacing-section)">
+      <section className="pt-16">
         <Divider wide />
-        <div className="container-page mt-14 text-center">
+        <div className="container-page reveal mt-14 text-center">
           <p className="text-lead mx-auto max-w-4xl font-normal text-body-soft">
             <RichText text={intro.lead} />
           </p>
@@ -46,9 +59,12 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Values up front */}
+      <VisionVenn {...vision} />
+
       {/* Proof points */}
       <section className="pb-(--spacing-section)" aria-labelledby="stats-title">
-        <div className="container-wide">
+        <div className="container-wide reveal">
           <h2 id="stats-title" className="type-display mx-auto max-w-5xl text-center font-black uppercase text-balance">
             {stats.title}
           </h2>
@@ -62,16 +78,16 @@ export default function HomePage() {
       </section>
 
       {/* Approach: Foundation / Strategy / Execution */}
-      <section aria-labelledby="approach-title">
+      <section className="pb-(--spacing-section)" aria-labelledby="approach-title">
         <Divider wide />
         <div className="container-wide mt-16">
           <h2 id="approach-title" className="type-display mx-auto max-w-4xl text-center text-balance">
             {approach.title}
           </h2>
-          <ul className="mt-16 grid gap-12 md:grid-cols-3">
+          <ul className="mt-16 grid gap-8 md:grid-cols-3">
             {approach.items.map((item) => (
-              <li key={item.label} className="flex flex-col items-center text-center">
-                <ImageSlot image={item.icon} placeholder="light" fit="contain" sizes="180px" className="size-40 bg-transparent! outline-0!" />
+              <li key={item.label} className="reveal card-lift flex flex-col items-center rounded-card border border-navy/10 bg-white px-6 py-10 text-center">
+                <ImageSlot image={item.icon} placeholder="light" fit="contain" sizes="180px" className="size-36 bg-transparent! outline-0!" />
                 <h3 className="mt-6 text-[1.375rem] leading-tight font-semibold text-black uppercase">{item.label}</h3>
                 <details className="group mt-5 w-full max-w-sm">
                   <summary className="mx-auto flex min-h-11 w-fit cursor-pointer list-none items-center gap-3 text-lg leading-tight font-bold text-blue [&::-webkit-details-marker]:hidden">
@@ -87,8 +103,89 @@ export default function HomePage() {
             <CtaButton />
           </div>
         </div>
-        <div className="mt-(--spacing-section) pb-4">
-          <Divider wide />
+      </section>
+
+      {/* For business owners: process + criteria snapshot */}
+      <ProcessSteps
+        eyebrow={process.eyebrow}
+        title={process.title}
+        steps={process.steps}
+        confirmed={process.confirmed}
+        note={process.note}
+        criteriaTitle={process.criteriaTitle}
+        criteria={criteriaPage.criteria.items.slice(0, process.criteriaCount)}
+        criteriaLink={process.criteriaLink}
+      />
+
+      {/* Exit stories */}
+      <section className="bg-sky/40 py-(--spacing-section)" aria-labelledby="stories-title">
+        <div className="container-wide">
+          <h2 id="stories-title" className="type-display mx-auto max-w-4xl text-center text-balance">
+            {stories.title}
+          </h2>
+          <div className="mt-14">
+            <StoryCards stories={stories.items} />
+          </div>
+          <div className="mt-12 flex justify-center">
+            <Link href={home.stories.href} className="inline-flex min-h-11 items-center gap-2 text-lg font-semibold text-navy hover:text-blue">
+              {home.stories.cta}
+              <ArrowRightIcon className="size-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section className="py-(--spacing-section)" aria-labelledby="team-title">
+        <div className="container-wide grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-20">
+          <div className="reveal">
+            <h2 id="team-title" className="type-display-sm text-balance">
+              {home.team.title}
+            </h2>
+            <p className="mt-5 text-lg">{home.team.body}</p>
+            <Link href="/team/" className="mt-6 inline-flex min-h-11 items-center gap-2 text-lg font-semibold text-navy hover:text-blue">
+              {home.team.cta}
+              <ArrowRightIcon className="size-5" />
+            </Link>
+          </div>
+          <ul className="grid gap-8 sm:grid-cols-2">
+            {team.partners.map((p) => (
+              <li key={p.name} className="reveal card-lift group overflow-hidden rounded-card border border-navy/10 bg-white">
+                <ImageSlot image={p.photo} sizes="(min-width: 1024px) 22rem, (min-width: 640px) 45vw, 100vw" className="aspect-[4/5] w-full [&_img]:transition-transform [&_img]:duration-500 group-hover:[&_img]:scale-[1.03]" />
+                <div className="flex items-center justify-between gap-4 p-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-ink">{p.name}</h3>
+                    <p className="text-sm">{p.role}</p>
+                  </div>
+                  {p.linkedin?.href ? (
+                    <a href={p.linkedin.href} target="_blank" rel="noopener" className="flex size-11 shrink-0 items-center justify-center rounded-full bg-linkedin text-white hover:bg-navy">
+                      <LinkedInIcon className="size-5" />
+                      <span className="sr-only">{p.name} on LinkedIn (opens in a new tab)</span>
+                    </a>
+                  ) : null}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Media */}
+      <section className="pb-(--spacing-section)" aria-labelledby="media-title">
+        <Divider wide />
+        <div className="container-wide mt-16">
+          <h2 id="media-title" className="type-display mx-auto max-w-4xl text-center text-balance">
+            {media.title}
+          </h2>
+          <div className="mt-14">
+            <MediaCards items={media.items} />
+          </div>
+          <div className="mt-12 flex justify-center">
+            <Link href="/newspage/" className="inline-flex min-h-11 items-center gap-2 text-lg font-semibold text-navy hover:text-blue">
+              {home.mediaCta}
+              <ArrowRightIcon className="size-5" />
+            </Link>
+          </div>
         </div>
       </section>
 

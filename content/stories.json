@@ -1,0 +1,46 @@
+{
+  "note": "Exit stories. Facts from the Black Lake exit posts (Set Solutions 2023, SpinnakerSCA 2024) and the April 2026 A5 press release; quotes are the published testimonials. No deal multiples are published.",
+  "title": "Your success is our story",
+  "lead": null,
+  "items": [
+    {
+      "id": "set-solutions",
+      "company": "Set Solutions",
+      "sector": "Network security · Houston, Texas",
+      "outcome": "Acquired by Trace3",
+      "summary": "Black Lake invested alongside Third Century Partners. Set Solutions was acquired by Trace3, backed by American Securities, with TM Capital as exclusive financial advisor.",
+      "testimonial": "set-solutions",
+      "logo": {
+        "src": "/images/logos/strip-set-solutions.png",
+        "alt": "Set Solutions logo"
+      },
+      "href": "/black-lake-capital-announces-the-successful-exit-of-set-solutions/"
+    },
+    {
+      "id": "spinnaker",
+      "company": "SpinnakerSCA",
+      "sector": "Supply chain services · Boulder, Colorado",
+      "outcome": "Acquired by Publicis Sapient",
+      "summary": "Formed in 2021 through the merger of SCApath and Spinnaker, with Black Lake and Source Capital as investment partners. SpinnakerSCA was acquired by Publicis Sapient, part of Publicis Groupe.",
+      "testimonial": "spinnaker",
+      "logo": {
+        "src": "/images/logos/strip-spinnaker.png",
+        "alt": "SpinnakerSCA logo"
+      },
+      "href": "/black-lake-announces-successful-exit-of-spinnakersca-investment/"
+    },
+    {
+      "id": "a5",
+      "company": "A5 Corporation",
+      "sector": "Digital solutions · Pleasanton, California",
+      "outcome": "Acquired by Accordion",
+      "summary": "A5 Corporation, a digital solutions provider, was acquired by Accordion.",
+      "testimonial": "a5",
+      "logo": {
+        "src": "/images/logos/strip-a5.png",
+        "alt": "A5 Corporation logo"
+      },
+      "href": "/newspage/a5/"
+    }
+  ]
+}

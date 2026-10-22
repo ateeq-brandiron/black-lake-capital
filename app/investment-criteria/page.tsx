@@ -5,12 +5,13 @@ import { Divider } from "@/components/Divider";
 import { PageHero } from "@/components/PageHero";
 import { Unconfirmed } from "@/components/Unconfirmed";
 import content from "@/content/pages/investment-criteria.json";
+import { fillStats } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata(content.meta, "/investment-criteria/");
 
 export default function CriteriaPage() {
-  const { hero, intro, criteria } = content;
+  const { hero, intro, criteria, faq } = content;
   return (
     <>
       <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} subtitleWeight="bold-sm">
@@ -34,6 +35,15 @@ export default function CriteriaPage() {
           <div className="mt-16 flex justify-center">
             <CtaButton />
           </div>
+        </div>
+      </section>
+
+      <section id="faq" className="scroll-mt-24 bg-sky/40 py-(--spacing-section)" aria-labelledby="faq-title">
+        <div className="container-page grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+          <h2 id="faq-title" className="type-display-sm text-balance">
+            {faq.title}
+          </h2>
+          <Accordion items={faq.items.map((q) => ({ ...q, body: fillStats(q.body) }))} />
         </div>
       </section>
 

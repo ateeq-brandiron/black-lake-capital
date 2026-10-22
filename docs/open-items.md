@@ -23,6 +23,11 @@ Content rule (from the user): where sources conflict, the 2026 messaging platfor
 
 See also docs/slack-drive-review.md (competitor-site feedback, criteria sources, launch checklist).
 
+## From the competitor redesign (22 Oct)
+- **High-res originals:** the site uses the 1600px WordPress images (there are no larger originals on WordPress). The Drive "Client Media Review/Images" and "Video" folders hold the originals, but this environment's network policy blocks Drive downloads. Allow `drive.google.com` and `drive.usercontent.google.com`, or add the files to the repo.
+- Approve the "How we partner" step names and the FAQ questions.
+- Podcast cover art (optional), to replace the waveform graphic.
+
 ## Resolved by the extraction
 - All images, hero video, logos, icons, headshots, treeline art, official logo mark, favicon.
 - All 8 carousel testimonials with names, companies and logos.

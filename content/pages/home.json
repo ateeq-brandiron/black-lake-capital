@@ -22,29 +22,48 @@
     "logos": [
       {
         "name": "A5",
-        "src": "/images/logos/strip-a5.png"
+        "src": "/images/logos/strip-a5.png",
+        "exited": true
       },
       {
         "name": "Trapp",
-        "src": "/images/logos/strip-trapp.png"
+        "src": "/images/logos/strip-trapp.png",
+        "exited": false
       },
       {
         "name": "OMCO SUMO",
-        "src": "/images/logos/strip-omco-sumo.png"
+        "src": "/images/logos/strip-omco-sumo.png",
+        "exited": true
       },
       {
         "name": "Spinnaker SCA",
-        "src": "/images/logos/strip-spinnaker.png"
+        "src": "/images/logos/strip-spinnaker.png",
+        "exited": true
       },
       {
         "name": "Set Solutions",
-        "src": "/images/logos/strip-set-solutions.png"
+        "src": "/images/logos/strip-set-solutions.png",
+        "exited": true
       }
-    ]
+    ],
+    "exitedLabel": "Exited",
+    "note": "'exited' matches portfolio.json status (A5, OMCO SUMO, Spinnaker SCA and Set Solutions are completed)."
   },
   "intro": {
     "lead": "You built a strong business. Black Lake Capital helps you **keep building it** without losing what made it successful in the first place.",
     "body": "We partner with founders who want to take some money off the table today, stay involved in the business, and participate in the value created next."
+  },
+  "vision": {
+    "eyebrow": "Our vision",
+    "title": "The people who built a successful business should remain at the center of what comes next.",
+    "body": "We partner with founders and management teams to build on the vision, people, and playbook that made their companies successful in the first place.",
+    "goal": "Our goal is simple: help strong businesses become more valuable while giving the people behind them the opportunity to share in what comes next.",
+    "venn": {
+      "left": "Your operating expertise",
+      "right": "Our investment experience and resources",
+      "center": "Shared success"
+    },
+    "note": "All text from the platform Vision; the diagram labels are its own words."
   },
   "stats": {
     "title": "Investment performance that speaks for itself",
@@ -107,8 +126,42 @@
     "note": "Foundation / Strategy / Execution keep the live layout; the sub-labels and text are the platform's differentiators.",
     "cta": true
   },
+  "process": {
+    "eyebrow": "For business owners",
+    "title": "How we partner",
+    "confirmed": false,
+    "note": "Step names are draft (from Chad's competitor feedback); step text is from the platform.",
+    "steps": [
+      {
+        "title": "Start a conversation",
+        "body": "If you want a partner who respects what you built and helps you create more value from what comes next, Black Lake may be the right fit."
+      },
+      {
+        "title": "Candid diligence",
+        "body": "We ask hard questions, stay flexible when circumstances change, and bring perspective to the table without pretending we have every answer."
+      },
+      {
+        "title": "A deal built around you",
+        "body": "We evaluate opportunities deal by deal, bringing together the right capital and partners around the business in front of us, instead of forcing it into a predetermined box."
+      }
+    ],
+    "criteriaTitle": "What we look for",
+    "criteriaCount": 4,
+    "criteriaLink": "See all criteria and founder FAQs"
+  },
+  "stories": {
+    "cta": "Read more success stories",
+    "href": "/investing/#stories"
+  },
+  "team": {
+    "title": "Meet the partners",
+    "body": "Our lean team gives founders direct access to experienced investors and the people who make the decisions.",
+    "cta": "Meet the team"
+  },
+  "mediaCta": "All news",
   "testimonials": {
-    "title": "Success stories from those who've built with us"
+    "title": "Success stories from those who've built with us",
+    "note": "Testimonials stay at the bottom of the page (Source Capital pattern from Chad's feedback)."
   },
   "closing": {
     "title": "Your Vision. Your People. Your Success.",

@@ -4,7 +4,7 @@ import { type NewsPost, type NewsSource, postPath } from "@/lib/content";
 
 function NewsCard({ post }: { post: NewsPost }) {
   return (
-    <li className="border border-mist px-5 py-5">
+    <li className="card-lift rounded-card border border-mist bg-white px-5 py-5">
       <h3 className="text-lg leading-none font-medium text-ink">
         <Link href={postPath(post.slug)} className="hover:text-blue">
           {post.title}

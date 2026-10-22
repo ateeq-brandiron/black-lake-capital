@@ -3,14 +3,16 @@ import { CtaButton } from "@/components/CtaButton";
 import { Divider } from "@/components/Divider";
 import { PageHero } from "@/components/PageHero";
 import { PortfolioCard } from "@/components/PortfolioCard";
+import { StoryCards } from "@/components/StoryCards";
 import content from "@/content/pages/investing.json";
-import { fillStats, portfolio } from "@/lib/content";
+import { fillStats, getStories, portfolio } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata(content.meta, "/investing/");
 
 export default function InvestmentsPage() {
   const { hero, intro, statusLabels, learnMoreLabel } = content;
+  const stories = getStories();
   return (
     <>
       <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} subtitleWeight="bold">
@@ -34,6 +36,17 @@ export default function InvestmentsPage() {
           {portfolio.companies.map((c) => (
             <PortfolioCard key={c.name} company={c} completedLabel={statusLabels.completed} learnMoreLabel={learnMoreLabel} />
           ))}
+        </div>
+      </section>
+
+      <section id="stories" className="scroll-mt-24 bg-sky/40 py-(--spacing-section)" aria-labelledby="stories-title">
+        <div className="container-wide">
+          <h2 id="stories-title" className="type-display mx-auto max-w-4xl text-center text-balance">
+            {stories.title}
+          </h2>
+          <div className="mt-14">
+            <StoryCards stories={stories.items} />
+          </div>
         </div>
       </section>
 

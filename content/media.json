@@ -1,0 +1,30 @@
+{
+  "note": "Media and recognition. The podcast link is the Apple Podcasts episode shared in Slack; the other two are Black Lake posts.",
+  "title": "In the media",
+  "items": [
+    {
+      "kind": "Podcast",
+      "title": "PE Insight Series: Deal Risks",
+      "body": "Managing Partner Charles (Chad) Scripps on the PE Insight Series, talking through deal risks.",
+      "href": "https://podcasts.apple.com/us/podcast/pe-insight-series-deal-risks/id1573448162?i=1000775918577",
+      "cta": "Listen on Apple Podcasts",
+      "image": null
+    },
+    {
+      "kind": "Recognition",
+      "title": "Axial 2025 Top 50 Lower Middle Market Technology Investors",
+      "body": "Black Lake Capital was named to Axial's list of the 2025 Top 50 Lower Middle Market Technology Investors & M&A Advisors.",
+      "href": "/tech-investors-of-2025-by-axial/",
+      "cta": "Read the post",
+      "image": "tech-investors-of-2025-by-axial"
+    },
+    {
+      "kind": "Interview",
+      "title": "Black Lake's Managing Partner interviewed by Opus Connect",
+      "body": null,
+      "href": "/black-lakes-managing-partner-interviewed-by-opus-connect/",
+      "cta": "Read the interview",
+      "image": "black-lakes-managing-partner-interviewed-by-opus-connect"
+    }
+  ]
+}

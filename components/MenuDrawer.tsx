@@ -8,7 +8,7 @@ import { LakeMark } from "@/components/LakeMark";
 type NavItem = { label: string; href: string };
 type Props = { siteName: string; nav: NavItem[]; downloads: { label: string; files: { label: string; href: string }[] } };
 
-/** Hamburger button (fixed, top right) and the slide-in navigation panel from the live site. */
+/** Hamburger button (in the header bar, below lg) and the slide-in navigation panel from the live site. */
 export function MenuDrawer({ siteName, nav, downloads }: Props) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -38,12 +38,12 @@ export function MenuDrawer({ siteName, nav, downloads }: Props) {
         onClick={() => setOpen(true)}
         aria-expanded={open}
         aria-controls="site-menu"
-        className="fixed top-0 right-0 z-40 flex size-13 flex-col items-center justify-center gap-1.75 bg-black"
+        className="flex size-11 flex-col items-center justify-center gap-1.5 bg-navy lg:hidden"
       >
         <span className="sr-only">Open menu</span>
-        <span className="h-px w-7 bg-white" />
-        <span className="h-px w-7 bg-white" />
-        <span className="h-px w-7 bg-white" />
+        <span className="h-0.5 w-6 bg-white" />
+        <span className="h-0.5 w-6 bg-white" />
+        <span className="h-0.5 w-6 bg-white" />
       </button>
 
       <div

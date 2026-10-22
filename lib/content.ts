@@ -6,6 +6,8 @@ import home from "@/content/pages/home.json";
 import differentiators from "@/content/differentiators.json";
 import portfolio from "@/content/portfolio.json";
 import team from "@/content/team.json";
+import storiesJson from "@/content/stories.json";
+import mediaJson from "@/content/media.json";
 
 export { site, home, differentiators, portfolio, team };
 
@@ -86,4 +88,22 @@ export function formatDate(iso: string, style: "long" | "short" = "long") {
 /** Path for a page that exists in content/pages, e.g. "criteria" -> "/criteria/". */
 export function pagePath(slug: string) {
   return slug === "home" ? "/" : `/${slug}/`;
+}
+
+/** Exit stories with their testimonial quote attached. */
+export function getStories() {
+  const quotes = getTestimonials();
+  return {
+    title: storiesJson.title,
+    lead: storiesJson.lead as string | null,
+    items: storiesJson.items.map(({ testimonial, ...story }) => ({ ...story, quote: quotes.find((t) => t.id === testimonial) })),
+  };
+}
+
+/** Media items; "image" names a post whose featured image is used. */
+export function getMedia() {
+  return {
+    title: mediaJson.title,
+    items: mediaJson.items.map((m) => ({ ...m, image: (m.image && news.posts.find((p) => p.slug === m.image)?.featuredImage) || null })),
+  };
 }

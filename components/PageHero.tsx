@@ -23,7 +23,7 @@ type Props = {
 export function PageHero({ title, eyebrow, subtitle, image, video, markPosition = "above", imageLabel, size = "page", subtitleWeight = "medium", children }: Props) {
   const mark = <LakeMark className="size-20 drop-shadow-lg sm:size-26" />;
   return (
-    <section className="relative isolate flex min-h-[min(56rem,92svh)] flex-col items-center justify-center overflow-hidden px-4 pt-20 pb-36 text-center text-white sm:pb-44">
+    <section className="relative isolate flex min-h-[min(56rem,92svh)] flex-col items-center justify-center overflow-hidden px-4 pt-16 pb-36 text-center text-white sm:pb-44">
       <div className="absolute inset-0 -z-10">
         {video?.src ? (
           <video className="size-full object-cover motion-reduce:hidden" autoPlay muted loop playsInline poster={video.poster ?? undefined} aria-hidden="true">
@@ -49,6 +49,12 @@ export function PageHero({ title, eyebrow, subtitle, image, video, markPosition 
         {markPosition === "below" ? mark : null}
         {children}
       </div>
+
+      {/* Fine line-art ridge over the photo */}
+      <svg className="pointer-events-none absolute inset-x-0 bottom-14 h-28 w-full opacity-60 sm:bottom-24 sm:h-44 lg:bottom-28" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 170 L120 120 L190 140 L320 60 L410 115 L470 95 L600 20 L700 105 L760 80 L880 130 L980 50 L1080 120 L1160 90 L1290 140 L1440 85" fill="none" stroke="#fff" strokeOpacity="0.55" strokeWidth="1.25" vectorEffect="non-scaling-stroke" />
+        <path d="M0 185 L150 150 L260 165 L380 110 L520 160 L640 100 L760 150 L900 120 L1040 165 L1180 125 L1320 160 L1440 140" fill="none" stroke="#fff" strokeOpacity="0.3" strokeWidth="1" vectorEffect="non-scaling-stroke" />
+      </svg>
 
       {/* Curved bottom edge with the translucent grey swoosh from the live site */}
       <svg className="absolute inset-x-0 bottom-0 h-16 w-full sm:h-28 lg:h-36" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">

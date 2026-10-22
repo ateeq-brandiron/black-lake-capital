@@ -56,3 +56,20 @@
 45. Stat labels: "Transactions completed / Across seven platforms" (Home, Investors, Team).
 46. Home approach sub-labels are the platform's differentiator headings.
 47. Investments intro, Team "Built for agility", Investors form heading and Home meta description reworded to platform language.
+
+## Competitor-site "modern touch" (22 Oct 2026, Chad's feedback)
+
+Source: Drive "Competitor Websites.docx" and Slack (19 Oct). Brand colours, fonts, URLs and the four CTA positions are unchanged.
+
+48. **Header:** a sticky bar with the logo, the five main sections (Appian Way), and "Start a conversation". The hamburger drawer stays below 1024px and still lists every page.
+49. **Hero:** a fine line-art ridge over the photo (Astria).
+50. **Values up front** (Georgia Oak / LP First / Southstone overlap): an "Our vision" block with the platform Vision and a two-circle diagram (your operating expertise + our investment experience and resources = shared success). All text is platform wording.
+51. **Business-owner section** (Southstone): "How we partner", three steps next to a "What we look for" criteria snapshot. **The step names are draft** and are flagged as unconfirmed on staging; the step text is platform copy.
+52. **Founder FAQ** on Criteria (#faq). The questions are ours; every answer is platform text.
+53. **Exit stories** (Third Century "Your success is our story"): Set Solutions, SpinnakerSCA and A5, using facts from the exit posts or press release and the published testimonials. No multiples. Shown on Home and on Investments (#stories).
+54. **Partners teaser** on Home (people-first), plus an **In the media** section (podcast, Axial 2025, Opus Connect) on Home and News. No podcast artwork is available, so a waveform graphic stands in.
+55. **Exited companies** in the Home logo strip are muted until hover and tagged "Exited" (Canopy).
+56. **Testimonials stay at the bottom** of Home (Source Capital).
+57. **Modern finish:**
+    - Cards with hover lift.
+    - CSS-only scroll reveal (`.reveal`, scroll-driven animations). Content is visible without JS, in older browsers, and with reduced motion.

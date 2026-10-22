@@ -87,3 +87,52 @@
   text-transform: uppercase;
   color: var(--color-blue-stat);
 }
+
+/*
+ * Scroll reveal: sections fade up as they enter the viewport. Pure CSS (scroll-driven
+ * animations), so content is fully visible without JS, in older browsers, and with
+ * reduced motion.
+ */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .reveal {
+        animation: reveal-up linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 55%;
+      }
+    }
+  }
+}
+
+/* Card lift on hover/focus */
+@utility card-lift {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  &:hover,
+  &:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px -18px rgb(11 39 76 / 0.35);
+  }
+}
+
+@utility type-eyebrow {
+  font-size: 0.875rem;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}

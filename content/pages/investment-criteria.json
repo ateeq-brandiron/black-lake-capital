@@ -45,5 +45,35 @@
         "body": "We look for founders and management teams who share how we work: confident, human, collaborative, candid, and caring."
       }
     ]
+  },
+  "faq": {
+    "title": "Questions founders ask",
+    "note": "Answers are platform text. The questions are ours.",
+    "items": [
+      {
+        "title": "Will my leadership team stay?",
+        "body": "Your leadership team stays in place and your operating expertise remains at the center. Black Lake has never eliminated positions as part of an acquisition."
+      },
+      {
+        "title": "Do I have to sell the whole business?",
+        "body": "When founders partner with Black Lake, they have the opportunity to sell a portion of their business while retaining meaningful ownership."
+      },
+      {
+        "title": "What is the “second bite of the apple”?",
+        "body": "When founders partner with Black Lake, they sell a portion of their business while retaining meaningful ownership. That retained ownership creates the potential for a “second bite of the apple” when the business is sold again or completes a subsequent transaction. Across Black Lake’s last three subsequent transactions, founders received {secondBite} in value from that second transaction, and about {secondTransactionMultiple} more cash on average than in the initial sale."
+      },
+      {
+        "title": "Will you bring in your own playbook?",
+        "body": "No. We partner with founders and management teams without arriving with a predetermined playbook or trying to reengineer what already works, and we build an aligned strategy around where the business can go next."
+      },
+      {
+        "title": "What happens if things don’t go to plan?",
+        "body": "Every business gets hit by something it did not see coming. We do not panic when circumstances change, but we do not dig in just to prove we were right either. We focus on what the business needs next and adjust the strategy when it is time to move in a different direction."
+      },
+      {
+        "title": "How involved will Black Lake be?",
+        "body": "Black Lake gives founders an experienced partner to lean on. We help take on the problems we can solve, bring perspective when the path is not obvious, and give you more room to focus on the parts of the business where you create the most value."
+      }
+    ]
   }
 }

@@ -20,7 +20,7 @@ export function PortfolioCard({ company, completedLabel, learnMoreLabel }: { com
   const href = `https://${company.website.replace(/^https?:\/\//, "").toLowerCase()}`;
   const overlayRibbon = company.status === "completed" && !company.ribbonInLogo;
   return (
-    <article className="flex flex-col items-center text-center font-card text-lg leading-normal font-medium">
+    <article className="reveal flex flex-col items-center text-center font-card text-lg leading-normal font-medium">
       {/* Exits from the live site have the "Completed" ribbon baked into the logo; others get it overlaid at the same spot */}
       <div className="relative mx-auto w-full max-w-[20.5rem]">
         {overlayRibbon ? (
