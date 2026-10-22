@@ -63,7 +63,9 @@
   ],
   "menuDownloads": {
     "label": "Download Our Summary to Learn More",
-    "files": [
+    "files": [],
+    "note": "Hidden from the menu: the 2025 v7.2 sales sheet and deck say $50M+ founder value (platform: $60M+) and predate the 18-transaction figure. Files stay in /public/downloads for old links. Restore 'files' when updated PDFs arrive.",
+    "hiddenFiles": [
       {
         "label": "Sales sheet (PDF)",
         "href": "/downloads/UPDATED-2025-BLC-Sales-Sheet-v7.2.pdf"
@@ -72,8 +74,7 @@
         "label": "Sales deck (PDF)",
         "href": "/downloads/UPDATED-2025-Black-Lake-Capital-Sales-Deck-v7.2.pdf"
       }
-    ],
-    "note": "Both PDFs copied from the live menu (2025, v7.2). They may still say 15 transactions; check against the messaging platform."
+    ]
   },
   "footer": {
     "quickLinksTitle": "Quick Links",

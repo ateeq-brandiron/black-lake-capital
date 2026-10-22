@@ -10,7 +10,7 @@ Content rule (from the user): where sources conflict, the 2026 messaging platfor
 3. RESOLVED: "Start a conversation" goes to the contact form on /investors/ (the email link did nothing without a desktop mail app).
 4. **Where form inquiries go** (recipient address) and an email service (Resend API key + verified sender).
 5. **Founder process steps** and **case-study multiples** (Set Solutions 16x, Spinnaker SCA 32x, A5 22x): publish or leave out.
-6. **Sales sheet and deck PDFs** (menu downloads) are the 2025 v7.2 files. They may still say 15 transactions; the site now says 18 (messaging platform).
+6. **Sales sheet and deck PDFs** (2025 v7.2) say $50M+ founder value and predate 18 transactions, so they conflict with the platform. Hidden from the menu until updated PDFs are supplied (old links still work).
 7. **Landing pages** /blc-tech-landing-page/ and /blc-investor-landing-page/: still used in campaigns? Currently redirected (temporary).
 8. **Terms and Conditions / Cookie Policy:** shown as plain text in the live footer, but the pages don't exist. Supply text or leave them out (current).
 9. **Company LinkedIn URL:** the live footer icons are unlinked theme defaults.
