@@ -22,32 +22,25 @@
     "logos": [
       {
         "name": "A5",
-        "src": "/images/logos/strip-a5.png",
-        "exited": true
+        "src": "/images/logos/strip-a5.png"
       },
       {
         "name": "Trapp",
-        "src": "/images/logos/strip-trapp.png",
-        "exited": false
+        "src": "/images/logos/strip-trapp.png"
       },
       {
         "name": "OMCO SUMO",
-        "src": "/images/logos/strip-omco-sumo.png",
-        "exited": true
+        "src": "/images/logos/strip-omco-sumo.png"
       },
       {
         "name": "Spinnaker SCA",
-        "src": "/images/logos/strip-spinnaker.png",
-        "exited": true
+        "src": "/images/logos/strip-spinnaker.png"
       },
       {
         "name": "Set Solutions",
-        "src": "/images/logos/strip-set-solutions.png",
-        "exited": true
+        "src": "/images/logos/strip-set-solutions.png"
       }
-    ],
-    "exitedLabel": "Exited",
-    "note": "'exited' matches portfolio.json status (A5, OMCO SUMO, Spinnaker SCA and Set Solutions are completed)."
+    ]
   },
   "intro": {
     "lead": "You built a strong business. Black Lake Capital helps you **keep building it** without losing what made it successful in the first place.",
