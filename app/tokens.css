@@ -18,7 +18,9 @@
   --color-charcoal: #373536; /* lake mark (bottom half) */
   --color-sky: #deeeff; /* light blue band (logo strip, form panel) */
   --color-ink: #333333; /* dark headings, team names, news titles */
-  --color-body: #6b6b6b; /* body copy, intro text, footer contact */
+  --color-body: #666666; /* body copy (live: 16px / 500 / 27px) */
+  --color-body-soft: #6b6b6b; /* intro line, stat descriptions, footer contact */
+  --color-column: #0c71c3; /* "Why partner" / "What makes Black Lake different" column headings */
   --color-muted: #767676; /* divider lines, secondary text */
   --color-mist: #d9d9d9; /* footer background, accordion borders */
   --color-night: #171717; /* bottom bar */
@@ -27,16 +29,22 @@
   /* Typography */
   --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
   --font-numeral: var(--font-quattrocento), Georgia, serif;
+  --font-card: var(--font-lato), Helvetica, Arial, sans-serif; /* Investments cards */
+  --font-quote: "Century Gothic", CenturyGothic, AppleGothic, var(--font-questrial), sans-serif; /* testimonials */
 
-  /* Type scale (desktop values from the 1366px screenshots, fluid down to 360px) */
-  --text-hero: clamp(2.25rem, 1.4rem + 3.8vw, 3.75rem); /* 60px hero H1 */
-  --text-hero--line-height: 1.1;
-  --text-display: clamp(2rem, 1.3rem + 3vw, 3.5rem); /* 56px section H2 */
-  --text-display--line-height: 1.15;
-  --text-stat: clamp(3.5rem, 2.8rem + 3vw, 4.5rem); /* 72px stat numerals */
-  --text-stat--line-height: 1;
-  --text-lead: clamp(1.125rem, 1rem + 0.5vw, 1.375rem); /* 22px intro line */
-  --text-lead--line-height: 1.5;
+  /* Type scale: desktop sizes measured on the live site at 1366px, fluid down to 360px */
+  --text-hero: clamp(2.25rem, 1.2rem + 3.3vw, 3.625rem); /* 58px inner-page hero H1 */
+  --text-hero--line-height: 1.3;
+  --text-hero-home: clamp(2.375rem, 1.2rem + 3.7vw, 3.9375rem); /* 63px Home hero H1 */
+  --text-hero-home--line-height: 1.3;
+  --text-display: clamp(2rem, 0.9rem + 3.35vw, 3.75rem); /* 60px section headings (exactly 60 at 1366px) */
+  --text-display--line-height: 1.3;
+  --text-display-sm: clamp(1.875rem, 1.2rem + 2.2vw, 2.875rem); /* 46px Team section headings */
+  --text-display-sm--line-height: 1.2;
+  --text-stat: clamp(3.75rem, 3rem + 2.8vw, 5rem); /* 80px stat numerals (Quattrocento) */
+  --text-stat--line-height: 0.9;
+  --text-lead: clamp(1.125rem, 1rem + 0.45vw, 1.3125rem); /* 21px intro line, stat descriptions */
+  --text-lead--line-height: 1.3;
 
   /* Layout */
   --container-page: 67.5rem; /* 1080px content column (143px gutters at 1366px) */

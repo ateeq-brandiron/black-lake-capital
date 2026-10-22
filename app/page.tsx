@@ -16,7 +16,7 @@ export default function HomePage() {
   const { hero, logoStrip, intro, stats, approach, testimonials, closing } = home;
   return (
     <>
-      <PageHero title={hero.title} eyebrow={hero.eyebrow} video={hero.video} image={hero.image} markPosition="below">
+      <PageHero title={hero.title} eyebrow={hero.eyebrow} video={hero.video} image={hero.image} markPosition="below" size="home">
         <CtaButton variant="light" className="mt-4" />
       </PageHero>
 
@@ -39,17 +39,17 @@ export default function HomePage() {
       <section className="pt-16 pb-(--spacing-section)">
         <Divider wide />
         <div className="container-page mt-14 text-center">
-          <p className="text-lead mx-auto max-w-4xl">
+          <p className="text-lead mx-auto max-w-4xl font-normal text-body-soft">
             <RichText text={intro.lead} />
           </p>
-          <p className="text-lead mx-auto mt-4 max-w-4xl">{intro.body}</p>
+          <p className="text-lead mx-auto mt-4 max-w-4xl font-normal text-body-soft">{intro.body}</p>
         </div>
       </section>
 
       {/* Proof points */}
       <section className="pb-(--spacing-section)" aria-labelledby="stats-title">
         <div className="container-wide">
-          <h2 id="stats-title" className="type-display mx-auto max-w-5xl text-center uppercase text-balance">
+          <h2 id="stats-title" className="type-display mx-auto max-w-5xl text-center font-black uppercase text-balance">
             {stats.title}
           </h2>
           <div className="mt-16">
@@ -65,20 +65,20 @@ export default function HomePage() {
       <section aria-labelledby="approach-title">
         <Divider wide />
         <div className="container-wide mt-16">
-          <h2 id="approach-title" className="type-display mx-auto max-w-4xl text-center font-bold text-balance">
+          <h2 id="approach-title" className="type-display mx-auto max-w-4xl text-center text-balance">
             {approach.title}
           </h2>
           <ul className="mt-16 grid gap-12 md:grid-cols-3">
             {approach.items.map((item) => (
               <li key={item.label} className="flex flex-col items-center text-center">
                 <ImageSlot image={item.icon} placeholder="light" fit="contain" sizes="180px" className="size-40 bg-transparent! outline-0!" />
-                <h3 className="mt-6 text-xl font-medium tracking-wide text-ink uppercase">{item.label}</h3>
+                <h3 className="mt-6 text-[1.375rem] leading-tight font-semibold text-black uppercase">{item.label}</h3>
                 <details className="group mt-5 w-full max-w-sm">
-                  <summary className="mx-auto flex min-h-11 w-fit cursor-pointer list-none items-center gap-3 font-semibold text-blue [&::-webkit-details-marker]:hidden">
+                  <summary className="mx-auto flex min-h-11 w-fit cursor-pointer list-none items-center gap-3 text-lg leading-tight font-bold text-blue [&::-webkit-details-marker]:hidden">
                     {item.summary}
                     <ChevronDownIcon className="size-6 rounded-full border-2 border-current p-0.5 transition-transform group-open:rotate-180" />
                   </summary>
-                  <p className="mt-4 text-lg leading-relaxed">{item.body}</p>
+                  <p className="mt-4">{item.body}</p>
                 </details>
               </li>
             ))}

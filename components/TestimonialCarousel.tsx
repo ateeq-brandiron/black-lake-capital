@@ -6,6 +6,8 @@ import type { Testimonial } from "@/lib/content";
 
 type Props = {
   title: string;
+  /** Live: 60px on Home ("Success stories..."), 26px uppercase on Investors ("What our partners say"). */
+  titleSize?: "large" | "small";
   items: Testimonial[];
   /** Optional background photo (Investors uses a night sky); otherwise the brand blue band. */
   background?: React.ReactNode;
@@ -16,14 +18,17 @@ type Props = {
  * No autoplay: rotating content needs a pause control under WCAG 2.2.2, and manual is calmer.
  * Without JS the first testimonial shows.
  */
-export function TestimonialCarousel({ title, items, background }: Props) {
+export function TestimonialCarousel({ title, items, background, titleSize = "large" }: Props) {
   const [index, setIndex] = useState(0);
   if (!items.length) return null;
   return (
     <section id="testimonials" className="relative isolate overflow-hidden bg-blue-deep py-(--spacing-section) text-white" aria-roledescription="carousel" aria-labelledby="testimonials-title">
       {background ? <div className="absolute inset-0 -z-10">{background}</div> : null}
       <div className="container-wide">
-        <h2 id="testimonials-title" className="text-center text-[clamp(1.75rem,1.2rem+2.6vw,3.5rem)] leading-tight font-bold text-balance">
+        <h2
+          id="testimonials-title"
+          className={`text-center font-bold text-balance ${titleSize === "large" ? "text-[clamp(2rem,0.9rem+3.35vw,3.75rem)] leading-[1.3]" : "text-[1.625rem] leading-tight uppercase"}`}
+        >
           {title}
         </h2>
         <div className="mt-14 grid">
@@ -37,16 +42,16 @@ export function TestimonialCarousel({ title, items, background }: Props) {
             >
               <figcaption className="order-2 flex flex-col items-center md:order-1 md:items-start md:pl-[10%]">
                 <ImageSlot image={t.logo} placeholder="light" fit="contain" sizes="240px" className="mb-4 h-24 w-60 bg-white/0" />
-                <span className="font-bold uppercase">{t.name}</span>
+                <span className="font-quote text-lg leading-tight font-bold uppercase">{t.name}</span>
                 {t.companyUrl ? (
-                  <a href={t.companyUrl} target="_blank" rel="noopener" className="uppercase hover:underline">
+                  <a href={t.companyUrl} target="_blank" rel="noopener" className="font-quote text-lg leading-tight font-normal uppercase hover:underline">
                     {t.company}
                   </a>
                 ) : (
-                  <span className="uppercase">{t.company}</span>
+                  <span className="font-quote text-lg leading-tight font-normal uppercase">{t.company}</span>
                 )}
               </figcaption>
-              <blockquote className="relative order-1 pl-12 text-lg leading-snug md:order-2 md:text-xl">
+              <blockquote className="relative order-1 pl-12 font-quote text-lg leading-[1.05] font-normal md:order-2">
                 <span className="absolute top-0 left-0 font-numeral text-6xl leading-none text-white/80" aria-hidden="true">
                   &ldquo;
                 </span>

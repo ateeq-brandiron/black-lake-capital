@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Quattrocento } from "next/font/google";
+import { Lato, Montserrat, Quattrocento, Questrial } from "next/font/google";
 import Script from "next/script";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -8,6 +8,9 @@ import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat", display: "swap" });
 const quattrocento = Quattrocento({ subsets: ["latin"], weight: "400", variable: "--font-quattrocento", display: "swap" });
+// Lato: Investments cards on the live site. Questrial: free fallback for Century Gothic (testimonials).
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-lato", display: "swap" });
+const questrial = Questrial({ subsets: ["latin"], weight: "400", variable: "--font-questrial", display: "swap" });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? site.url;
 const indexable = process.env.VERCEL_ENV === "production";
@@ -27,7 +30,7 @@ export const viewport: Viewport = { themeColor: "#2e3b54" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${quattrocento.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${quattrocento.variable} ${lato.variable} ${questrial.variable}`}>
       <body>
         {gtmId ? (
           <noscript>

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CtaBand } from "@/components/CtaBand";
-import { PageHero } from "@/components/PageHero";
 import { Prose } from "@/components/Prose";
 import { formatDate, getLocalPosts, getPost, getSource, postPath, site } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
@@ -29,33 +28,45 @@ export default async function PostPage({ params }: PageProps<"/[slug]">) {
   const source = getSource(post.source);
   return (
     <>
-      <PageHero title={post.title} eyebrow={source?.name ?? "News"} image={{ src: "/images/sections/news-hero.jpg", alt: "" }} />
-      <article className="container-page max-w-3xl pb-(--spacing-section)">
-        <p className="text-sm">
-          {post.author ? <>by {post.author}</> : null}
-          {post.author && post.date ? " · " : null}
-          {post.date ? <time dateTime={post.date}>{formatDate(post.date)}</time> : null}
-        </p>
-        {post.featuredImage ? (
-          <Image
-            src={post.featuredImage.src}
-            alt={post.featuredImage.alt}
-            width={post.featuredImage.width}
-            height={post.featuredImage.height}
-            sizes="(min-width: 768px) 768px, 100vw"
-            className="mt-8 h-auto w-full rounded-card"
-          />
-        ) : null}
-        {post.body ? <Prose html={post.body} className="mt-6" /> : null}
-        <div className="mt-14 flex flex-wrap gap-x-8 gap-y-2">
-          {source ? (
-            <Link href={`/newspage/${source.id}/`} className="py-2 font-semibold text-navy hover:text-blue">
-              More from {source.name}
-            </Link>
+      {/* Live post layout: no photo hero; title, meta line and featured image in a left-aligned column */}
+      <article className="container-page pt-28 pb-(--spacing-section)">
+        <div className="max-w-[50rem]">
+          <h1 className="text-[clamp(1.5rem,1.2rem+1vw,1.875rem)] leading-none font-medium text-ink">{post.title}</h1>
+          <p className="mt-4 text-sm">
+            {post.author ? <>by {post.author}</> : null}
+            {post.author && post.date ? " | " : null}
+            {post.date ? <time dateTime={post.date}>{formatDate(post.date, "short")}</time> : null}
+            {source ? (
+              <>
+                {" | "}
+                <Link href={`/newspage/${source.id}/`} className="hover:text-blue">
+                  {source.name}
+                </Link>
+              </>
+            ) : null}
+          </p>
+          {post.featuredImage ? (
+            <Image
+              src={post.featuredImage.src}
+              alt={post.featuredImage.alt}
+              width={post.featuredImage.width}
+              height={post.featuredImage.height}
+              sizes="(min-width: 860px) 800px, 100vw"
+              priority
+              className="mt-8 h-auto w-full"
+            />
           ) : null}
-          <Link href="/newspage/" className="py-2 font-semibold text-navy hover:text-blue">
-            &larr; All news
-          </Link>
+          {post.body ? <Prose html={post.body} className="mt-6" /> : null}
+          <div className="mt-14 flex flex-wrap gap-x-8 gap-y-2">
+            {source ? (
+              <Link href={`/newspage/${source.id}/`} className="py-2 font-semibold text-navy hover:text-blue">
+                More from {source.name}
+              </Link>
+            ) : null}
+            <Link href="/newspage/" className="py-2 font-semibold text-navy hover:text-blue">
+              &larr; All news
+            </Link>
+          </div>
         </div>
       </article>
       <CtaBand />

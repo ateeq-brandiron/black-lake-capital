@@ -11,7 +11,7 @@ export function Header({ topBar = true }: { topBar?: boolean }) {
         Skip to content
       </a>
       {topBar ? (
-        <div className="bg-navy text-[0.8125rem] font-semibold text-white">
+        <div className="bg-navy text-xs font-semibold text-white">
           <div className="flex min-h-8 flex-wrap items-center gap-x-4 gap-y-1 py-1.5 pr-16 pl-4 sm:pl-8">
             <a href={contact.phoneHref} className="inline-flex items-center gap-1.5 hover:underline">
               <PhoneIcon className="size-3.5" />

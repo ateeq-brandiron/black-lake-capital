@@ -16,7 +16,7 @@ export default function NewsPage() {
         <CtaButton variant="light" className="mt-2" />
       </PageHero>
       <section className="py-(--spacing-section)" aria-label="Posts">
-        <div className="container-wide">
+        <div className="container-page">
           <NewsList sources={news.sources} posts={getLocalPosts()} perSource={5} />
         </div>
       </section>

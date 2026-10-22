@@ -34,9 +34,9 @@ export function ContactForm({ labels }: { labels: Labels }) {
   const yesNo = (name: "tech" | "region") => (
     <fieldset className="mt-5">
       <legend className="font-semibold text-ink">{f[name]}</legend>
-      <div className="mt-1 flex gap-6">
+      <div className="mt-1 flex flex-col">
         {["yes", "no"].map((v) => (
-          <label key={v} className="flex min-h-11 items-center gap-2 capitalize">
+          <label key={v} className="flex min-h-8 items-center gap-2 font-medium capitalize">
             <input type="radio" name={name} value={v} className="size-4 accent-navy" />
             {v}
           </label>
@@ -46,8 +46,8 @@ export function ContactForm({ labels }: { labels: Labels }) {
   );
 
   return (
-    <form action={action} className="bg-sky px-5 py-6 text-[0.9375rem] text-ink sm:px-6" noValidate>
-      <h2 className="text-2xl leading-tight font-bold text-black">{labels.title}</h2>
+    <form action={action} className="bg-sky px-5 py-6 text-[0.9375rem] leading-snug text-ink" noValidate>
+      <h2 className="text-[1.375rem] leading-none font-bold text-black">{labels.title}</h2>
       {state.message ? (
         <p className="mt-4 rounded-md bg-white px-3 py-2 font-semibold text-[#b3261e]" role="alert">
           {state.message}

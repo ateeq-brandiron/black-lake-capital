@@ -35,8 +35,8 @@ export default function ValuesPage() {
           <ul className="mt-14 grid gap-12 md:grid-cols-3">
             {valuePoints.items.map((item) => (
               <li key={item.title} className="border-t-4 border-blue pt-6">
-                <h3 className="text-2xl leading-tight font-bold text-ink">{item.title}</h3>
-                <p className="mt-5 leading-loose text-ink">{item.body}</p>
+                <h3 className="text-2xl leading-none font-bold text-column">{item.title}</h3>
+                <p className="mt-6 text-[0.9375rem] leading-[1.8] text-black">{item.body}</p>
               </li>
             ))}
           </ul>

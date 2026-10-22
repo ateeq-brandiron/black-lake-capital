@@ -13,13 +13,13 @@ export default function CriteriaPage() {
   const { hero, intro, criteria } = content;
   return (
     <>
-      <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image}>
+      <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} subtitleWeight="bold-sm">
         <CtaButton variant="light" className="mt-2" />
       </PageHero>
 
       <section className="py-16">
         <Divider />
-        <p className="text-lead container-page mt-14 max-w-5xl text-center">
+        <p className="container-page mt-14 max-w-5xl text-center text-[clamp(1.125rem,0.95rem+0.6vw,1.5rem)] leading-[1.15] font-normal">
           <Unconfirmed confirmed={content.introConfirmed} note="Draft wording for the focus line">
             {intro}
           </Unconfirmed>

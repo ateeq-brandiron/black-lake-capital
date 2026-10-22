@@ -1,21 +1,17 @@
 import Link from "next/link";
 import { ImageSlot } from "@/components/ImageSlot";
-import { formatDate, type NewsPost, type NewsSource, postPath } from "@/lib/content";
+import { type NewsPost, type NewsSource, postPath } from "@/lib/content";
 
 function NewsCard({ post }: { post: NewsPost }) {
   return (
-    <li className="border border-mist px-5 py-6">
-      <h3 className="text-xl leading-tight text-ink">
+    <li className="border border-mist px-5 py-5">
+      <h3 className="text-lg leading-none font-medium text-ink">
         <Link href={postPath(post.slug)} className="hover:text-blue">
           {post.title}
         </Link>
       </h3>
-      <p className="mt-3 text-sm">
-        {post.author ? <>by {post.author}</> : null}
-        {post.author && post.date ? " · " : null}
-        {post.date ? <time dateTime={post.date}>{formatDate(post.date)}</time> : null}
-      </p>
-      <Link href={postPath(post.slug)} className="mt-4 inline-block py-1 font-medium text-navy hover:text-blue">
+      {post.author ? <p className="mt-4">by {post.author}</p> : null}
+      <Link href={postPath(post.slug)} className="mt-3 inline-block py-1 text-navy hover:text-blue">
         read more<span className="sr-only">: {post.title}</span>
       </Link>
     </li>
@@ -36,7 +32,7 @@ type ListProps = { sources: NewsSource[]; posts: NewsPost[]; perSource: number }
 /** News listing: one column per source (Black Lake + portfolio companies), as on the live site. */
 export function NewsList({ sources, posts, perSource }: ListProps) {
   return (
-    <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
       {sources.map((source) => {
         const all = posts.filter((p) => p.source === source.id);
         if (!all.length) return null;

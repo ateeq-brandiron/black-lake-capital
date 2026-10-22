@@ -22,8 +22,8 @@ type Props = {
 
 function ContactLink({ href, icon, label, srLabel }: { href: string; icon: React.ReactNode; label?: string; srLabel: string }) {
   return (
-    <a href={href} className="group flex flex-col items-center gap-3 text-center text-sm text-navy hover:text-blue" target={href.startsWith("http") ? "_blank" : undefined} rel="noopener">
-      <span className="flex size-20 items-center justify-center rounded-full border-3 border-blue/80 text-blue/90 transition-colors group-hover:bg-blue group-hover:text-white">{icon}</span>
+    <a href={href} className="group flex flex-col items-center gap-3 text-center text-navy hover:text-blue" target={href.startsWith("http") ? "_blank" : undefined} rel="noopener">
+      <span className="flex size-22 items-center justify-center rounded-full border-4 border-[#4472c4] text-[#4472c4] transition-colors group-hover:bg-blue group-hover:text-white">{icon}</span>
       {label ? <span className="break-all">{label}</span> : <span className="sr-only">{srLabel}</span>}
     </a>
   );
@@ -32,19 +32,19 @@ function ContactLink({ href, icon, label, srLabel }: { href: string; icon: React
 export function TeamCard({ member, variant = "partner", reverse = false }: Props) {
   const contacts = (
     <div className={`mt-10 grid gap-6 ${variant === "partner" ? "grid-cols-1 sm:grid-cols-3" : "justify-items-center"}`}>
-      {member.phone ? <ContactLink href={`tel:${member.phone.replace(/[^\d+]/g, "")}`} icon={<PhoneIcon className="size-9" />} label={member.phone} srLabel={`Call ${member.name}`} /> : null}
-      {member.email ? <ContactLink href={`mailto:${member.email}`} icon={<MailIcon className="size-9" />} label={member.email} srLabel={`Email ${member.name}`} /> : null}
+      {member.phone ? <ContactLink href={`tel:${member.phone.replace(/[^\d+]/g, "")}`} icon={<PhoneIcon className="size-11" />} label={member.phone} srLabel={`Call ${member.name}`} /> : null}
+      {member.email ? <ContactLink href={`mailto:${member.email}`} icon={<MailIcon className="size-11" />} label={member.email} srLabel={`Email ${member.name}`} /> : null}
       {member.linkedin?.href ? (
-        <ContactLink href={member.linkedin.href} icon={<LinkedInIcon className="size-9" />} label={variant === "partner" ? member.linkedin.label : undefined} srLabel={`${member.name} on LinkedIn`} />
+        <ContactLink href={member.linkedin.href} icon={<LinkedInIcon className="size-11" />} label={variant === "partner" ? member.linkedin.label : undefined} srLabel={`${member.name} on LinkedIn`} />
       ) : null}
     </div>
   );
 
   const text = (
     <div>
-      <h3 className="text-[clamp(1.75rem,1.4rem+1.2vw,2.25rem)] leading-tight text-ink">{member.name}</h3>
-      <p className="mt-2 text-blue">{member.role}</p>
-      <div className="mt-8 space-y-4 leading-relaxed">
+      <h3 className="text-[clamp(1.625rem,1.3rem+1vw,2rem)] leading-none font-medium text-ink">{member.name}</h3>
+      <p className="mt-3 text-blue-stat">{member.role}</p>
+      <div className={`mt-8 space-y-4 ${variant === "partner" ? "[&_strong]:font-semibold [&_strong]:text-navy" : ""}`}>
         {member.bio.map((p, i) => (
           <p key={i}>
             <RichText text={p} />

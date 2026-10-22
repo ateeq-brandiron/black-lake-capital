@@ -13,13 +13,13 @@ export default function InvestmentsPage() {
   const { hero, intro, statusLabels, learnMoreLabel } = content;
   return (
     <>
-      <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image}>
+      <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} subtitleWeight="bold">
         <CtaButton variant="light" className="mt-2" />
       </PageHero>
 
       <section className="pt-8 pb-16">
         <div className="container-page text-center">
-          <p className="mx-auto max-w-4xl text-[clamp(1.5rem,1.1rem+1.6vw,2.25rem)] leading-tight font-extrabold text-[#555] text-balance">{fillStats(intro)}</p>
+          <p className="mx-auto max-w-4xl text-[clamp(1.5rem,1.1rem+1.3vw,2.125rem)] leading-none font-black text-body text-balance">{fillStats(intro)}</p>
           <div className="mt-10 flex justify-center">
             <CtaButton />
           </div>

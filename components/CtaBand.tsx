@@ -11,7 +11,7 @@ export function CtaBand({ title = site.messaging.signOff, body }: Props) {
         <h2 id="cta-band-title" className="type-display text-balance">
           {title}
         </h2>
-        {body ? <p className="text-lead max-w-2xl text-ink">{body}</p> : null}
+        {body ? <p className="text-lead max-w-2xl font-normal text-body-soft">{body}</p> : null}
         <CtaButton className="mt-2" />
       </div>
     </section>

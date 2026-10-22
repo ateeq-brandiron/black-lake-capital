@@ -7,7 +7,7 @@ export function Footer() {
   const { footer, contact } = site;
   const copyright = `${site.name} © ${site.copyrightYear}`;
   return (
-    <footer className="text-[0.9375rem] text-ink">
+    <footer className="text-base leading-[1.7] font-medium text-[#5c5c5c]">
       <div className="bg-mist py-16">
         <div className="container-page grid gap-10 sm:grid-cols-[1fr_auto_auto] sm:gap-16 lg:grid-cols-[1.2fr_1fr_1fr]">
           <Link href="/" className="justify-self-start sm:justify-self-center">
@@ -18,7 +18,7 @@ export function Footer() {
             <ul className="mt-3 space-y-1">
               {footer.quickLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="inline-block py-1 font-medium text-navy hover:text-blue">
+                  <Link href={l.href} className="inline-block py-0.5 text-navy hover:text-blue">
                     {l.label}
                   </Link>
                 </li>
@@ -27,7 +27,7 @@ export function Footer() {
             <ul className="mt-8 space-y-1">
               {footer.legal.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="inline-block py-1 hover:text-blue">
+                  <Link href={l.href} className="inline-block py-0.5 hover:text-blue">
                     {l.label}
                   </Link>
                 </li>
@@ -36,7 +36,7 @@ export function Footer() {
           </div>
           <div>
             <h2 className="text-lg font-semibold text-blue">{footer.contactTitle}</h2>
-            <address className="mt-4 space-y-1 leading-relaxed not-italic">
+            <address className="mt-4 not-italic">
               <a href={contact.phoneHref} className="block hover:text-blue">
                 {contact.phone}
               </a>

@@ -15,7 +15,7 @@ export function CtaButton({ label = site.cta.label, href = site.cta.href, varian
     variant === "solid"
       ? "bg-navy text-white hover:bg-blue"
       : "bg-white text-navy hover:bg-sky";
-  const classes = `inline-flex min-h-12 items-center justify-center rounded-md px-7 py-3 text-base font-semibold tracking-wide shadow-sm transition-colors ${styles} ${className}`;
+  const classes = `inline-flex min-h-12 items-center justify-center px-6 py-2.5 text-xl font-medium shadow-sm transition-colors ${styles} ${className}`;
   // Internal targets (the contact form) use client-side navigation; anything else is a plain link.
   if (href.startsWith("/") || href.startsWith("#")) {
     return (

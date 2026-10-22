@@ -78,8 +78,9 @@ export function postPath(slug: string) {
   return `/${slug}/`;
 }
 
-export function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+/** "April 17, 2023", or "Apr 17, 2023" for the post meta line (as on the live site). */
+export function formatDate(iso: string, style: "long" | "short" = "long") {
+  return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: style, day: "numeric" });
 }
 
 /** Path for a page that exists in content/pages, e.g. "criteria" -> "/criteria/". */

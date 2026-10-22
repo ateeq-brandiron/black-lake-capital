@@ -72,7 +72,7 @@ export function MenuDrawer({ siteName, nav, downloads }: Props) {
                 href={item.href}
                 onClick={() => setOpen(false)}
                 aria-current={pathname === item.href ? "page" : undefined}
-                className="block py-4 text-lg hover:text-sky aria-[current=page]:font-semibold"
+                className="block py-4 text-xl leading-none font-normal capitalize hover:text-sky aria-[current=page]:underline aria-[current=page]:underline-offset-8"
               >
                 {item.label}
               </Link>
