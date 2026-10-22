@@ -18,12 +18,23 @@ export type Company = {
 /** Portfolio company card (Investments): logo, "Completed" ribbon for exits, location, website, one-liner. */
 export function PortfolioCard({ company, completedLabel, learnMoreLabel }: { company: Company; completedLabel: string; learnMoreLabel: string }) {
   const href = `https://${company.website.replace(/^https?:\/\//, "").toLowerCase()}`;
+  const overlayRibbon = company.status === "completed" && !company.ribbonInLogo;
   return (
     <article className="flex flex-col items-center text-center font-card text-lg leading-normal font-medium">
-      <div className="w-full">
-        <ImageSlot image={company.logo} label={`${company.name} logo`} placeholder="light" fit="contain" sizes="(min-width: 1024px) 360px, 90vw" className="mx-auto aspect-600/342 w-full max-w-[20.5rem]" />
-        {company.status === "completed" && !company.ribbonInLogo ? (
-          <p className="bg-[linear-gradient(90deg,transparent,#ebe7ee_15%,#ebe7ee_85%,transparent)] py-0.5 text-sm font-semibold tracking-widest text-[#8a8a8a] uppercase">{completedLabel}</p>
+      {/* Exits from the live site have the "Completed" ribbon baked into the logo; others get it overlaid at the same spot */}
+      <div className="relative mx-auto w-full max-w-[20.5rem]">
+        {overlayRibbon ? (
+          <div className="relative aspect-600/342 w-full">
+            {/* Keep the logo clear of the ribbon, as in the live "completed" artwork */}
+            <ImageSlot image={company.logo} label={`${company.name} logo`} placeholder="light" fit="contain" sizes="(min-width: 1024px) 330px, 90vw" className="absolute! inset-x-[12%] top-[6%] bottom-[24%]" />
+          </div>
+        ) : (
+          <ImageSlot image={company.logo} label={`${company.name} logo`} placeholder="light" fit="contain" sizes="(min-width: 1024px) 330px, 90vw" className="aspect-600/342 w-full" />
+        )}
+        {overlayRibbon ? (
+          <p className="absolute inset-x-0 bottom-[6%] bg-[linear-gradient(90deg,transparent,#ebe7ee_15%,#ebe7ee_85%,transparent)] py-0.5 text-sm font-semibold tracking-widest text-[#8a8a8a] uppercase">
+            {completedLabel}
+          </p>
         ) : null}
       </div>
       <h3 className="mt-4 text-[1.3125rem] leading-none font-medium text-ink">{company.name}</h3>

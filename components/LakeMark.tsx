@@ -9,12 +9,12 @@ type Props = {
 
 const WAVE = "M4 52" + " q3 4 6 0".repeat(16);
 
-/** Circular lake mark. The brand version is the official logo file from the live site. */
+/** Circular lake mark. The brand version is the official vector (BLC_logo_Stacked SVG, 2024). */
 export function LakeMark({ className, tone = "brand", title }: Props) {
   if (tone === "brand") {
     return (
       <span className={`relative block ${className ?? ""}`}>
-        <Image src="/images/brand/lake-mark.png" alt={title ?? ""} fill sizes="164px" className="object-contain" />
+        <Image src="/images/brand/lake-mark.svg" alt={title ?? ""} fill unoptimized className="object-contain" />
       </span>
     );
   }

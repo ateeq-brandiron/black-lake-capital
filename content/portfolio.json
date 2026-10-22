@@ -6,13 +6,14 @@
       "location": "Pleasanton, California",
       "website": "www.A5corp.com",
       "description": "Leading digital solution provider",
-      "status": "current",
+      "status": "completed",
       "logo": {
         "src": "/images/logos/portfolio-a5.jpg",
         "alt": "A5 Corporation logo"
       },
       "ribbonInLogo": false,
-      "newsSource": "a5"
+      "newsSource": "a5",
+      "note": "Exited: acquired by Accordion (BLC April 2026 press release, approved for distribution)."
     },
     {
       "name": "Spinnaker SCA",

@@ -18,8 +18,10 @@ Content rule (from the user): where sources conflict, the 2026 messaging platfor
 11. **News feed** includes 162 portfolio-company posts, many AI-themed. CLAUDE.md says not to make AI a selling point. Keep all (current), filter, or drop?
 12. **Innovatix** card links to macrosoftinc.com (as on the live site). Confirm.
 13. **Aaron Nack:** updated headshot and LinkedIn (the live ones are used for now).
-14. **Vector logo:** only a 164px PNG exists on the live site. An SVG would be sharper on high-density screens.
+14. RESOLVED: official vector logo found in Drive and in use.
 15. **Michael Doyle's comment** on the messaging platform (more hard-hitting facts, "deal of the year"): needs approved facts before anything is added.
+
+See also docs/slack-drive-review.md (competitor-site feedback, criteria sources, launch checklist).
 
 ## Resolved by the extraction
 - All images, hero video, logos, icons, headshots, treeline art, official logo mark, favicon.
