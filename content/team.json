@@ -36,7 +36,8 @@
       ],
       "photo": {
         "src": "/images/team/charles-scripps.jpg",
-        "alt": "Charles Scripps"
+        "alt": "Charles Scripps",
+        "note": "Live headshot (CAS-Headshot-Fall-2025.jpg, full 1600x2400 from WordPress)."
       },
       "phone": "303-951-8188",
       "email": "cscripps@blacklakecap.com",
@@ -54,7 +55,7 @@
       "photo": {
         "src": "/images/team/aaron-nack.webp",
         "alt": "Aaron Nack",
-        "note": "Current live photo (413px). Updated headshot still pending from the client."
+        "note": "Current live photo. WordPress only has this 413px upload; a larger copy is needed for sharp display."
       },
       "phone": "312-543-8161",
       "email": "anack@blacklakecap.com",

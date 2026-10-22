@@ -25,7 +25,7 @@ See also docs/slack-drive-review.md (competitor-site feedback, criteria sources,
 
 ## From the competitor redesign (22 Oct)
 - **High-res originals (done 22 Oct):** the Criteria, Investments, News and Team heroes now use the 2000px Drive originals ("Client Media Review/Images"; WordPress had 1600px). Those originals are only 2000px. Still 1600px: Investors hero and testimonial background (not in Drive). The Video folder holds watermarked stock previews and the 4K clips; the Home hero video is already 4K.
-- **Headshots on Drive are private:** "Chad headshot.png", "Aaron headshot.png" (Jan 2025) and "CAS Headshot Fall 2025.jpg" need link sharing (or upload to the repo) before they can be used. "CAS Fall 2025" may be Chad's newer headshot; confirm which to use.
+- **Headshots:** using the live website's photos (per Ateeq, 22 Oct). Chad's is now the full 1600×2400 live upload. Aaron's live photo is only 413px (the largest on WordPress), so it is slightly soft on large screens; a larger copy would fix that.
 - Approve the "How we partner" step names and the FAQ questions.
 - Podcast cover art (optional), to replace the waveform graphic.
 
