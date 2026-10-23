@@ -30,7 +30,7 @@ See also docs/slack-drive-review.md (competitor-site feedback, criteria sources,
 - **Headshots:** using the live website's photos (per Ateeq, 22 Oct). Chad's is now the full 1600×2400 live upload. Aaron's live photo is only 413px (the largest on WordPress), so it is slightly soft on large screens; a larger copy would fix that.
 - RESOLVED (22 Oct): "How we partner" step names and FAQ questions kept as is.
 - Podcast cover art (optional), to replace the waveform graphic.
-- **Axial Top 20 Independent Sponsors 2026** (added 22 Oct from Chad's email via Katrina): the news post and "In the media" card are live without images. The email's graphics (Axial cover, "closed deals by buyer type" chart, photo) are hosted on content.app-us1.com, which this environment's network blocks. Allow that host or send the image files. Also missing: the direct link to Axial's ranking article (the email only has tracking links).
+- **Axial Top 20 Independent Sponsors 2026** (added 22–23 Oct from Chad's email via Katrina): post and media card now use the email's Axial cover (featured image) and closed-deals chart (in the post). The email's decorative lake photo is not used. Still missing: a direct link to Axial's ranking article (the email only has tracking links), so "Axial" links to axial.net.
 
 ## Resolved by the extraction
 - All images, hero video, logos, icons, headshots, treeline art, official logo mark, favicon.

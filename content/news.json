@@ -66,12 +66,17 @@
       "date": "2026-10-17T14:02:00",
       "url": null,
       "excerpt": "Black Lake Capital is honored to be recognized by leading middle-market deal platform Axial as one of the top 20 independent sponsors of 2026.",
-      "featuredImage": null,
+      "featuredImage": {
+        "src": "/images/news/black-lake-capital-top-20-independent-sponsor-axial-2026-featured.webp",
+        "alt": "Axial Top 20 Independent Sponsors 2026, including Black Lake Capital",
+        "width": 1500,
+        "height": 762
+      },
       "categories": [
         "blc"
       ],
-      "body": "<p>Black Lake Capital is honored to be recognized by leading middle-market deal platform <a href=\"https://www.axial.net/\" target=\"_blank\" rel=\"noopener\">Axial</a> as one of the top 20 independent sponsors of 2026. The ranking is assembled based on the deal-making activities of 1,326 Independent Sponsors actively sourcing transactions via the Axial platform. The top 20 sponsors were chosen based on total transactions closed as well as process effectiveness.</p>\n<p>Black Lake is a family office, investing the capital of its two partners, alongside co-investments from lenders and other funding sources. Because Black Lake is not operating out of a fund, it has the independence and flexibility to structure and close transactions that are not feasible for some private equity firms.</p>\n<p>Independent sponsors represent the largest source of closed deals on the Axial platform. In 2026 year to date, 27% of transactions were closed by independent sponsors, ahead of traditional private equity firms.</p>",
-      "note": "From Chad's 17 Oct 2026 announcement email (forwarded by Katrina, 22 Oct). Email boilerplate ('About Black Lake Capital', '$2-12M', 'equity recapitalizations') left out: it conflicts with the messaging platform. Axial graphics pending: their image host is blocked from the build environment."
+      "body": "<p>Black Lake Capital is honored to be recognized by leading middle-market deal platform <a href=\"https://www.axial.net/\" target=\"_blank\" rel=\"noopener\">Axial</a> as one of the top 20 independent sponsors of 2026. The ranking is assembled based on the deal-making activities of 1,326 Independent Sponsors actively sourcing transactions via the Axial platform. The top 20 sponsors were chosen based on total transactions closed as well as process effectiveness.</p>\n<p>Black Lake is a family office, investing the capital of its two partners, alongside co-investments from lenders and other funding sources. Because Black Lake is not operating out of a fund, it has the independence and flexibility to structure and close transactions that are not feasible for some private equity firms.</p>\n<p>Independent sponsors represent the largest source of closed deals on the Axial platform. In 2026 year to date, 27% of transactions were closed by independent sponsors, ahead of traditional private equity firms.</p>\n<p><img src=\"/images/news/black-lake-capital-top-20-independent-sponsor-axial-2026-chart.webp\" alt=\"Axial chart, closed deals by buyer type, 2026 year to date: independent sponsors 27.0%, search funds 20.3%, private equity funds 17.6%, holding companies 12.2%, individual investors 9.5%, corporations 5.4%, family offices 4.1%, other 4.1%.\"></p>",
+      "note": "From Chad's 17 Oct 2026 announcement email (forwarded by Katrina, 22 Oct). Images are the email's Axial cover and chart. The email's boilerplate ('About Black Lake Capital', '$2-12M', 'equity recapitalizations') and its decorative lake photo are left out."
     },
     {
       "slug": "case-study-a-proven-partner-trusted-three-decades-and-counting",
