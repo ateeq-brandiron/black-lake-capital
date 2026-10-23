@@ -21,7 +21,7 @@ export function MediaCards({ items }: { items: MediaItem[] }) {
           <li key={m.href} className="reveal card-lift group relative flex flex-col overflow-hidden rounded-card border border-navy/10 bg-white">
             <div className="relative aspect-[16/9] overflow-hidden bg-navy">
               {m.image ? (
-                <Image src={m.image.src} alt={m.image.alt} fill sizes="(min-width: 1280px) 22vw, (min-width: 768px) 45vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={m.image.src} alt={m.image.alt} fill sizes="(min-width: 1280px) 22vw, (min-width: 768px) 45vw, 100vw" className="object-cover object-[50%_20%] transition-transform duration-500 group-hover:scale-105" />
               ) : m.kind !== "Podcast" ? (
                 // No artwork yet: the lake mark on navy stands in.
                 <div className="flex size-full items-center justify-center bg-[radial-gradient(circle_at_30%_20%,#1e60ad_0%,#0b274c_70%)]">

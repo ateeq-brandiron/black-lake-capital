@@ -55,16 +55,16 @@
       "newsSource": null
     },
     {
-      "name": "Innovatix",
-      "location": "Parsippany, New Jersey",
-      "website": "www.macrosoftinc.com",
+      "name": "Innovatix Technology Partners",
+      "location": "Bedminster, New Jersey",
+      "website": "www.innovatixinc.com",
       "description": "Solutions for complex software development",
       "status": "current",
       "logo": {
         "src": "/images/logos/portfolio-innovatix.jpg",
-        "alt": "Innovatix logo"
+        "alt": "Innovatix Technology Partners logo"
       },
-      "note": "Live card shows the Innovatix logo but links to macrosoftinc.com. Confirm name and URL.",
+      "note": "Macrosoft, Inc. rebranded as Innovatix Technology Partners (Drive: 'Innovatix Technology Partners Press Release August 20.docx', dateline Bedminster, NJ; site innovatixinc.com). Live card said Parsippany, NJ and linked macrosoftinc.com.",
       "ribbonInLogo": false,
       "newsSource": "macrosoft"
     },

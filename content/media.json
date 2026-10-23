@@ -1,5 +1,5 @@
 {
-  "note": "Media and recognition. The podcast link is the Apple Podcasts episode shared in Slack; the other two are Black Lake posts.",
+  "note": "Media and recognition (four cards). The Opus Connect interview (2022) moved off the cards to make room; it stays in News.",
   "title": "In the media",
   "items": [
     {
@@ -9,6 +9,14 @@
       "href": "/black-lake-capital-top-20-independent-sponsor-axial-2026/",
       "cta": "Read the post",
       "image": "black-lake-capital-top-20-independent-sponsor-axial-2026"
+    },
+    {
+      "kind": "Award",
+      "title": "Independent Sponsor of the Year 2025",
+      "body": "Managing Partner Charles (Chad) Scripps was named Independent Sponsor of the Year at the 3rd Independent Sponsor Awards, hosted by iGlobal Forum.",
+      "href": "/black-lake-capital-honored-as-sponsor-of-the-year-at-the-2025-independent-sponsor-awards/",
+      "cta": "Read the post",
+      "image": "black-lake-capital-honored-as-sponsor-of-the-year-at-the-2025-independent-sponsor-awards"
     },
     {
       "kind": "Podcast",
@@ -25,14 +33,6 @@
       "href": "/tech-investors-of-2025-by-axial/",
       "cta": "Read the post",
       "image": "tech-investors-of-2025-by-axial"
-    },
-    {
-      "kind": "Interview",
-      "title": "Black Lake's Managing Partner interviewed by Opus Connect",
-      "body": null,
-      "href": "/black-lakes-managing-partner-interviewed-by-opus-connect/",
-      "cta": "Read the interview",
-      "image": "black-lakes-managing-partner-interviewed-by-opus-connect"
     }
   ]
 }

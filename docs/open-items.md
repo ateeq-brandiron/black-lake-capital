@@ -18,10 +18,10 @@ Content rule (from the user): where sources conflict, the 2026 messaging platfor
 9. **Company LinkedIn URL:** the live footer icons are unlinked theme defaults.
 10. **Phone on the live News page** reads 303-327-9701; everywhere else (720) 770-0079 (used).
 11. **News feed** includes 162 portfolio-company posts, many AI-themed. CLAUDE.md says not to make AI a selling point. Keep all (current), filter, or drop?
-12. **Innovatix** card links to macrosoftinc.com (as on the live site). Confirm.
+12. RESOLVED (23 Oct): Macrosoft rebranded as **Innovatix Technology Partners** (Drive press release, 20 Aug 2025): card renamed, website innovatixinc.com, location Bedminster, NJ (release dateline; live card said Parsippany).
 13. **Aaron Nack:** updated headshot and LinkedIn (the live ones are used for now).
 14. RESOLVED: official vector logo found in Drive and in use.
-15. **Michael Doyle's comment** on the messaging platform (more hard-hitting facts, "deal of the year"): needs approved facts before anything is added.
+15. PARTLY RESOLVED (23 Oct): the 2025 **Independent Sponsor of the Year** press release (Drive, distributed via EIN Presswire 17 Apr 2025) is now a News post and media card. **Michael Doyle's comment** on the messaging platform (more hard-hitting facts, "deal of the year"): needs approved facts before anything is added.
 
 See also docs/slack-drive-review.md (competitor-site feedback, criteria sources, launch checklist).
 
@@ -44,3 +44,9 @@ See also docs/slack-drive-review.md (competitor-site feedback, criteria sources,
 
 ## Technical
 - RESOLVED (22 Oct): unknown URLs now return a real HTTP 404 with a branded not-found page (`proxy.ts`).
+
+## Document sweep (23 Oct)
+- Added: 2025 Independent Sponsor of the Year post with award photos (Drive Press Release folder).
+- A5 story card now uses the approved April 2026 press release facts (Ramsey Solutions, Cloudware Connections, SnapBI add-ons; Salesforce Ventures investment). The release itself is not posted: its date is still "[Date]" and no distribution record was found.
+- Removed 3 imported Macrosoft-feed posts that Katrina flagged as spam in March 2026 (Chad: "I did not post them"); their URLs now return 404.
+- Media cards: Axial 2026, Sponsor of the Year 2025, podcast, Axial 2025 (Opus Connect stays in News).
