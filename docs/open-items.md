@@ -7,7 +7,7 @@ Updated after extracting the live site (21 Oct 2026).
 Content rule (from the user): where sources conflict, the 2026 messaging platform wins. Form delivery questions are on hold.
 
 **22 Oct:** per Ateeq, every open question below stays as currently built unless the messaging platform changes. The platform was last edited 19 Oct and is already applied, so nothing changed.
-1. **Criteria wording.** Aligned with the messaging platform: deal-by-deal intro, thresholds shown as "typically $2M+ EBITDA and $8M+ revenue", platform voice for Shared Values. The proposed update ($3M–$6M EBITDA etc.) is not published.
+1. RESOLVED (27 Oct): criteria now show "$10M+ revenue, around $2M+ EBITDA" (approved at the 25 Aug BrandStorm; $1.5M floor is internal). Previously: **Criteria wording.** Aligned with the messaging platform: deal-by-deal intro, thresholds shown as "typically $2M+ EBITDA and $8M+ revenue", platform voice for Shared Values. The proposed update ($3M–$6M EBITDA etc.) is not published.
 2. RESOLVED: the $6M revenue gate is removed from the form (platform: no investment formula).
 3. RESOLVED: "Start a conversation" goes to the contact form on /investors/ (the email link did nothing without a desktop mail app).
 4. **Where form inquiries go** (recipient address) and an email service (Resend API key + verified sender).
@@ -15,7 +15,7 @@ Content rule (from the user): where sources conflict, the 2026 messaging platfor
 6. **Sales sheet and deck PDFs** (2025 v7.2) say $50M+ founder value and predate 18 transactions, so they conflict with the platform. Hidden from the menu until updated PDFs are supplied (old links still work).
 7. **Landing pages** /blc-tech-landing-page/ and /blc-investor-landing-page/: still used in campaigns? Currently redirected (temporary).
 8. **Terms and Conditions / Cookie Policy:** shown as plain text in the live footer, but the pages don't exist. Supply text or leave them out (current).
-9. **Company LinkedIn URL:** the live footer icons are unlinked theme defaults.
+9. RESOLVED (27 Oct): company LinkedIn https://www.linkedin.com/company/blacklakecap/ in the footer and the Organization structured data.
 10. **Phone on the live News page** reads 303-327-9701; everywhere else (720) 770-0079 (used).
 11. **News feed** includes 162 portfolio-company posts, many AI-themed. CLAUDE.md says not to make AI a selling point. Keep all (current), filter, or drop?
 12. RESOLVED (23 Oct): Macrosoft rebranded as **Innovatix Technology Partners** (Drive press release, 20 Aug 2025): card renamed, website innovatixinc.com, location Bedminster, NJ (release dateline; live card said Parsippany).

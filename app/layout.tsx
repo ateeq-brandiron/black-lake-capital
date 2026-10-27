@@ -28,6 +28,19 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = { themeColor: "#2e3b54" };
 
+// Organization details for search engines (logo, contact, LinkedIn profile).
+const organization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.name,
+  url: siteUrl,
+  logo: new URL("/images/brand/lake-mark.svg", siteUrl).href,
+  email: site.contact.email,
+  telephone: site.contact.phoneHref.replace("tel:", ""),
+  address: { "@type": "PostalAddress", streetAddress: site.contact.address[0], addressLocality: "Evergreen", addressRegion: "CO", postalCode: "80439", addressCountry: "US" },
+  sameAs: site.contact.linkedin.href ? [site.contact.linkedin.href] : [],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${montserrat.variable} ${quattrocento.variable} ${lato.variable} ${questrial.variable}`}>
@@ -37,6 +50,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <iframe src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`} height="0" width="0" style={{ display: "none", visibility: "hidden" }} title="Google Tag Manager" />
           </noscript>
         ) : null}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization).replace(/</g, "\\u003c") }} />
         <Header />
         <main id="main">{children}</main>
         <Footer />

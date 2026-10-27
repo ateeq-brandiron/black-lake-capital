@@ -26,9 +26,9 @@
       "Evergreen, CO 80439"
     ],
     "linkedin": {
-      "href": null,
-      "confirmed": false,
-      "note": "The live footer's social icons have no links (theme defaults). Company LinkedIn URL needed from the client."
+      "href": "https://www.linkedin.com/company/blacklakecap/",
+      "confirmed": true,
+      "note": "From Katrina's answers doc (2026 Black Lake Capital Website Revision and AI Platform Rebuild Assets, 27 Oct 2026)."
     }
   },
   "nav": [
