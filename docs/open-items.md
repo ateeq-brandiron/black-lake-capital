@@ -19,7 +19,7 @@ Content rule (from the user): where sources conflict, the 2026 messaging platfor
 10. **Phone on the live News page** reads 303-327-9701; everywhere else (720) 770-0079 (used).
 11. **News feed** includes 162 portfolio-company posts, many AI-themed. CLAUDE.md says not to make AI a selling point. Keep all (current), filter, or drop?
 12. RESOLVED (23 Oct): Macrosoft rebranded as **Innovatix Technology Partners** (Drive press release, 20 Aug 2025): card renamed, website innovatixinc.com, location Bedminster, NJ (release dateline; live card said Parsippany).
-13. **Aaron Nack:** updated headshot and LinkedIn (the live ones are used for now).
+13. RESOLVED (27 Oct): Aaron Nack headshot updated (1080px).
 14. RESOLVED: official vector logo found in Drive and in use.
 15. PARTLY RESOLVED (23 Oct): the 2025 **Independent Sponsor of the Year** press release (Drive, distributed via EIN Presswire 17 Apr 2025) is now a News post and media card. **Michael Doyle's comment** on the messaging platform (more hard-hitting facts, "deal of the year"): needs approved facts before anything is added.
 
@@ -27,7 +27,7 @@ See also docs/slack-drive-review.md (competitor-site feedback, criteria sources,
 
 ## From the competitor redesign (22 Oct)
 - **High-res originals (done 22 Oct):** the Criteria, Investments, News and Team heroes now use the 2000px Drive originals ("Client Media Review/Images"; WordPress had 1600px). Those originals are only 2000px. Still 1600px: Investors hero and testimonial background (not in Drive). The Video folder holds watermarked stock previews and the 4K clips; the Home hero video is already 4K.
-- **Headshots:** using the live website's photos (per Ateeq, 22 Oct). Chad's is now the full 1600×2400 live upload. Aaron's live photo is only 413px (the largest on WordPress), so it is slightly soft on large screens; a larger copy would fix that.
+- **Headshots:** using the live website's photos (per Ateeq, 22 Oct). Chad's is now the full 1600×2400 live upload. RESOLVED (27 Oct): Aaron's photo is now the 1080px headshot from Drive.
 - RESOLVED (22 Oct): "How we partner" step names and FAQ questions kept as is.
 - Podcast cover art (optional), to replace the waveform graphic.
 - **Axial Top 20 Independent Sponsors 2026** (added 22–23 Oct from Chad's email via Katrina): post and media card now use the email's Axial cover (featured image) and closed-deals chart (in the post). The email's decorative lake photo is not used. Still missing: a direct link to Axial's ranking article (the email only has tracking links), so "Axial" links to axial.net.
