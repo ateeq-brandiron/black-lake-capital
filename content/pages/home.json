@@ -145,7 +145,8 @@
   },
   "stories": {
     "cta": "Read more success stories",
-    "href": "/investing/#stories"
+    "href": "/investing/",
+    "note": "Lands at the top of Investments (agreed in the 27 Oct review: landing mid-page looked like the link had not worked)."
   },
   "team": {
     "title": "Meet the partners",

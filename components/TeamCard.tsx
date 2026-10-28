@@ -30,19 +30,25 @@ function ContactLink({ href, icon, label, srLabel }: { href: string; icon: React
 }
 
 export function TeamCard({ member, variant = "partner", reverse = false }: Props) {
-  const contacts = (
-    <div className={`mt-10 grid gap-6 ${variant === "partner" ? "grid-cols-1 sm:grid-cols-3" : "justify-items-center"}`}>
+  const contacts = !member.phone && !member.email ? null : (
+    <div className={`mt-10 grid gap-6 ${variant === "partner" ? "max-w-xl grid-cols-1 sm:grid-cols-2" : "justify-items-center"}`}>
       {member.phone ? <ContactLink href={`tel:${member.phone.replace(/[^\d+]/g, "")}`} icon={<PhoneIcon className="size-11" />} label={member.phone} srLabel={`Call ${member.name}`} /> : null}
       {member.email ? <ContactLink href={`mailto:${member.email}`} icon={<MailIcon className="size-11" />} label={member.email} srLabel={`Email ${member.name}`} /> : null}
-      {member.linkedin?.href ? (
-        <ContactLink href={member.linkedin.href} icon={<LinkedInIcon className="size-11" />} label={variant === "partner" ? member.linkedin.label : undefined} srLabel={`${member.name} on LinkedIn`} />
-      ) : null}
     </div>
   );
 
   const text = (
     <div>
-      <h3 className="text-[clamp(1.625rem,1.3rem+1vw,2rem)] leading-none font-medium text-ink">{member.name}</h3>
+      {/* LinkedIn sits right after the name, small (27 Oct review: the large circle looked detached) */}
+      <div className="flex items-center gap-3">
+        <h3 className="text-[clamp(1.625rem,1.3rem+1vw,2rem)] leading-none font-medium text-ink">{member.name}</h3>
+        {member.linkedin?.href ? (
+          <a href={member.linkedin.href} target="_blank" rel="noopener" className="flex size-9 shrink-0 items-center justify-center rounded-full bg-linkedin text-white transition-colors hover:bg-navy">
+            <LinkedInIcon className="size-4.5" />
+            <span className="sr-only">{member.name} on LinkedIn (opens in a new tab)</span>
+          </a>
+        ) : null}
+      </div>
       <p className="mt-3 text-blue-stat">{member.role}</p>
       <div className={`mt-8 space-y-4 ${variant === "partner" ? "[&_strong]:font-semibold [&_strong]:text-navy" : ""}`}>
         {member.bio.map((p, i) => (

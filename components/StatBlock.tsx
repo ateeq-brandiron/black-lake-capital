@@ -1,3 +1,4 @@
+import { CountUp } from "@/components/CountUp";
 import { Unconfirmed } from "@/components/Unconfirmed";
 import { fillStats, getStat, type StatKey } from "@/lib/content";
 
@@ -23,7 +24,7 @@ export function StatBlock({ items, tone = "light" }: Props) {
             </dt>
             <dd className={`order-1 ${dark ? "text-[2.125rem] leading-tight font-bold text-white" : "font-numeral text-stat font-normal text-blue-stat"}`}>
               <Unconfirmed confirmed={s.confirmed} note={s.note}>
-                {s.value}
+                <CountUp value={s.value} />
               </Unconfirmed>
             </dd>
             {item.body ? <dd className={`order-3 mt-4 max-w-64 ${dark ? "text-lg leading-normal text-white" : "text-lead text-body-soft"}`}>{fillStats(item.body)}</dd> : null}

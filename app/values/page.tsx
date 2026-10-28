@@ -26,7 +26,7 @@ export default function ValuesPage() {
           <div className="mt-16">
             <Differentiators />
           </div>
-          <div className="mt-16 flex justify-center">
+          <div className="mt-14 flex justify-center">
             <CtaButton />
           </div>
         </div>

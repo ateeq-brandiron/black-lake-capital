@@ -32,7 +32,7 @@ export default function CriteriaPage() {
           <Unconfirmed confirmed={criteria.confirmed} note={criteria.note} block>
             <Accordion items={criteria.items} />
           </Unconfirmed>
-          <div className="mt-16 flex justify-center">
+          <div className="mt-14 flex justify-center">
             <CtaButton />
           </div>
         </div>

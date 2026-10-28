@@ -73,3 +73,19 @@ Source: Drive "Competitor Websites.docx" and Slack (19 Oct). Brand colours, font
 57. **Modern finish:**
     - Cards with hover lift.
     - CSS-only scroll reveal (`.reveal`, scroll-driven animations). Content is visible without JS, in older browsers, and with reduced motion.
+
+## Internal review changes (27 Oct 2026 meeting: Ateeq, Katrina, Shelly)
+
+58. **Kept as approved:** the header navigation, the mountain line art, the Venn diagram and all new sections.
+59. **Hero:** about 110px of white space before the logo strip at 1366px (fluid down to 40px on phones), matching the live site. The curve under the hero is now the live site's double-transparency divider (30% and 50% white bands over solid white).
+60. **CTAs:**
+    - One spacing rule everywhere: hero buttons sit 8px below the content, and section buttons sit 56px below it (Investments intro: 40px).
+    - Each button has a subtle shadow that lifts off photos and white.
+    - Each button rises slightly on hover; the lift is turned off for reduced motion.
+61. **Numbers:**
+    - Stats count up from zero the first time they scroll into view (1.6s, eased), as on the live site.
+    - Final values are rendered server-side, so screen readers, crawlers, visitors without JS and visitors with reduced motion get the real number.
+    - The width is reserved while counting, so nothing shifts.
+62. **Team page:** the LinkedIn icon is now a small icon right after each name. The large circle under the bio looked detached. Phone and email circles are unchanged.
+63. **Success stories:** "Read more success stories" on Home lands at the top of Investments, not mid-page.
+64. **Financial figures:** reviewed on every page and consistent (18 transactions, 10x+, $60M+, 3.5x, $10M+ / ~$2M+ criteria). No values changed.

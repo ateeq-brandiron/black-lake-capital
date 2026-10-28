@@ -25,11 +25,11 @@ export default function HomePage() {
   return (
     <>
       <PageHero title={hero.title} eyebrow={hero.eyebrow} video={hero.video} image={hero.image} markPosition="below" size="home">
-        <CtaButton variant="light" className="mt-4" />
+        <CtaButton variant="light" className="mt-2" />
       </PageHero>
 
       {/* Portfolio logo strip: scrolls continuously as on the live site (static with reduced motion) */}
-      <section className="marquee overflow-hidden bg-sky py-12" aria-label={logoStrip.label}>
+      <section className="marquee mt-[clamp(2.5rem,0.5rem+7.5vw,7rem)] overflow-hidden bg-sky py-12" aria-label={logoStrip.label}>
         {/* Four copies so half the track is wider than any screen; the track slides by half and loops seamlessly */}
         <ul className="marquee-track flex w-max items-center motion-reduce:w-full motion-reduce:flex-wrap motion-reduce:justify-center">
           {[0, 1, 2, 3].flatMap((copy) =>
@@ -103,7 +103,7 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-          <div className="mt-16 flex justify-center">
+          <div className="mt-14 flex justify-center">
             <CtaButton />
           </div>
         </div>

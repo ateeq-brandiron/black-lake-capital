@@ -42,7 +42,7 @@ export default function InvestorsPage() {
           <div className="mt-16">
             <Differentiators />
           </div>
-          <div className="mt-16 flex justify-center">
+          <div className="mt-14 flex justify-center">
             <CtaButton href="#contact" />
           </div>
         </div>
