@@ -19,7 +19,7 @@ export default function InvestmentsPage() {
         <CtaButton variant="light" className="mt-2" />
       </PageHero>
 
-      <section className="pt-8 pb-16">
+      <section className="pt-24 pb-16">
         <div className="container-page text-center">
           <p className="mx-auto max-w-4xl text-[clamp(1.5rem,1.1rem+1.3vw,2.125rem)] leading-none font-black text-body text-balance">{fillStats(intro)}</p>
           <div className="mt-10 flex justify-center">
@@ -35,7 +35,7 @@ export default function InvestmentsPage() {
         <h2 id="portfolio-title" className="sr-only">
           Portfolio companies
         </h2>
-        <div className="container-wide grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="container-wide grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-flow-col lg:grid-cols-3 lg:grid-rows-2">
           {portfolio.companies.map((c) => (
             <PortfolioCard key={c.name} company={c} completedLabel={statusLabels.completed} learnMoreLabel={learnMoreLabel} />
           ))}
