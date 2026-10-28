@@ -16,7 +16,8 @@ export default function InvestorsPage() {
   return (
     <>
       {/* Hero with the inquiry form: the form is this section's one action */}
-      <section id="contact" className="relative isolate scroll-mt-4 overflow-hidden py-14 text-white lg:py-14">
+      {/* #contact is the page's first section: the scroll margin (larger than the top bar + header) makes every jump to it stop at the top of the page */}
+      <section id="contact" className="relative isolate scroll-mt-[200px] overflow-hidden py-14 text-white lg:py-14">
         <ImageSlot image={hero.image} sizes="100vw" priority className="absolute! inset-0 -z-10" />
         <div className="absolute inset-0 -z-10 bg-black/30" />
         <div className="container-page grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_22.5rem] lg:gap-24">
