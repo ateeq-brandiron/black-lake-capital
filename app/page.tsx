@@ -88,7 +88,7 @@ export default function HomePage() {
           <h2 id="approach-title" className="type-display mx-auto max-w-4xl text-center text-balance">
             {approach.title}
           </h2>
-          <ul className="mt-16 grid gap-8 md:grid-cols-3">
+          <ul className="mt-16 grid items-start gap-8 md:grid-cols-3">
             {approach.items.map((item) => (
               <li key={item.label} className="reveal card-lift flex flex-col items-center rounded-card border border-navy/10 bg-white px-6 py-10 text-center">
                 <ImageSlot image={item.icon} placeholder="light" fit="contain" sizes="180px" className="size-36 bg-transparent! outline-0!" />
