@@ -20,13 +20,28 @@ type Props = {
   children?: React.ReactNode;
 };
 
+// The area above the divider's solid white curve (same path, closed along the top), used to mask the media.
+const CURVE_MASK = `url("data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 140" preserveAspectRatio="none"><path d="M0 0s286.54 140 640 140c353.46 0 640-140 640-139V0z"/></svg>')}")`;
+const MASK_IMAGE = `linear-gradient(#000,#000), ${CURVE_MASK}`;
+const MASK_SIZE = "100% calc(100% - var(--divider-h) + 1px), 100% var(--divider-h)";
+const mediaMask: React.CSSProperties = {
+  maskImage: MASK_IMAGE,
+  maskSize: MASK_SIZE,
+  maskPosition: "top, bottom",
+  maskRepeat: "no-repeat",
+  WebkitMaskImage: MASK_IMAGE,
+  WebkitMaskSize: MASK_SIZE,
+  WebkitMaskPosition: "top, bottom",
+  WebkitMaskRepeat: "no-repeat",
+};
+
 /** Full-bleed photo/video hero with the lake mark and the curved bottom edge. */
 export function PageHero({ title, eyebrow, subtitle, image, video, markPosition = "above", imageLabel, size = "page", subtitleWeight = "medium", children }: Props) {
   const mark = <LakeMark className="size-20 drop-shadow-lg sm:size-26" />;
   return (
-    <section className="relative isolate flex min-h-[min(56rem,92svh)] flex-col items-center justify-center overflow-hidden px-4 pt-16 pb-36 text-center text-white sm:pb-44">
-      {/* Media stops 4px short of the bottom edge: the curve covers it, and it keeps a video hairline from showing under the curve at fractional zoom levels */}
-      <div className="absolute inset-x-0 top-0 bottom-1 -z-10">
+    <section className="relative isolate flex [--divider-h:4rem] sm:[--divider-h:7rem] lg:[--divider-h:149px] min-h-[min(56rem,92svh)] flex-col items-center justify-center overflow-hidden px-4 pt-16 pb-36 text-center text-white sm:pb-44">
+      {/* Media is masked along the white curve, so nothing of the video sits under the solid white (no hairline at fractional zoom) and the shadow bands keep their curved edge */}
+      <div className="absolute inset-0 -z-10" style={mediaMask}>
         {video?.src ? (
           <video className="size-full object-cover motion-reduce:hidden" autoPlay muted loop playsInline poster={video.poster ?? undefined} aria-hidden="true">
             {video.srcMobile ? <source src={video.srcMobile} type="video/mp4" media="(max-width: 767px)" /> : null}
@@ -60,7 +75,7 @@ export function PageHero({ title, eyebrow, subtitle, image, video, markPosition 
       </svg>
 
       {/* Curved bottom edge: the live site's double-transparency divider (30% and 50% white bands over solid white) */}
-      <svg className="absolute inset-x-0 bottom-0 h-16 w-full sm:h-28 lg:h-[149px]" viewBox="0 0 1280 140" preserveAspectRatio="none" aria-hidden="true">
+      <svg className="absolute inset-x-0 bottom-0 h-(--divider-h) w-full" viewBox="0 0 1280 140" preserveAspectRatio="none" aria-hidden="true">
         <g fill="#fff">
           <path d="M725.29 101.2C325.22 122.48 0 0 0 0v140h1280V0s-154.64 79.92-554.71 101.2z" fillOpacity="0.3" />
           <path d="M556.45 119.74C953.41 140 1280 14 1280 14v126H0V0s159.5 99.48 556.45 119.74z" fillOpacity="0.5" />
