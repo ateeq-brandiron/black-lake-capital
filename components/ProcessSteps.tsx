@@ -53,7 +53,7 @@ export function ProcessSteps({ eyebrow, title, steps, confirmed, note, criteriaT
               </li>
             ))}
           </ul>
-          <Link href="/investment-criteria/#faq" className="mt-8 inline-flex min-h-11 items-center gap-2 font-semibold text-navy hover:text-blue">
+          <Link href="/investment-criteria/" className="mt-8 inline-flex min-h-11 items-center gap-2 font-semibold text-navy hover:text-blue">
             {criteriaLink}
             <ArrowRightIcon className="size-5" />
           </Link>
