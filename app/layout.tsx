@@ -3,6 +3,7 @@ import { Lato, Montserrat, Quattrocento, Questrial } from "next/font/google";
 import Script from "next/script";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { site } from "@/lib/content";
 import "./globals.css";
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </noscript>
         ) : null}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization).replace(/</g, "\\u003c") }} />
+        <ScrollToTop />
         <Header />
         <main id="main">{children}</main>
         <Footer />
