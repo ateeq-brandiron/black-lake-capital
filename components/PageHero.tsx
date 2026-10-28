@@ -25,7 +25,8 @@ export function PageHero({ title, eyebrow, subtitle, image, video, markPosition 
   const mark = <LakeMark className="size-20 drop-shadow-lg sm:size-26" />;
   return (
     <section className="relative isolate flex min-h-[min(56rem,92svh)] flex-col items-center justify-center overflow-hidden px-4 pt-16 pb-36 text-center text-white sm:pb-44">
-      <div className="absolute inset-0 -z-10">
+      {/* Media stops 4px short of the bottom edge: the curve covers it, and it keeps a video hairline from showing under the curve at fractional zoom levels */}
+      <div className="absolute inset-x-0 top-0 bottom-1 -z-10">
         {video?.src ? (
           <video className="size-full object-cover motion-reduce:hidden" autoPlay muted loop playsInline poster={video.poster ?? undefined} aria-hidden="true">
             {video.srcMobile ? <source src={video.srcMobile} type="video/mp4" media="(max-width: 767px)" /> : null}
