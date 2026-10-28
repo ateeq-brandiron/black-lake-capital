@@ -16,8 +16,8 @@ const nextConfig: NextConfig = {
       { source: "/slide-anything-popup-preview", destination: "/", permanent: true },
       { source: "/thank-you", destination: "/investors/", permanent: true },
       // Landing pages (not in the menu). PROVISIONAL: confirm whether campaigns still use them.
-      { source: "/blc-tech-landing-page", destination: "/", permanent: false },
-      { source: "/blc-investor-landing-page", destination: "/investors/", permanent: false },
+      { source: "/blc-tech-landing-page", destination: "/", permanent: true },
+      { source: "/blc-investor-landing-page", destination: "/investors/", permanent: true },
       // Old News pages and per-company feeds
       news("/news-4"),
       news("/new-news"),

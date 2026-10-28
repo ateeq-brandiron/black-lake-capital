@@ -50,3 +50,8 @@ See also docs/slack-drive-review.md (competitor-site feedback, criteria sources,
 - A5 story card now uses the approved April 2026 press release facts (Ramsey Solutions, Cloudware Connections, SnapBI add-ons; Salesforce Ventures investment). The release itself is not posted: its date is still "[Date]" and no distribution record was found.
 - Removed 3 imported Macrosoft-feed posts that Katrina flagged as spam in March 2026 (Chad: "I did not post them"); their URLs now return 404.
 - Media cards: Axial 2026, Sponsor of the Year 2025, podcast, Axial 2025 (Opus Connect stays in News).
+
+## Answers doc follow-up (28 Oct)
+- A5 press release: published 23 Apr 2026 ([EIN Presswire](https://www.einpresswire.com/article/907526001/black-lake-capital-announces-successful-exit-of-a5-through-acquisition-by-accordion)). Now a News post; the A5 success-story card links to it.
+- Landing pages: not used by current campaigns (Ahmad). The redirects (tech → Home, investor → /investors/) are now permanent. /investors/ is the page to use for future campaigns; it already carries the platform messaging and the US/Canada technology ICP questions.
+- Still open: contact form → ActiveCampaign (needs an API URL + key and the list/tag for new inquiries; the login in the doc should be removed and its password changed).
