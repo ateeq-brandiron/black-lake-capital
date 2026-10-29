@@ -31,4 +31,4 @@ Playwright is not a project dependency. The script uses the globally installed c
 - **Live (blacklakecap.com):** Hostinger. The site needs a Node.js server (Node 20.9+), not static file hosting: the contact form, the 404 handling (`proxy.ts`) and redirects all run on the server. Use a Hostinger plan with Node.js app support, or a VPS.
   - Build: `npm ci && npm run build`. Start: `npm start` (honours `PORT`).
   - Set these before building (they are read at build time): `SITE_ENV=production`, `NEXT_PUBLIC_SITE_URL=https://blacklakecap.com`.
-  - Contact form: `EMAIL_PROVIDER=activecampaign` plus `ACTIVECAMPAIGN_API_URL`, `ACTIVECAMPAIGN_API_KEY`, `ACTIVECAMPAIGN_LIST_ID`, `ACTIVECAMPAIGN_TAG` (see `.env.example`). Failed submissions are written to the server log with the full inquiry.
+  - Contact form: `EMAIL_PROVIDER=activecampaign` sends inquiries to Black Lake's existing ActiveCampaign form (form 2; no API key). Failed submissions are written to the server log with the full inquiry.

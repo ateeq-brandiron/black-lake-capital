@@ -1,8 +1,8 @@
-import { activeCampaignConfig, sendToActiveCampaign } from "@/lib/activecampaign";
+import { submitActiveCampaignForm } from "@/lib/activecampaign";
 import type { Inquiry } from "@/lib/inquiry";
 
 /**
- * Sends an inquiry. EMAIL_PROVIDER=activecampaign adds the contact to ActiveCampaign;
+ * Sends an inquiry. EMAIL_PROVIDER=activecampaign submits Black Lake's ActiveCampaign form;
  * EMAIL_PROVIDER=resend posts to the Resend REST API (no SDK dependency).
  * The default "log" mode only prints to the server log (staging: set nothing).
  */
@@ -13,13 +13,8 @@ export async function sendInquiry(inquiry: Inquiry): Promise<boolean> {
   const provider = process.env.EMAIL_PROVIDER;
 
   if (provider === "activecampaign") {
-    const cfg = activeCampaignConfig();
-    if (!cfg) {
-      console.error("[inquiry] ActiveCampaign is selected but ACTIVECAMPAIGN_API_URL or ACTIVECAMPAIGN_API_KEY is missing.\n" + body);
-      return false;
-    }
     try {
-      await sendToActiveCampaign(cfg, inquiry);
+      await submitActiveCampaignForm(inquiry);
       return true;
     } catch (error) {
       // The inquiry is logged so it can be recovered from the Vercel logs.
