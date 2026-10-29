@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { site } from "@/lib/content";
+import { isLive } from "@/lib/env";
 import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat", display: "swap" });
@@ -14,16 +15,15 @@ const lato = Lato({ subsets: ["latin"], weight: ["400", "700"], variable: "--fon
 const questrial = Questrial({ subsets: ["latin"], weight: "400", variable: "--font-questrial", display: "swap" });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? site.url;
-const indexable = process.env.VERCEL_ENV === "production";
-// Tag Manager container from the live site. Loads only on production so staging traffic stays out of analytics.
-const gtmId = indexable ? (process.env.NEXT_PUBLIC_GTM_ID ?? site.tracking.gtmId) : null;
+// Tag Manager container from the live site. Loads only on the live site so staging traffic stays out of analytics.
+const gtmId = isLive ? (process.env.NEXT_PUBLIC_GTM_ID ?? site.tracking.gtmId) : null;
 const siteVerification = process.env.GOOGLE_SITE_VERIFICATION ?? site.tracking.googleSiteVerification;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: site.name, template: `%s | ${site.name}` },
   description: site.messaging.elevatorPitch,
-  robots: indexable ? undefined : { index: false, follow: false },
+  robots: isLive ? undefined : { index: false, follow: false },
   verification: siteVerification ? { google: siteVerification } : undefined,
 };
 

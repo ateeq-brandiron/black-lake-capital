@@ -24,3 +24,11 @@ Next.js (App Router, TypeScript, Tailwind CSS 4) rebuild of the WordPress site a
 `npm run extract` (or `node scripts/extract-wordpress.mjs --base https://blacklakecap.com`) reads the sitemap, crawls every page and post with headless Chromium, and writes everything listed at the top of the script. It only issues GET requests and blocks any other method from the page, so the live site is never changed. Existing screenshots in `reference/` are never overwritten.
 
 Playwright is not a project dependency. The script uses the globally installed copy (`npm i -g playwright` if it is missing). Flags: `--no-screenshots`, `--no-media`.
+
+## Hosting
+
+- **Staging:** Vercel (black-lake-capital.vercel.app). Leave `SITE_ENV` unset: the site is `noindex`, Tag Manager is off and the contact form only logs.
+- **Live (blacklakecap.com):** Hostinger. The site needs a Node.js server (Node 20.9+), not static file hosting: the contact form, the 404 handling (`proxy.ts`) and redirects all run on the server. Use a Hostinger plan with Node.js app support, or a VPS.
+  - Build: `npm ci && npm run build`. Start: `npm start` (honours `PORT`).
+  - Set these before building (they are read at build time): `SITE_ENV=production`, `NEXT_PUBLIC_SITE_URL=https://blacklakecap.com`.
+  - Contact form: `EMAIL_PROVIDER=activecampaign` plus `ACTIVECAMPAIGN_API_URL`, `ACTIVECAMPAIGN_API_KEY`, `ACTIVECAMPAIGN_LIST_ID`, `ACTIVECAMPAIGN_TAG` (see `.env.example`). Failed submissions are written to the server log with the full inquiry.

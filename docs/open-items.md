@@ -54,4 +54,8 @@ See also docs/slack-drive-review.md (competitor-site feedback, criteria sources,
 ## Answers doc follow-up (28 Oct)
 - A5 press release: published 23 Apr 2026 ([EIN Presswire](https://www.einpresswire.com/article/907526001/black-lake-capital-announces-successful-exit-of-a5-through-acquisition-by-accordion)). Now a News post; the A5 success-story card links to it.
 - Landing pages: not used by current campaigns (Ahmad). The redirects (tech → Home, investor → /investors/) are now permanent. /investors/ is the page to use for future campaigns; it already carries the platform messaging and the US/Canada technology ICP questions.
-- Still open: contact form → ActiveCampaign (needs an API URL + key and the list/tag for new inquiries; the login in the doc should be removed and its password changed).
+- Contact form → ActiveCampaign: BUILT (29 Oct). Each inquiry upserts the contact, joins the list, gets a note with every answer and the `website-inquiry` tag (created if missing). Still needed in ActiveCampaign: the list, an automation on "tag is added" that emails the team, optional custom fields (Company, Technology company, US/Canada based, Services, Description). The env vars go on the live host only. The login in the answers doc should be removed and its password changed.
+
+## Hosting (29 Oct)
+- Vercel is staging only. The live site (blacklakecap.com) will be hosted on **Hostinger**, so "live" no longer depends on Vercel: `SITE_ENV=production` (set at build time on Hostinger) makes the site indexable and loads Tag Manager. Vercel staging is now `noindex` with no analytics (it was indexable before).
+- The Hostinger plan must run Node.js apps (the form, 404 handling and redirects run on the server); plain static or PHP-only hosting will not work. See README → Hosting.
