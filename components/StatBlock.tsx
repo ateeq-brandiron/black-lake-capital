@@ -20,7 +20,7 @@ export function StatBlock({ items, tone = "light" }: Props) {
         return (
           <div key={item.stat} className="flex flex-col items-center">
             <dt className="order-2 mt-4">
-              <span className={dark ? "block text-xl leading-tight font-bold text-white uppercase" : "type-label block"}>{item.label}</span>
+              <span className={dark ? "block text-xl leading-tight font-bold text-white uppercase sm:min-h-[2lh] lg:max-xl:min-h-[3lh]" : "type-label block sm:min-h-[2lh] lg:max-xl:min-h-[3lh]"}>{item.label}</span>
             </dt>
             <dd className={`order-1 ${dark ? "text-[2.125rem] leading-tight font-bold text-white" : "font-numeral text-stat font-normal text-blue-stat"}`}>
               <Unconfirmed confirmed={s.confirmed} note={s.note}>

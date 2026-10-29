@@ -51,7 +51,7 @@ export function TestimonialCarousel({ title, items, background, titleSize = "lar
                   <span className="font-quote text-lg leading-tight font-normal uppercase">{t.company}</span>
                 )}
               </figcaption>
-              <blockquote className="relative order-1 pl-12 font-quote text-lg leading-[1.05] font-normal md:order-2">
+              <blockquote className="relative order-1 pl-12 font-quote text-lg leading-relaxed font-normal md:order-2">
                 <span className="absolute top-0 left-0 font-numeral text-6xl leading-none text-white/80" aria-hidden="true">
                   &ldquo;
                 </span>

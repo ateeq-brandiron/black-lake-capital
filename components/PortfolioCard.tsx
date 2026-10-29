@@ -37,7 +37,7 @@ export function PortfolioCard({ company, completedLabel, learnMoreLabel }: { com
           </p>
         ) : null}
       </div>
-      <h3 className="mt-4 text-[1.3125rem] leading-none font-medium text-ink">{company.name}</h3>
+      <h3 className="mt-4 text-[1.3125rem] leading-tight font-medium text-ink">{company.name}</h3>
       <p className="mt-4 text-black">{company.location}</p>
       <a href={href} target="_blank" rel="noopener" className="text-navy hover:text-blue">
         {company.website}

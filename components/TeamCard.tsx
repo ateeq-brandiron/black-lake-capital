@@ -41,7 +41,7 @@ export function TeamCard({ member, variant = "partner", reverse = false }: Props
     <div>
       {/* LinkedIn sits right after the name, small (27 Oct review: the large circle looked detached) */}
       <div className="flex items-center gap-3">
-        <h3 className="text-[clamp(1.625rem,1.3rem+1vw,2rem)] leading-none font-medium text-ink">{member.name}</h3>
+        <h3 className="text-[clamp(1.625rem,1.3rem+1vw,2rem)] leading-tight font-medium text-ink">{member.name}</h3>
         {member.linkedin?.href ? (
           <a href={member.linkedin.href} target="_blank" rel="noopener" className="flex size-9 shrink-0 items-center justify-center rounded-full bg-linkedin text-white transition-colors hover:bg-navy">
             <LinkedInIcon className="size-4.5" />

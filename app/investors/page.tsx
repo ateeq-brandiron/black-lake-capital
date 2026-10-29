@@ -22,7 +22,7 @@ export default function InvestorsPage() {
         <div className="absolute inset-0 -z-10 bg-black/30" />
         <div className="container-page grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_22.5rem] lg:gap-24">
           <div className="lg:pt-24">
-            <h1 className="text-[clamp(1.75rem,1.4rem+1.2vw,2rem)] leading-none font-bold [text-shadow:0_2px_8px_rgb(0_0_0/0.5)]">{hero.title}</h1>
+            <h1 className="text-[clamp(1.75rem,1.4rem+1.2vw,2rem)] leading-tight font-bold [text-shadow:0_2px_8px_rgb(0_0_0/0.5)]">{hero.title}</h1>
             <p className="mt-4 text-lg leading-[1.78] font-bold [text-shadow:0_2px_8px_rgb(0_0_0/0.5)]">{hero.subtitle}</p>
           </div>
           <ContactForm labels={form} />
@@ -37,7 +37,7 @@ export default function InvestorsPage() {
 
       <section className="py-(--spacing-section)" aria-labelledby="why-title">
         <div className="container-wide">
-          <h2 id="why-title" className="text-center text-[clamp(1.75rem,1.4rem+1.2vw,2.125rem)] leading-none font-bold text-ink">
+          <h2 id="why-title" className="text-center text-[clamp(1.75rem,1.4rem+1.2vw,2.125rem)] leading-tight font-bold text-balance text-ink">
             {whyTitle}
           </h2>
           <div className="mt-16">

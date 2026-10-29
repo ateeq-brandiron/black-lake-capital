@@ -6,7 +6,7 @@ export function Differentiators() {
     <ul className="grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
       {differentiators.items.map((item) => (
         <li key={item.title}>
-          <h3 className="text-2xl leading-none font-bold text-column">{item.title}</h3>
+          <h3 className="text-2xl leading-tight font-bold text-column sm:min-h-[2lh]">{item.title}</h3>
           <p className="mt-6 text-[0.9375rem] leading-[1.8] text-black">{fillStats(item.body)}</p>
         </li>
       ))}

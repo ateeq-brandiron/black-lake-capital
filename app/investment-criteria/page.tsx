@@ -20,7 +20,7 @@ export default function CriteriaPage() {
 
       <section className="py-16">
         <Divider />
-        <p className="container-page mt-14 max-w-5xl text-center text-[clamp(1.125rem,0.95rem+0.6vw,1.5rem)] leading-[1.15] font-normal">
+        <p className="container-page mt-14 max-w-5xl text-center text-[clamp(1.125rem,0.95rem+0.6vw,1.5rem)] leading-normal font-normal text-balance">
           <Unconfirmed confirmed={content.introConfirmed} note="Draft wording for the focus line">
             {intro}
           </Unconfirmed>

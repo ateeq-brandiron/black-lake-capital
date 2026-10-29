@@ -154,9 +154,9 @@ export default function HomePage() {
           </div>
           <ul className="grid gap-8 sm:grid-cols-2">
             {team.partners.map((p) => (
-              <li key={p.name} className="reveal card-lift group overflow-hidden rounded-card border border-navy/10 bg-white">
+              <li key={p.name} className="reveal card-lift group flex flex-col overflow-hidden rounded-card border border-navy/10 bg-white">
                 <ImageSlot image={p.photo} sizes="(min-width: 1024px) 22rem, (min-width: 640px) 45vw, 100vw" className="aspect-[4/5] w-full [&_img]:object-[50%_25%] [&_img]:transition-transform [&_img]:duration-500 group-hover:[&_img]:scale-[1.03]" />
-                <div className="flex items-center justify-between gap-4 p-6">
+                <div className="flex flex-1 items-end justify-between gap-4 p-6">
                   <div>
                     <h3 className="text-xl font-bold text-ink">{p.name}</h3>
                     <p className="text-sm">{p.role}</p>

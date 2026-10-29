@@ -40,7 +40,7 @@ export function MediaCards({ items }: { items: MediaItem[] }) {
             </div>
             <div className="flex flex-1 flex-col p-7">
               <p className="type-eyebrow text-xs!">{m.kind}</p>
-              <h3 className="mt-3 text-xl leading-snug font-bold text-ink">{m.title}</h3>
+              <h3 className="mt-3 text-xl leading-snug font-bold text-ink md:min-h-[3lh]">{m.title}</h3>
               {m.body ? <p className="mt-3">{m.body}</p> : null}
               <a
                 href={m.href}

@@ -31,7 +31,7 @@ export default async function PostPage({ params }: PageProps<"/[slug]">) {
       {/* Live post layout: no photo hero; title, meta line and featured image in a left-aligned column */}
       <article className="container-page pt-28 pb-(--spacing-section)">
         <div className="max-w-[50rem]">
-          <h1 className="text-[clamp(1.5rem,1.2rem+1vw,1.875rem)] leading-none font-medium text-ink">{post.title}</h1>
+          <h1 className="text-[clamp(1.5rem,1.2rem+1vw,1.875rem)] leading-tight font-medium text-ink">{post.title}</h1>
           <p className="mt-4 text-sm">
             {post.author ? <>by {post.author}</> : null}
             {post.author && post.date ? " | " : null}
