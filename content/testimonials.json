@@ -8,7 +8,7 @@
       "company": "Set Solutions",
       "companyUrl": "https://setsolutionsllc.com/",
       "logo": {
-        "src": "/images/testimonials/set-solutions.webp",
+        "src": "/images/testimonials/set-solutions-reversed.webp",
         "alt": "Set Solutions logo"
       }
     },
@@ -19,7 +19,7 @@
       "company": "A5 Corporation",
       "companyUrl": "https://a5corp.com/",
       "logo": {
-        "src": "/images/testimonials/a5.webp",
+        "src": "/images/testimonials/a5-reversed.webp",
         "alt": "A5 Corporation logo"
       }
     },
@@ -30,7 +30,7 @@
       "company": "Spinnaker SCA",
       "companyUrl": "https://spinnakersca.com/",
       "logo": {
-        "src": "/images/testimonials/spinnaker.webp",
+        "src": "/images/testimonials/spinnaker-reversed.webp",
         "alt": "Spinnaker SCA logo"
       }
     },
@@ -52,7 +52,7 @@
       "company": "TM Capital",
       "companyUrl": "https://www.tmcapital.com/",
       "logo": {
-        "src": "/images/testimonials/tm-capital.png",
+        "src": "/images/testimonials/tm-capital-reversed.webp",
         "alt": "TM Capital logo"
       }
     },
@@ -74,7 +74,7 @@
       "company": "Third Century Partners",
       "companyUrl": "https://www.thirdcentury.com/",
       "logo": {
-        "src": "/images/testimonials/third-century.png",
+        "src": "/images/testimonials/third-century-reversed.webp",
         "alt": "Third Century Partners logo"
       }
     },

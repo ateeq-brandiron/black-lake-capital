@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { ChevronLeftIcon, ChevronRightIcon, PauseIcon, PlayIcon } from "@/components/Icons";
 import { ImageSlot } from "@/components/ImageSlot";
 import type { Testimonial } from "@/lib/content";
 
@@ -13,16 +14,64 @@ type Props = {
   background?: React.ReactNode;
 };
 
+const INTERVAL_MS = 7000;
+const REDUCED = "(prefers-reduced-motion: reduce)";
+const subscribeReduced = (onChange: () => void) => {
+  const query = window.matchMedia(REDUCED);
+  query.addEventListener("change", onChange);
+  return () => query.removeEventListener("change", onChange);
+};
+
 /**
- * One testimonial at a time with dot navigation, as on the live site.
- * No autoplay: rotating content needs a pause control under WCAG 2.2.2, and manual is calmer.
- * Without JS the first testimonial shows.
+ * One testimonial at a time, as on the live site: it advances on its own (live: every 4s; 7s here
+ * so the longer quotes can be read), with previous/next arrows, dots and swipe.
+ * Autoplay runs only while the carousel is on screen, pauses on hover or keyboard focus, has a
+ * pause button (WCAG 2.2.2) and is off for reduced motion. Without JS the first testimonial shows.
  */
 export function TestimonialCarousel({ title, items, background, titleSize = "large" }: Props) {
   const [index, setIndex] = useState(0);
-  if (!items.length) return null;
+  const reducedMotion = useSyncExternalStore(subscribeReduced, () => window.matchMedia(REDUCED).matches, () => false);
+  // null until the visitor presses pause/play; until then autoplay follows the motion setting.
+  const [choice, setChoice] = useState<boolean | null>(null);
+  const playing = choice ?? !reducedMotion;
+  const [held, setHeld] = useState(false);
+  const [inView, setInView] = useState(false);
+  const section = useRef<HTMLElement>(null);
+  const touchX = useRef<number | null>(null);
+  const count = items.length;
+  const go = (i: number) => setIndex((i + count) % count);
+
+  useEffect(() => {
+    const el = section.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { threshold: 0.4 });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const rotating = playing && !held && inView && count > 1;
+  useEffect(() => {
+    if (!rotating) return;
+    // Restarts after every change, so a manual step gets a full interval too.
+    const timer = window.setTimeout(() => setIndex((i) => (i + 1) % count), INTERVAL_MS);
+    return () => window.clearTimeout(timer);
+  }, [rotating, index, count]);
+
+  if (!count) return null;
   return (
-    <section id="testimonials" className="relative isolate overflow-hidden bg-blue-deep py-(--spacing-section) text-white" aria-roledescription="carousel" aria-labelledby="testimonials-title">
+    <section
+      ref={section}
+      id="testimonials"
+      className="relative isolate overflow-hidden bg-blue-deep py-(--spacing-section) text-white"
+      aria-roledescription="carousel"
+      aria-labelledby="testimonials-title"
+      onMouseEnter={() => setHeld(true)}
+      onMouseLeave={() => setHeld(false)}
+      onFocus={() => setHeld(true)}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) setHeld(false);
+      }}
+    >
       {background ? <div className="absolute inset-0 -z-10">{background}</div> : null}
       <div className="container-wide">
         <h2
@@ -31,14 +80,25 @@ export function TestimonialCarousel({ title, items, background, titleSize = "lar
         >
           {title}
         </h2>
-        <div className="mt-14 grid">
+        <div
+          className="mt-14 grid"
+          aria-live={rotating ? "off" : "polite"}
+          onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
+          onTouchEnd={(e) => {
+            if (touchX.current === null) return;
+            const dx = e.changedTouches[0].clientX - touchX.current;
+            touchX.current = null;
+            if (Math.abs(dx) > 50) go(index + (dx < 0 ? 1 : -1));
+          }}
+        >
           {items.map((t, i) => (
             <figure
               key={t.id}
               aria-roledescription="slide"
-              aria-label={`${i + 1} of ${items.length}`}
-              hidden={i !== index}
-              className="col-start-1 row-start-1 grid items-start gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:gap-16"
+              aria-label={`${i + 1} of ${count}`}
+              aria-hidden={i !== index}
+              inert={i !== index}
+              className={`col-start-1 row-start-1 grid items-start gap-8 transition-opacity duration-500 motion-reduce:transition-none md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:gap-16 ${i === index ? "opacity-100" : "opacity-0"}`}
             >
               <figcaption className="order-2 flex flex-col items-center md:order-1 md:items-start md:pl-[10%]">
                 <ImageSlot image={t.logo} placeholder="light" fit="contain" sizes="240px" className="mb-4 h-24 w-60 bg-white/0" />
@@ -60,8 +120,12 @@ export function TestimonialCarousel({ title, items, background, titleSize = "lar
             </figure>
           ))}
         </div>
-        {items.length > 1 ? (
-          <div className="mt-12 flex justify-center gap-1">
+        {count > 1 ? (
+          <div className="mt-12 flex items-center justify-center gap-1">
+            <button type="button" onClick={() => go(index - 1)} className="flex size-11 items-center justify-center rounded-full text-white/80 hover:bg-white/10 hover:text-white">
+              <ChevronLeftIcon className="size-6" />
+              <span className="sr-only">Previous testimonial</span>
+            </button>
             {items.map((t, i) => (
               <button
                 key={t.id}
@@ -74,6 +138,18 @@ export function TestimonialCarousel({ title, items, background, titleSize = "lar
                 <span className="size-2.5 rounded-full bg-white/60 group-hover:bg-white group-aria-[current=true]:bg-white group-aria-[current=true]:ring-2 group-aria-[current=true]:ring-white/50" />
               </button>
             ))}
+            <button type="button" onClick={() => go(index + 1)} className="flex size-11 items-center justify-center rounded-full text-white/80 hover:bg-white/10 hover:text-white">
+              <ChevronRightIcon className="size-6" />
+              <span className="sr-only">Next testimonial</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setChoice(!playing)}
+              className="ml-2 flex size-11 items-center justify-center rounded-full border border-white/40 text-white/80 hover:bg-white/10 hover:text-white"
+            >
+              {playing ? <PauseIcon className="size-4" /> : <PlayIcon className="size-4" />}
+              <span className="sr-only">{playing ? "Pause testimonials" : "Play testimonials"}</span>
+            </button>
           </div>
         ) : null}
       </div>
