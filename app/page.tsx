@@ -195,7 +195,7 @@ export default function HomePage() {
 
       <TestimonialCarousel title={testimonials.title} items={getTestimonials()} />
 
-      <CtaBand title={closing.title} body={closing.body} />
+      <CtaBand title={closing.title} />
     </>
   );
 }
