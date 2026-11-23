@@ -60,7 +60,7 @@
       },
       {
         "title": "What is the “second bite of the apple”?",
-        "body": "When founders partner with Black Lake, they sell a portion of their business while retaining meaningful ownership. That retained ownership creates the potential for a “second bite of the apple” when the business is sold again or completes a subsequent transaction. Across Black Lake’s last three subsequent transactions, founders received {secondBite} in value from that second transaction, and about {secondTransactionMultiple} more cash on average than in the initial sale."
+        "body": "When founders partner with Black Lake, they sell a portion of their business while retaining meaningful ownership. That retained ownership creates the potential for a “second bite of the apple” when the business is sold again or completes a subsequent transaction. Across Black Lake’s last three subsequent transactions, founders received {secondBite} in value from that second transaction, and over {secondTransactionMultiple} more cash on average than in the initial sale."
       },
       {
         "title": "Will you bring in your own playbook?",

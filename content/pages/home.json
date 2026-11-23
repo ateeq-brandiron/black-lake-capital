@@ -75,7 +75,7 @@
         "stat": "secondBite",
         "label": "In second-bite value for founders",
         "body": "From the second transaction after partnering with Black Lake, across the last three",
-        "detail": "About {secondTransactionMultiple} more cash, on average, in the second transaction than the first."
+        "detail": "Over {secondTransactionMultiple} more cash, on average, in the second transaction than the first."
       },
       {
         "stat": "positionsEliminated",
