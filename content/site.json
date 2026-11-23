@@ -61,10 +61,22 @@
       "href": "/investors/"
     }
   ],
+  "onePager": {
+    "label": "Download our one-pager",
+    "shortLabel": "One-pager",
+    "href": "/downloads/Black-Lake-Capital-One-Pager.pdf",
+    "confirmed": false,
+    "note": "Rebuilt Nov 2026 (Chad's review) from site content: stats.json, team.json, portfolio.json, criteria. Source: scripts/one-pager/one-pager.html; rebuild with node scripts/one-pager/build.mjs. Needs client sign-off."
+  },
   "menuDownloads": {
     "label": "Download Our Summary to Learn More",
-    "files": [],
-    "note": "Hidden from the menu: the 2025 v7.2 sales sheet and deck say $50M+ founder value (platform: $60M+) and predate the 18-transaction figure. Files stay in /public/downloads for old links. Restore 'files' when updated PDFs arrive.",
+    "files": [
+      {
+        "label": "One-pager (PDF)",
+        "href": "/downloads/Black-Lake-Capital-One-Pager.pdf"
+      }
+    ],
+    "note": "The 2025 v7.2 sales sheet and deck stay hidden: they say $50M+ founder value (platform: $60M+) and predate the 18-transaction figure. Files stay in /public/downloads for old links. The rebuilt one-pager replaces the sales sheet.",
     "hiddenFiles": [
       {
         "label": "Sales sheet (PDF)",

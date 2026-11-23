@@ -4,12 +4,12 @@ import { CtaButton } from "@/components/CtaButton";
 import { DesktopNav } from "@/components/DesktopNav";
 import { LakeMark } from "@/components/LakeMark";
 import { MenuDrawer } from "@/components/MenuDrawer";
-import { MailIcon, PhoneIcon } from "@/components/Icons";
+import { DownloadIcon, MailIcon, PhoneIcon } from "@/components/Icons";
 import { site } from "@/lib/content";
 
 /** Contact top bar, then a sticky bar with the logo, the main sections and the CTA. Shared by every page. */
 export function Header({ topBar = true }: { topBar?: boolean }) {
-  const { contact } = site;
+  const { contact, onePager } = site;
   // The CTA already sits in the bar, so "Contact Us" only appears in the drawer.
   const primary = site.nav.filter((item) => item.href !== "/investors/");
   return (
@@ -45,6 +45,17 @@ export function Header({ topBar = true }: { topBar?: boolean }) {
           </Link>
           <DesktopNav nav={primary} />
           <div className="flex items-center gap-3">
+            <a
+              href={onePager.href}
+              target="_blank"
+              rel="noopener"
+              aria-label={`${onePager.label} (PDF)`}
+              className="hidden min-h-11 min-w-11 items-center justify-center gap-2 border border-navy px-4 text-base font-medium whitespace-nowrap text-navy transition hover:-translate-y-0.5 hover:bg-sky motion-reduce:hover:translate-y-0 sm:inline-flex lg:max-[75rem]:px-0"
+            >
+              <DownloadIcon className="size-4.5 shrink-0" />
+              {/* Icon only from lg up to 1200px, where the inline nav leaves no room for the label. */}
+              <span className="lg:max-[75rem]:sr-only">{onePager.shortLabel}</span>
+            </a>
             <div className="hidden sm:block">
               <CtaButton className="min-h-11! px-5! text-base!" />
             </div>

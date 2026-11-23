@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Black Lake Capital One-Pager</title>
+<!--
+  Source for public/downloads/Black-Lake-Capital-One-Pager.pdf.
+  Rebuild with: node scripts/one-pager/build.mjs
+  Figures mirror content/stats.json, content/team.json, content/portfolio.json and
+  content/pages/investment-criteria.json. Update those first, then this file.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter; margin: 0; }
+  :root {
+    --blue: #1e60ad; --blue-stat: #165fac; --navy: #2e3b54; --navy-deep: #0b274c;
+    --sky: #deeeff; --ink: #333; --body: #5c5c5c; --mist: #d9d9d9;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; }
+  body { font-family: Montserrat, sans-serif; color: var(--body); font-weight: 500; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 8.5in; height: 11in; position: relative; overflow: hidden; page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .pad { padding: 0 0.7in; }
+  h2 { font-size: 22pt; font-weight: 700; color: var(--blue); margin: 0 0 12pt; line-height: 1.15; }
+  h3 { font-size: 11pt; font-weight: 700; color: var(--ink); margin: 0; }
+  p { margin: 0; }
+  strong { color: var(--ink); font-weight: 700; }
+
+  /* Page 1 hero */
+  .hero { height: 4.6in; position: relative; color: #fff; text-align: center;
+    background: linear-gradient(180deg, rgb(0 0 0 / 0.25), rgb(0 0 0 / 0.5)), url("../../public/images/sections/home-hero-poster.jpg") center 60% / cover; }
+  .brand { position: absolute; top: 0.45in; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 12pt; }
+  .brand .mark { width: 40pt; height: 40pt; border-radius: 50%; box-shadow: 0 0 0 2.5pt #fff; }
+  .brand .word { height: 15pt; filter: brightness(0) invert(1); }
+  .hero-copy { position: absolute; left: 0.6in; right: 0.6in; top: 1.75in; }
+  .eyebrow { font-size: 8.5pt; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; text-shadow: 0 1pt 4pt rgb(0 0 0 / 0.5); }
+  .tagline { font-size: 34pt; font-weight: 800; text-transform: uppercase; line-height: 1.12; margin-top: 10pt; text-shadow: 0 2pt 8pt rgb(0 0 0 / 0.45); }
+  .vp { font-size: 13pt; font-weight: 600; margin-top: 12pt; text-shadow: 0 1pt 4pt rgb(0 0 0 / 0.5); }
+
+  .intro { padding-top: 0.42in; text-align: center; }
+  .intro p { font-size: 11pt; line-height: 1.6; max-width: 6.6in; margin: 0 auto; }
+  .criteria { margin: 14pt auto 0; display: inline-flex; gap: 0; border: 1pt solid #c9dcf3; border-radius: 4pt; overflow: hidden; }
+  .criteria div { padding: 7pt 14pt; background: var(--sky); font-size: 9pt; color: var(--navy); font-weight: 600; }
+  .criteria div + div { border-left: 1pt solid #c9dcf3; }
+  .criteria b { font-size: 12pt; color: var(--blue); font-weight: 700; margin-right: 3pt; }
+
+  .portfolio { padding-top: 0.45in; }
+  .rule-head { display: flex; align-items: center; gap: 10pt; font-size: 9pt; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 10pt; }
+  .rule-head::before, .rule-head::after { content: ""; flex: 1; height: 1pt; background: #c9dcf3; }
+  .logos { display: grid; gap: 10pt; margin-bottom: 26pt; }
+  .logos.three { grid-template-columns: repeat(3, 1fr); }
+  .logos.two { grid-template-columns: repeat(2, 1fr); width: 66%; margin-left: auto; margin-right: auto; }
+  .co { text-align: center; }
+  .co .logo { height: 0.85in; display: flex; align-items: center; justify-content: center; }
+  .co img { max-height: 0.72in; max-width: 1.9in; object-fit: contain; }
+  .co img.innovatix { max-height: none; max-width: none; width: 2.5in; height: 0.85in; object-fit: cover; }
+  .co img.trapp { max-width: 1.6in; }
+  .co .where { font-size: 8pt; margin-top: 4pt; }
+  .co .what { font-size: 8.5pt; font-weight: 700; color: var(--ink); margin-top: 1pt; }
+
+  /* Page 2 */
+  .p2-top { height: 0.55in; background: var(--navy); display: flex; align-items: center; justify-content: space-between; padding: 0 0.7in; }
+  .p2-top img.word { height: 11pt; filter: brightness(0) invert(1); }
+  .p2-top span { color: #fff; font-size: 8pt; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; }
+
+  .stats-sec { padding-top: 0.38in; }
+  .stats { display: grid; grid-template-columns: repeat(5, 1fr); border: 1pt solid #c9dcf3; border-radius: 4pt; overflow: hidden; }
+  .stat { padding: 12pt 8pt 13pt; text-align: center; background: #fff; }
+  .stat + .stat { border-left: 1pt solid #c9dcf3; }
+  .stat .n { font-family: Quattrocento, Georgia, serif; font-size: 27pt; color: var(--blue-stat); line-height: 1; }
+  .stat .l { font-size: 7.5pt; line-height: 1.35; color: var(--blue-stat); font-weight: 600; margin-top: 7pt; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .lead-sec { padding-top: 0.34in; }
+  .leaders { display: grid; grid-template-columns: 1fr 1fr; gap: 22pt; }
+  .leader { display: flex; gap: 12pt; align-items: flex-start; }
+  .leader img { width: 0.8in; height: 0.8in; border-radius: 50%; object-fit: cover; object-position: center 20%; flex: none; border: 2pt solid var(--sky); }
+  .leader .role { font-size: 9pt; color: var(--blue); font-weight: 600; margin: 1pt 0 6pt; }
+  .leader ul { margin: 0; padding-left: 11pt; font-size: 8.8pt; line-height: 1.45; }
+  .leader li + li { margin-top: 3pt; }
+
+  .diff-sec { padding-top: 0.32in; }
+  .diffs { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt 22pt; }
+  .diff h3 { color: var(--blue); font-size: 10.5pt; margin-bottom: 3pt; }
+  .diff p { font-size: 8.8pt; line-height: 1.5; }
+
+  .close { position: absolute; left: 0; right: 0; bottom: 0; text-align: center; }
+  .close .trees { display: block; width: 100%; margin-top: 16pt; }
+  .close h2 { font-size: 21pt; color: var(--navy); margin-bottom: 4pt; }
+  .close .sign { font-size: 9pt; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--blue); margin-bottom: 14pt; }
+  .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 4pt 12pt; max-width: 7in; margin: 0 auto; font-size: 9.5pt; font-weight: 600; color: var(--navy); }
+  .contact a { color: var(--navy); text-decoration: none; }
+  .contact .sep { color: #9fb4cf; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <header class="hero">
+    <div class="brand">
+      <img class="mark" src="../../public/images/brand/lake-mark.svg" alt="">
+      <img class="word" src="../../public/images/brand/wordmark-text.png" alt="Black Lake Capital">
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Partnering with founders of technology businesses</p>
+      <p class="tagline">Your team. Your plan.<br>Your reward.</p>
+      <p class="vp">Keep what works. Build what's next.</p>
+    </div>
+  </header>
+
+  <div class="intro pad">
+    <p>You built a strong business. <strong>Black Lake Capital</strong> is a family office that helps you keep building it without losing what made it successful. We partner with founders who want to <strong>take some money off the table today</strong>, <strong>stay involved in the business</strong>, and <strong>participate in the value created next</strong>.</p>
+    <div class="criteria">
+      <div><b>US &amp; Canada</b> cash-flow positive</div>
+      <div><b>$10M+</b> revenue</div>
+      <div><b>~$2M+</b> EBITDA</div>
+    </div>
+  </div>
+
+  <div class="portfolio pad">
+    <div class="rule-head">Completed investments</div>
+    <div class="logos three">
+      <div class="co"><div class="logo"><img src="../../public/images/logos/strip-a5.png" alt="A5 Corporation"></div><p class="where">Pleasanton, CA</p><p class="what">Digital solutions</p></div>
+      <div class="co"><div class="logo"><img src="../../public/images/logos/strip-spinnaker.png" alt="Spinnaker SCA"></div><p class="where">Boulder, CO</p><p class="what">Supply chain services</p></div>
+      <div class="co"><div class="logo"><img src="../../public/images/logos/strip-set-solutions.png" alt="Set Solutions"></div><p class="where">Houston, TX</p><p class="what">Network security</p></div>
+    </div>
+    <div class="rule-head">Active investments</div>
+    <div class="logos two">
+      <div class="co"><div class="logo"><img class="trapp" src="../../public/images/logos/portfolio-trapp.jpg" alt="Trapp Technology"></div><p class="where">Phoenix, AZ</p><p class="what">Cybersecurity solutions</p></div>
+      <div class="co"><div class="logo"><img class="innovatix" src="../../public/images/logos/portfolio-innovatix.jpg" alt="Innovatix Technology Partners"></div><p class="where">Bedminster, NJ</p><p class="what">Complex software development</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <div class="p2-top">
+    <img class="word" src="../../public/images/brand/wordmark-text.png" alt="Black Lake Capital">
+    <span>blacklakecap.com</span>
+  </div>
+
+  <div class="stats-sec pad">
+    <h2>Backed by numbers</h2>
+    <div class="stats">
+      <div class="stat"><div class="n">18</div><div class="l">Transactions across seven platforms</div></div>
+      <div class="stat"><div class="n">10x+</div><div class="l">Cash-on-cash realized returns</div></div>
+      <div class="stat"><div class="n">$60M+</div><div class="l">To founders from their second transaction*</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">Positions eliminated in an acquisition</div></div>
+      <div class="stat"><div class="n">150+</div><div class="l">Combined years of transaction experience</div></div>
+    </div>
+    <p style="font-size:7pt;margin-top:5pt;color:#8a8a8a">*Across Black Lake's last three subsequent transactions, about 3.5x more cash on average than in the initial sale.</p>
+  </div>
+
+  <div class="lead-sec pad">
+    <h2>Leadership you can trust</h2>
+    <div class="leaders">
+      <div class="leader">
+        <img src="../../public/images/team/charles-scripps.jpg" alt="Charles Scripps">
+        <div>
+          <h3>Charles Scripps</h3>
+          <p class="role">Managing Partner</p>
+          <ul>
+            <li>Two decades investing in private and public businesses</li>
+            <li>Previously at <strong>HIG Capital</strong> and <strong>AEA Investors</strong>; began at <strong>McKinsey &amp; Company</strong></li>
+            <li>MBA with Honors, Wharton; BS Chemical Engineering, University of Wisconsin</li>
+          </ul>
+        </div>
+      </div>
+      <div class="leader">
+        <img src="../../public/images/team/aaron-nack.jpg" alt="Aaron Nack">
+        <div>
+          <h3>Aaron Nack</h3>
+          <p class="role">Partner</p>
+          <ul>
+            <li>25 years as a founder, partner, investor and advisor</li>
+            <li>Grew <strong>AHEAD</strong> from startup to <strong>$250M</strong> in revenue in seven years</li>
+            <li>BS Economics, University of Wisconsin-Madison</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="diff-sec pad">
+    <h2>What makes Black Lake different</h2>
+    <div class="diffs">
+      <div class="diff"><h3>Your People. Your Playbook.</h3><p>No predetermined playbook. Your leadership team stays in place and your operating expertise remains at the center.</p></div>
+      <div class="diff"><h3>Shared Success.</h3><p>Sell a portion of your business while retaining meaningful ownership, with the potential for a "second bite of the apple."</p></div>
+      <div class="diff"><h3>Experience Without Ego.</h3><p>We ask hard questions, stay flexible when circumstances change, and bring perspective without pretending we have every answer.</p></div>
+      <div class="diff"><h3>The Deal Should Fit the Business.</h3><p>We evaluate opportunities deal by deal and structure the investment around your business, not a formula.</p></div>
+    </div>
+  </div>
+
+  <footer class="close">
+        <h2>Let's start a conversation.</h2>
+    <p class="sign">Your Vision. Your People. Your Success.</p>
+    <div class="contact">
+      <a href="https://blacklakecap.com">blacklakecap.com</a><span class="sep">|</span>
+      <a href="mailto:info@BlackLakeCap.com">info@BlackLakeCap.com</a><span class="sep">|</span>
+      <a href="tel:+17207700079">(720) 770-0079</a><span class="sep">|</span>
+      <a href="https://www.linkedin.com/company/blacklakecap/">LinkedIn</a>
+    </div>
+    <img class="trees" src="treeline.png" alt="">
+  </footer>
+</section>
+
+</body>
+</html>
