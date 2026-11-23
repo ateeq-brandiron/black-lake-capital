@@ -9,7 +9,7 @@
 7. **Primary CTA** "Start a conversation" is a mailto to info@BlackLakeCap.com until the client picks mailto or the form. One field in `content/site.json` changes every CTA.
 8. **CTA placement on Home**: hero, after the stats, after the approach section, closing band. Every other page gets the closing band (`CtaBand`).
 9. **Closing band** is a new section (CLAUDE.md requires it on every page). It uses the sign-off "Your Vision. Your People. Your Success." with "You don't have to carry it alone."
-10. **Home hero**: the H1 is now the tagline. "Investors in technology" (the old H1) stays as a small eyebrow so the technology focus is mentioned in passing.
+10. **Home hero**: the H1 is now the tagline. The small eyebrow above it reads "Partnering with founders of technology businesses" (replaced the old "Investors in technology" headline per client review).
 11. **Home intro** line replaced with the elevator pitch.
 12. **Stats**: second-bite now reads $60M+ (unconfirmed). The approved 3.5x proof point sits under it as the italic line. The old italic lines were dropped because they did not match the approved wording.
 13. **Approach section**: heading is the value proposition. The three approved differentiators sit behind Foundation / Strategy / Execution (expandable, native `<details>`, works without JS). The mapping is a proposal.

@@ -55,7 +55,7 @@ export function PageHero({ title, eyebrow, subtitle, image, video, markPosition 
 
       <div className="flex max-w-6xl flex-col items-center gap-6">
         {markPosition === "above" ? mark : null}
-        {eyebrow ? <p className="text-sm font-semibold tracking-[0.2em] uppercase [text-shadow:0_2px_6px_rgb(0_0_0/0.5)] sm:text-base">{eyebrow}</p> : null}
+        {eyebrow ? <p className="text-sm font-semibold tracking-[0.2em] text-balance uppercase [text-shadow:0_2px_6px_rgb(0_0_0/0.5)] sm:text-base">{eyebrow}</p> : null}
         <h1 className={`${size === "home" ? "type-hero-home" : "type-hero"} ${size === "compact" ? "text-[clamp(2.125rem,1.2rem+3vw,3.375rem)]" : ""} text-balance`}>{title}</h1>
         {subtitle ? (
           <p
