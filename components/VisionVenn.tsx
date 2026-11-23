@@ -2,7 +2,7 @@ type Props = {
   eyebrow: string;
   title: string;
   body: string;
-  goal: string;
+  goal?: string | null;
   venn: { left: string; right: string; center: string };
 };
 
@@ -17,7 +17,7 @@ export function VisionVenn({ eyebrow, title, body, goal, venn }: Props) {
             {title}
           </h2>
           <p className="mt-6 text-lg">{body}</p>
-          <p className="mt-4 text-lg">{goal}</p>
+          {goal ? <p className="mt-4 text-lg">{goal}</p> : null}
         </div>
         {/* Two overlapping circles; the overlap is the shared result */}
         <figure className="mx-auto w-full max-w-[32rem]">
