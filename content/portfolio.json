@@ -44,7 +44,8 @@
     {
       "name": "Set Solutions",
       "location": "Houston, Texas",
-      "website": "www.Setsolutions.com",
+      "website": null,
+      "websiteNote": "setsolutions.com no longer works (company acquired by Trace3), so no link is shown.",
       "description": "Full-service network security provider",
       "status": "completed",
       "logo": {

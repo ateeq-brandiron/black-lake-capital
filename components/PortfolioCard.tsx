@@ -5,7 +5,7 @@ import type { ImageRef } from "@/lib/content";
 export type Company = {
   name: string;
   location: string;
-  website: string;
+  website?: string | null;
   description: string;
   status: string;
   logo: ImageRef;
@@ -17,7 +17,7 @@ export type Company = {
 
 /** Portfolio company card (Investments): logo, "Completed" ribbon for exits, location, website, one-liner. */
 export function PortfolioCard({ company, completedLabel, learnMoreLabel }: { company: Company; completedLabel: string; learnMoreLabel: string }) {
-  const href = `https://${company.website.replace(/^https?:\/\//, "").toLowerCase()}`;
+  const href = company.website ? `https://${company.website.replace(/^https?:\/\//, "").toLowerCase()}` : null;
   const overlayRibbon = company.status === "completed" && !company.ribbonInLogo;
   return (
     <article className="reveal flex flex-col items-center text-center font-card text-lg leading-normal font-medium">
@@ -39,9 +39,11 @@ export function PortfolioCard({ company, completedLabel, learnMoreLabel }: { com
       </div>
       <h3 className="mt-4 text-[1.3125rem] leading-tight font-medium text-ink">{company.name}</h3>
       <p className="mt-4 text-black">{company.location}</p>
-      <a href={href} target="_blank" rel="noopener" className="text-navy hover:text-blue">
-        {company.website}
-      </a>
+      {href ? (
+        <a href={href} target="_blank" rel="noopener" className="text-navy hover:text-blue">
+          {company.website}
+        </a>
+      ) : null}
       <p className="text-black">{company.description}</p>
       {company.newsSource ? (
         <Link href={`/newspage/${company.newsSource}/`} className="mt-4 inline-block py-2 font-bold text-navy hover:text-blue">
