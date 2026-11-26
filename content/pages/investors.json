@@ -26,6 +26,8 @@
       "tech": "Does your business benefit from technology?",
       "region": "Is it a US- or Canada-based company?",
       "company": "Company",
+      "revenue": "Estimated 2026 revenue",
+      "ebitda": "Estimated 2026 EBITDA",
       "services": "Services",
       "description": "Description"
     },

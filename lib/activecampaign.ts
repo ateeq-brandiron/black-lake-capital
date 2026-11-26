@@ -13,10 +13,15 @@ const FIELDS = { tech: "field[30]", region: "field[29]", company: "field[25]", s
 
 const yesNo = (v: string) => (v === "yes" ? "Yes" : v === "no" ? "No" : "");
 
+// The ActiveCampaign form has no revenue or EBITDA fields yet, so the estimates lead the Description field.
+// Once custom fields exist there, map them in FIELDS instead.
+const withFinancials = (i: Inquiry) =>
+  [i.revenue && `Estimated 2026 revenue: ${i.revenue}`, i.ebitda && `Estimated 2026 EBITDA: ${i.ebitda}`, i.description].filter(Boolean).join("\n");
+
 export async function submitActiveCampaignForm(inquiry: Inquiry): Promise<void> {
   const params = new URLSearchParams({ ...FORM, fullname: inquiry.name, email: inquiry.email, phone: inquiry.phone });
   for (const [key, name] of Object.entries(FIELDS)) {
-    const value = key === "tech" || key === "region" ? yesNo(inquiry[key]) : inquiry[key as keyof typeof FIELDS];
+    const value = key === "tech" || key === "region" ? yesNo(inquiry[key]) : key === "description" ? withFinancials(inquiry) : inquiry[key as keyof typeof FIELDS];
     if (value) params.set(name, value);
   }
   params.set("jsonp", "true");

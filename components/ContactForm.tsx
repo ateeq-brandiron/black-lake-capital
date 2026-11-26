@@ -8,7 +8,7 @@ type Labels = {
   title: string;
   submitLabel: string;
   successMessage: string;
-  fields: Record<"name" | "email" | "phone" | "tech" | "region" | "company" | "services" | "description", string>;
+  fields: Record<"name" | "email" | "phone" | "tech" | "region" | "company" | "revenue" | "ebitda" | "services" | "description", string>;
 };
 
 const input = "mt-1.5 block min-h-11 w-full rounded-md border border-[#9aa3ae] bg-white px-3 py-2 text-ink placeholder:text-[#6b6b6b] focus:border-blue";
@@ -77,6 +77,14 @@ export function ContactForm({ labels }: { labels: Labels }) {
       <label className="mt-5 block font-semibold">
         {f.company}
         <input name="company" autoComplete="organization" className={input} />
+      </label>
+      <label className="mt-4 block font-semibold">
+        {f.revenue}
+        <input name="revenue" placeholder="e.g. $12M" className={input} />
+      </label>
+      <label className="mt-4 block font-semibold">
+        {f.ebitda}
+        <input name="ebitda" placeholder="e.g. $2.5M" className={input} />
       </label>
       <label className="mt-4 block font-semibold">
         {f.services}

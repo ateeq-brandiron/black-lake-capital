@@ -1,6 +1,6 @@
 export type InquiryState = { status: "idle" | "success" | "error"; message?: string; errors?: Partial<Record<string, string>> };
 
-export const INQUIRY_FIELDS = ["name", "email", "phone", "tech", "region", "company", "services", "description"] as const;
+export const INQUIRY_FIELDS = ["name", "email", "phone", "tech", "region", "company", "revenue", "ebitda", "services", "description"] as const;
 export type InquiryField = (typeof INQUIRY_FIELDS)[number];
 export type Inquiry = Record<InquiryField, string>;
 
