@@ -23,7 +23,7 @@
       "name": "Name",
       "email": "Email",
       "phone": "Phone",
-      "tech": "Are you a technology-focused company?",
+      "tech": "Does your business benefit from technology?",
       "region": "Is it a US- or Canada-based company?",
       "company": "Company",
       "services": "Services",
