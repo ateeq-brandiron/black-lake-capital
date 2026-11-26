@@ -12,7 +12,7 @@
         "alt": "A5 Corporation logo"
       },
       "ribbonInLogo": false,
-      "newsSource": "a5",
+      "newsSource": null,
       "note": "Exited: acquired by Accordion (BLC April 2026 press release, approved for distribution)."
     },
     {
@@ -26,7 +26,7 @@
         "alt": "Spinnaker SCA logo"
       },
       "ribbonInLogo": true,
-      "newsSource": "spinnaker"
+      "newsSource": null
     },
     {
       "name": "Trapp Technology",
@@ -80,7 +80,7 @@
         "alt": "OMCO SUMO logo"
       },
       "ribbonInLogo": true,
-      "newsSource": "omco-sumo"
+      "newsSource": null
     }
   ]
 }

@@ -1,4 +1,11 @@
 import type { NextConfig } from "next";
+import newsJson from "./content/news.json";
+
+// News from completed (exited) investments is no longer listed (Chad's review); old links go to /newspage/.
+const hiddenSources = new Set(newsJson.sources.filter((s) => !s.local).map((s) => s.id));
+const hiddenPostRedirects = newsJson.posts
+  .filter((p) => hiddenSources.has(p.source))
+  .map((p) => ({ source: `/${p.slug}`, destination: "/newspage/", permanent: false }));
 
 const nextConfig: NextConfig = {
   // WordPress URLs end in a slash (/criteria/); keep them identical.
@@ -23,20 +30,20 @@ const nextConfig: NextConfig = {
       news("/new-news"),
       news("/blogs"),
       news("/black-lake-capital-posts", "black-lake"),
-      news("/a5-corp-posts", "a5"),
-      news("/a5-2", "a5"),
+      news("/a5-corp-posts"),
+      news("/a5-2"),
       news("/trapp-posts", "trapp"),
       news("/macrosoft-post", "macrosoft"),
       news("/macrosoft-2", "macrosoft"),
-      news("/spinnaker-posts", "spinnaker"),
-      news("/spinnakersca", "spinnaker"),
-      news("/ocmo-sumo-posts", "omco-sumo"),
-      news("/omcosumo", "omco-sumo"),
+      news("/spinnaker-posts"),
+      news("/spinnakersca"),
+      news("/ocmo-sumo-posts"),
+      news("/omcosumo"),
       { source: "/setsolutions-2", destination: "/investing/", permanent: true },
       // Testimonial posts and the old "Learn More" short links
       { source: "/testimonial/:slug*", destination: "/#testimonials", permanent: true },
-      news("/a5-corporation", "a5"),
-      news("/spinnaker-sca", "spinnaker"),
+      news("/a5-corporation"),
+      news("/spinnaker-sca"),
       news("/trapp-technology", "trapp"),
       { source: "/set-solutions", destination: "/investing/", permanent: true },
       // WordPress archives and feeds
@@ -46,6 +53,9 @@ const nextConfig: NextConfig = {
       news("/page/:n"),
       news("/feed"),
       { source: "/wp-content/uploads/2025/10/:file(UPDATED-2025-.*\\.pdf)", destination: "/downloads/:file", permanent: true },
+      // The company feeds and posts of completed investments
+      ...[...hiddenSources].map((id) => ({ source: `/newspage/${id}`, destination: "/newspage/", permanent: false })),
+      ...hiddenPostRedirects,
     ];
   },
   turbopack: {

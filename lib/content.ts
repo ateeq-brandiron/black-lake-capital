@@ -24,7 +24,7 @@ export type Testimonial = {
   logo: ImageRef;
 };
 
-export type NewsSource = { id: string; name: string; logo: ImageRef; local: boolean };
+export type NewsSource = { id: string; name: string; logo: ImageRef; local: boolean; completed?: boolean };
 
 export type NewsPost = {
   slug: string;
@@ -69,6 +69,11 @@ export function getLocalPosts() {
 
 export function getPost(slug: string) {
   return getLocalPosts().find((p) => p.slug === slug);
+}
+
+/** Companies whose news is shown. Completed (exited) investments are pulled from News (Chad's review). */
+export function getListedSources() {
+  return news.sources.filter((s) => s.local);
 }
 
 export function getSource(id: string) {

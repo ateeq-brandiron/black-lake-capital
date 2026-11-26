@@ -32,7 +32,7 @@ type ListProps = { sources: NewsSource[]; posts: NewsPost[]; perSource: number }
 /** News listing: one column per source (Black Lake + portfolio companies), as on the live site. */
 export function NewsList({ sources, posts, perSource }: ListProps) {
   return (
-    <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
+    <div className={`grid gap-x-8 gap-y-14 sm:grid-cols-2 ${sources.length >= 4 ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
       {sources.map((source) => {
         const all = posts.filter((p) => p.source === source.id);
         if (!all.length) return null;

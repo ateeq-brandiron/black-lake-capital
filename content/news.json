@@ -18,7 +18,8 @@
         "src": "/images/logos/news-a5.webp",
         "alt": "A5"
       },
-      "local": true
+      "local": false,
+  "completed": true
     },
     {
       "id": "trapp",
@@ -45,7 +46,8 @@
         "src": "/images/logos/news-spinnaker.webp",
         "alt": "Spinnaker SCA"
       },
-      "local": true
+      "local": false,
+  "completed": true
     },
     {
       "id": "omco-sumo",
@@ -54,7 +56,8 @@
         "src": "/images/logos/news-omco-sumo.webp",
         "alt": "OMCO SUMO"
       },
-      "local": true
+      "local": false,
+  "completed": true
     }
   ],
   "posts": [

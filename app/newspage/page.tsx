@@ -4,7 +4,7 @@ import { MediaCards } from "@/components/MediaCards";
 import { NewsList } from "@/components/NewsList";
 import { PageHero } from "@/components/PageHero";
 import content from "@/content/pages/newspage.json";
-import { getLocalPosts, getMedia, news } from "@/lib/content";
+import { getListedSources, getLocalPosts, getMedia } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata(content.meta, "/newspage/");
@@ -29,7 +29,7 @@ export default function NewsPage() {
       </section>
       <section className="py-(--spacing-section)" aria-label="Posts">
         <div className="container-page">
-          <NewsList sources={news.sources} posts={getLocalPosts()} perSource={5} />
+          <NewsList sources={getListedSources()} posts={getLocalPosts()} perSource={5} />
         </div>
       </section>
       <CtaBand />
