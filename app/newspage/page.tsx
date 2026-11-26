@@ -14,7 +14,7 @@ export default function NewsPage() {
   const media = getMedia();
   return (
     <>
-      <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} video={hero.video}>
+      <PageHero title={hero.title} subtitle={hero.subtitle} image={hero.image} video={hero.video} subtitlePosition="above" markPosition="below">
         <CtaButton variant="light" className="mt-2" />
       </PageHero>
       <section className="pt-(--spacing-section)" aria-labelledby="media-title">
